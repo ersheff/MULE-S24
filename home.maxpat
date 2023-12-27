@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 62.0, 1012.0, 804.0 ],
+		"rect" : [ 34.0, 62.0, 1332.0, 804.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,23 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontsize" : 16.0,
+					"id" : "obj-7",
+					"linecount" : 16,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 10.0, 58.0, 780.0, 292.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 16,
+					"presentation_rect" : [ 10.0, 58.0, 780.0, 292.0 ],
+					"text" : "Use the control area in the lower-right corner of this main performance patch to:\n- reload chat window (if needed)\n- adjust zoom level to better fit content on your display\n- adjust master volume\n- turn audio processing on/off\n\nSubpatches for different pieces will be loaded automatically by the director.\n\nPlease remember to check all audio settings in the Options > Audio Status... window before starting:\n- Driver: Core Audio (Mac) or ASIO4ALL (Windows)\n- Latency: 10ms (Windows only)\n- I/O Vector Size: as low as possible, ideally 32 or 64 (Windows users, adjust in ASIO4ALL control panel)\n- Signal Vector Size: match the I/O Vector Size setting\n\nIf you experience audio glitches, start by raising the I/O Vector Size one notch (no higher than 128).\nWindows users can also adjust Latency up to 20ms if there are still issues.",
+					"textcolor" : [ 0.800000011920929, 0.800000011920929, 0.800000011920929, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"comment" : "",
 					"id" : "obj-6",
 					"index" : 0,
@@ -47,44 +64,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 834.0, 0.0, 30.0, 30.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"comment" : "",
-					"id" : "obj-5",
-					"index" : 0,
-					"maxclass" : "inlet",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 802.0, 0.0, 30.0, 30.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"comment" : "",
-					"id" : "obj-4",
-					"index" : 0,
-					"maxclass" : "outlet",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 834.0, 77.0, 30.0, 30.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"comment" : "",
-					"id" : "obj-1",
-					"index" : 0,
-					"maxclass" : "outlet",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 802.0, 77.0, 30.0, 30.0 ]
+					"patching_rect" : [ 138.0, 209.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -99,8 +79,9 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 10.0, 10.0, 208.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 10.0, 208.0, 24.0 ],
-					"text" : "Title"
+					"presentation_rect" : [ 0.0, 0.0, 208.0, 24.0 ],
+					"text" : "Home",
+					"textcolor" : [ 0.800000011920929, 0.800000011920929, 0.800000011920929, 1.0 ]
 				}
 
 			}
@@ -113,8 +94,27 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 10.0, 36.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 36.0, 150.0, 20.0 ],
-					"text" : "last update"
+					"presentation_rect" : [ 0.0, 26.0, 150.0, 20.0 ],
+					"text" : "last update 12/26/23",
+					"textcolor" : [ 0.800000011920929, 0.800000011920929, 0.800000011920929, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"background" : 1,
+					"hidden" : 1,
+					"id" : "obj-2",
+					"maxclass" : "comment",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patching_rect" : [ 267.5, 390.0, 265.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 367.5, 390.0, 265.0, 20.0 ],
+					"suppressinlet" : 1,
+					"text" : "all patch content must fit within this area",
+					"textcolor" : [ 0.5, 0.5, 0.5, 1.0 ],
+					"textjustification" : 1
 				}
 
 			}
@@ -131,29 +131,11 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 0.0, 0.0, 800.0, 800.0 ],
+					"patching_rect" : [ 0.0, 0.0, 1000.0, 800.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 800.0, 800.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 1000.0, 800.0 ],
 					"proportion" : 0.5,
 					"rounded" : 0
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"background" : 1,
-					"hidden" : 1,
-					"id" : "obj-2",
-					"maxclass" : "comment",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"patching_rect" : [ 267.5, 390.0, 265.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 267.5, 390.0, 265.0, 20.0 ],
-					"suppressinlet" : 1,
-					"text" : "all patch content must fit within this area",
-					"textcolor" : [ 0.396078431372549, 0.396078431372549, 0.396078431372549, 1.0 ],
-					"textjustification" : 1
 				}
 
 			}
@@ -244,8 +226,8 @@
 				"multi" : 0
 			}
  ],
-		"bgcolor" : [ 0.545098039215686, 0.545098039215686, 0.545098039215686, 1.0 ],
-		"editing_bgcolor" : [ 0.545098039215686, 0.545098039215686, 0.545098039215686, 1.0 ]
+		"bgcolor" : [ 0.150000020861626, 0.150000020861626, 0.150000020861626, 1.0 ],
+		"editing_bgcolor" : [ 0.200000017881393, 0.200000017881393, 0.200000017881393, 1.0 ]
 	}
 
 }
