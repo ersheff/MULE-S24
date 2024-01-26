@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 7,
+			"minor" : 6,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -42,15 +42,15 @@
 				"box" : 				{
 					"fontsize" : 16.0,
 					"id" : "obj-7",
-					"linecount" : 16,
+					"linecount" : 17,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 10.0, 58.0, 780.0, 292.0 ],
+					"patching_rect" : [ 10.0, 58.0, 780.0, 310.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 16,
-					"presentation_rect" : [ 10.0, 58.0, 780.0, 292.0 ],
-					"text" : "Use the control area in the lower-right corner of this main performance patch to:\n- reload chat window (if needed)\n- adjust zoom level to better fit content on your display\n- adjust master volume\n- turn audio processing on/off\n\nSubpatches for different pieces will be loaded automatically by the director.\n\nPlease remember to check all audio settings in the Options > Audio Status... window before starting:\n- Driver: Core Audio (Mac) or ASIO4ALL (Windows)\n- Latency: 10ms (Windows only)\n- I/O Vector Size: as low as possible, ideally 32 or 64 (Windows users, adjust in ASIO4ALL control panel)\n- Signal Vector Size: match the I/O Vector Size setting\n\nIf you experience audio glitches, start by raising the I/O Vector Size one notch (no higher than 128).\nWindows users can also adjust Latency up to 20ms if there are still issues.",
+					"presentation_linecount" : 17,
+					"presentation_rect" : [ 10.0, 58.0, 780.0, 310.0 ],
+					"text" : "Set Color Theme to \"deepdark-carbon\" in Preferences...\nAdd the MULE-S24 folder in Options > File Preferences...\n\nUse the control area in the lower-right corner of this main performance patch to:\n- reload chat window (if needed)\n- adjust zoom level to better fit content on your display\n- adjust master volume\n- turn audio processing on/off\n\nPlease remember to check all audio settings in the Options > Audio Status... window before starting:\n- Driver: Core Audio (Mac) or ASIO4ALL (Windows)\n- Latency: 10ms (Windows only)\n- I/O Vector Size: as low as possible, ideally 32 or 64 (Windows users, adjust in ASIO4ALL control panel)\n- Signal Vector Size: match the I/O Vector Size setting\n\nIf you experience audio glitches, start by raising the I/O Vector Size one notch (no higher than 128).\nWindows users can also adjust Latency up to 20ms if there are still issues.",
 					"textcolor" : [ 0.800000011920929, 0.800000011920929, 0.800000011920929, 1.0 ]
 				}
 
@@ -95,7 +95,7 @@
 					"patching_rect" : [ 10.0, 36.0, 150.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 26.0, 150.0, 20.0 ],
-					"text" : "last update 12/26/23",
+					"text" : "last update 1/25/23",
 					"textcolor" : [ 0.800000011920929, 0.800000011920929, 0.800000011920929, 1.0 ]
 				}
 
