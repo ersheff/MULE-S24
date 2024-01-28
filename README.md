@@ -1,3 +1,1 @@
 # MULE Spring 2024
-
-MULE
