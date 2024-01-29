@@ -40,13 +40,13 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-25",
+					"id" : "obj-9",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 549.0, 84.0, 32.0, 22.0 ],
-					"text" : "path"
+					"patching_rect" : [ 507.0, 108.0, 51.0, 22.0 ],
+					"text" : "osc-test"
 				}
 
 			}
@@ -59,7 +59,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 731.0, 92.0, 651.0, 62.0 ],
-					"presentation_linecount" : 6,
 					"text" : ";\rmax launchbrowser https://docs.google.com/presentation/d/e/2PACX-1vRLaLwNb10HlEasKhpZgNhC699gWPbOxnps3qfUdBk_nUII1M2tvNos7U0awlP5C4gwrNHmgg3ST2ts/pub?start=false&loop=false&delayms=3000#slide=id.ga39165f4ac_0_575"
 				}
 
@@ -131,7 +130,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-15",
-					"items" : "Home",
+					"items" : [ "Home", ",", "OSC", "Test" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -300,7 +299,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 466.0, 132.0, 212.0, 22.0 ],
+					"patching_rect" : [ 466.0, 161.0, 212.0, 22.0 ],
 					"text" : "prepend script sendbox mainb replace"
 				}
 
@@ -312,7 +311,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 466.0, 181.0, 67.0, 22.0 ],
+					"patching_rect" : [ 466.0, 210.0, 67.0, 22.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
@@ -372,6 +371,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"source" : [ "obj-16", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
 					"source" : [ "obj-18", 0 ]
 				}
@@ -403,13 +409,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
-					"source" : [ "obj-25", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
 					"source" : [ "obj-3", 0 ]
 				}
 
@@ -418,6 +417,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
 					"source" : [ "obj-8", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-9", 0 ]
 				}
 
 			}
