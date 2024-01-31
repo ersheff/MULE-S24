@@ -10,8 +10,8 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 62.0, 1332.0, 804.0 ],
-		"bglocked" : 1,
+		"rect" : [ 34.0, 62.0, 869.0, 804.0 ],
+		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
@@ -40,30 +40,81 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"comment" : "",
-					"id" : "obj-1",
-					"index" : 0,
-					"maxclass" : "outlet",
-					"numinlets" : 1,
+					"bufsize" : 64,
+					"calccount" : 32,
+					"id" : "obj-13",
+					"maxclass" : "scope~",
+					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 451.0, 616.0, 30.0, 30.0 ]
+					"patching_rect" : [ 173.0, 455.0, 480.0, 120.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 71.0, 172.0, 480.0, 120.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"fontsize" : 16.0,
-					"id" : "obj-7",
-					"linecount" : 17,
+					"id" : "obj-12",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 81.0, 332.0, 66.0, 22.0 ],
+					"text" : "cycle~ 440"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 81.0, 195.0, 83.0, 22.0 ],
+					"text" : "loadmess 440"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-10",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 10.0, 58.0, 780.0, 310.0 ],
+					"patching_rect" : [ 81.0, 160.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 17,
-					"presentation_rect" : [ 10.0, 58.0, 780.0, 310.0 ],
-					"text" : "Set Color Theme to \"deepdark-carbon\" in Preferences...\nAdd the MULE-S24 folder in Options > File Preferences...\n\nUse the control area in the lower-right corner of this main performance patch to:\n- reload chat window (if needed)\n- adjust zoom level to better fit content on your display\n- adjust master volume\n- turn audio processing on/off\n\nPlease remember to check all audio settings in the Options > Audio Status... window before starting:\n- Driver: Core Audio (Mac) or ASIO4ALL (Windows)\n- Latency: 10ms (Windows only)\n- I/O Vector Size: as low as possible, ideally 32 or 64 (Windows users, adjust in ASIO4ALL control panel)\n- Signal Vector Size: match the I/O Vector Size setting\n\nIf you experience audio glitches, start by raising the I/O Vector Size one notch (no higher than 128).\nWindows users can also adjust Latency up to 20ms if there are still issues.",
-					"textcolor" : [ 0.800000011920929, 0.800000011920929, 0.800000011920929, 1.0 ]
+					"presentation_rect" : [ 71.0, 86.0, 150.0, 20.0 ],
+					"text" : "frequency (55-440Hz)"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 48.0,
+					"id" : "obj-8",
+					"maxclass" : "number",
+					"maximum" : 440,
+					"minimum" : 55,
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 81.0, 236.0, 118.0, 62.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 71.0, 108.0, 118.0, 62.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "",
+					"id" : "obj-5",
+					"index" : 0,
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 81.0, 449.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -76,7 +127,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 138.0, 209.0, 30.0, 30.0 ]
+					"patching_rect" : [ 502.5, 7.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -92,7 +143,7 @@
 					"patching_rect" : [ 10.0, 10.0, 208.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 208.0, 24.0 ],
-					"text" : "Home",
+					"text" : "Tester",
 					"textcolor" : [ 0.800000011920929, 0.800000011920929, 0.800000011920929, 1.0 ]
 				}
 
@@ -152,7 +203,37 @@
 
 			}
  ],
-		"lines" : [  ],
+		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"order" : 0,
+					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"order" : 1,
+					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-12", 0 ],
+					"source" : [ "obj-8", 0 ]
+				}
+
+			}
+ ],
 		"dependency_cache" : [  ],
 		"autosave" : 0,
 		"styles" : [ 			{
