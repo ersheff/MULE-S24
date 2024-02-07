@@ -40,12 +40,24 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 552.5, 108.0, 29.5, 22.0 ],
+					"text" : "fd"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-9",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 507.0, 108.0, 39.0, 22.0 ],
+					"patching_rect" : [ 504.0, 108.0, 39.0, 22.0 ],
 					"text" : "tester"
 				}
 
@@ -122,7 +134,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 6,
 					"outlettype" : [ "bang", "bang", "bang", "bang", "bang", "" ],
-					"patching_rect" : [ 466.0, 84.0, 74.0, 22.0 ],
+					"patching_rect" : [ 466.0, 78.0, 74.0, 22.0 ],
 					"text" : "sel 0 1 2 3 4"
 				}
 
@@ -130,7 +142,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-15",
-					"items" : [ "Home", ",", "Tester" ],
+					"items" : [ "Home", ",", "Tester", ",", "FD" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -328,8 +340,8 @@
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "tester.maxpat",
-					"numinlets" : 1,
+					"name" : "fd.maxpat",
+					"numinlets" : 2,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
@@ -374,6 +386,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
 					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-16", 2 ]
 				}
 
 			}
@@ -439,6 +458,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
 					"source" : [ "obj-8", 0 ]
 				}
@@ -467,11 +493,22 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "tester.maxpat",
+				"name" : "fd.maxpat",
 				"bootpath" : "~/GitHub/MULE-S24/subpatches",
 				"patcherrelativepath" : "./subpatches",
 				"type" : "JSON",
 				"implicit" : 1
+			}
+, 			{
+				"name" : "grooveduck.maxpat",
+				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/sequencing-looping/audio-rate-sequencing-looping/lib",
+				"patcherrelativepath" : "../../Library/Application Support/Cycling '74/Max 8/Examples/sequencing-looping/audio-rate-sequencing-looping/lib",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "link.beat.mxo",
+				"type" : "iLaX"
 			}
  ],
 		"autosave" : 0,
