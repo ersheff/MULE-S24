@@ -129,7 +129,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 692.0, 273.0, 58.0, 22.0 ],
+					"patching_rect" : [ 692.0, 11.0, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -314,8 +314,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1013.402005076408386, 755.216455221176147, 169.0, 22.0 ],
-					"text" : "timestretch $1, mode rhythmic"
+					"patching_rect" : [ 1013.402005076408386, 755.216455221176147, 84.0, 22.0 ],
+					"text" : "timestretch $1"
 				}
 
 			}
@@ -493,7 +493,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 350.243390679359436, 18.0, 68.0 ],
 					"size" : 3,
-					"value" : 2
+					"value" : 0
 				}
 
 			}
@@ -1142,7 +1142,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.149, 0.149, 0.149, 1.0 ],
+					"bgcolor" : [ 0.3, 0.3, 0.149, 1.0 ],
 					"id" : "obj-26",
 					"maxclass" : "comment",
 					"numinlets" : 1,
