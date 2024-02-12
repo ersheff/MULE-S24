@@ -341,10 +341,10 @@
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "fd.maxpat",
-					"numinlets" : 2,
-					"numoutlets" : 1,
+					"numinlets" : 1,
+					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "signal", "" ],
 					"patching_rect" : [ 18.0, 18.0, 412.0, 405.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 1000.0, 800.0 ],
@@ -493,16 +493,16 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "fd.maxpat",
+				"name" : "fd-sub.maxpat",
 				"bootpath" : "~/GitHub/MULE-S24/subpatches",
 				"patcherrelativepath" : "./subpatches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "grooveduck.maxpat",
-				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/sequencing-looping/audio-rate-sequencing-looping/lib",
-				"patcherrelativepath" : "../../Library/Application Support/Cycling '74/Max 8/Examples/sequencing-looping/audio-rate-sequencing-looping/lib",
+				"name" : "fd.maxpat",
+				"bootpath" : "~/GitHub/MULE-S24/subpatches",
+				"patcherrelativepath" : "./subpatches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
