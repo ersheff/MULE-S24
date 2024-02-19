@@ -156,20 +156,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-12",
-					"maxclass" : "jweb",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 942.0, 441.0, 300.0, 400.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 1000.0, 0.0, 300.0, 400.0 ],
-					"rendermode" : 0
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-10",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -342,9 +328,9 @@
 					"maxclass" : "bpatcher",
 					"name" : "fd.maxpat",
 					"numinlets" : 1,
-					"numoutlets" : 2,
+					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "signal", "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 18.0, 18.0, 412.0, 405.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 1000.0, 800.0 ],
