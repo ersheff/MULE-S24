@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 184.0, 67.0, 1134.0, 753.0 ],
+		"rect" : [ 184.0, 67.0, 1385.0, 911.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -156,8 +156,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 233.0, 745.0, 193.0, 22.0 ],
-					"text" : "udpsend SHEFFIEMBA.local 8001"
+					"patching_rect" : [ 233.0, 745.0, 165.0, 22.0 ],
+					"text" : "udpsend 192.168.0.181 8001"
 				}
 
 			}
@@ -1104,11 +1104,11 @@
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "fd.maxpat",
+					"name" : "home.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 18.0, 18.0, 412.0, 405.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 1000.0, 800.0 ],
@@ -1379,22 +1379,11 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "fd-sub.maxpat",
+				"name" : "home.maxpat",
 				"bootpath" : "~/GitHub/MULE-S24/subpatches",
 				"patcherrelativepath" : "./subpatches",
 				"type" : "JSON",
 				"implicit" : 1
-			}
-, 			{
-				"name" : "fd.maxpat",
-				"bootpath" : "~/GitHub/MULE-S24/subpatches",
-				"patcherrelativepath" : "./subpatches",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "link.beat.mxo",
-				"type" : "iLaX"
 			}
  ],
 		"autosave" : 0,
