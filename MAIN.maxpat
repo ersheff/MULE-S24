@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 6,
-			"revision" : 0,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -273,7 +273,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 6,
-							"revision" : 0,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1035,6 +1035,7 @@
 							"parameter_longname" : "gain",
 							"parameter_mmax" : 6.0,
 							"parameter_mmin" : -70.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "gain",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4
@@ -1144,11 +1145,11 @@
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "home.maxpat",
+					"name" : "fd.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 18.0, 18.0, 412.0, 405.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 1000.0, 800.0 ],
@@ -1440,11 +1441,22 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "home.maxpat",
+				"name" : "fd-sub.maxpat",
 				"bootpath" : "~/GitHub/MULE-S24/subpatches",
 				"patcherrelativepath" : "./subpatches",
 				"type" : "JSON",
 				"implicit" : 1
+			}
+, 			{
+				"name" : "fd.maxpat",
+				"bootpath" : "~/GitHub/MULE-S24/subpatches",
+				"patcherrelativepath" : "./subpatches",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "link.beat.mxo",
+				"type" : "iLaX"
 			}
  ],
 		"autosave" : 0,
