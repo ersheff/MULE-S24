@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 184.0, 67.0, 1385.0, 911.0 ],
+		"rect" : [ 34.0, 62.0, 1372.0, 804.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,42 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-31",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 680.0, 108.0, 31.0, 22.0 ],
+					"text" : "blue"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-27",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 637.5, 108.0, 39.0, 22.0 ],
+					"text" : "green"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-26",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 595.0, 108.0, 29.5, 22.0 ],
+					"text" : "red"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-35",
 					"maxclass" : "newobj",
@@ -888,7 +924,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 731.0, 92.0, 651.0, 62.0 ],
+					"patching_rect" : [ 924.0, 93.0, 651.0, 62.0 ],
 					"text" : ";\rmax launchbrowser https://docs.google.com/presentation/d/e/2PACX-1vRLaLwNb10HlEasKhpZgNhC699gWPbOxnps3qfUdBk_nUII1M2tvNos7U0awlP5C4gwrNHmgg3ST2ts/pub?start=false&loop=false&delayms=3000#slide=id.ga39165f4ac_0_575"
 				}
 
@@ -901,7 +937,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 715.0, 18.0, 140.0, 20.0 ],
+					"patching_rect" : [ 908.0, 19.0, 140.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1000.0, 568.0, 140.0, 20.0 ],
 					"text" : "Launch CML Arpeggios"
@@ -916,7 +952,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 715.0, 168.0, 395.0, 35.0 ],
+					"patching_rect" : [ 908.0, 169.0, 395.0, 35.0 ],
 					"text" : ";\rmax launchbrowser https://musiclab.chromeexperiments.com/Arpeggios/"
 				}
 
@@ -949,18 +985,18 @@
 				"box" : 				{
 					"id" : "obj-16",
 					"maxclass" : "newobj",
-					"numinlets" : 6,
-					"numoutlets" : 6,
-					"outlettype" : [ "bang", "bang", "bang", "bang", "bang", "" ],
-					"patching_rect" : [ 466.0, 78.0, 74.0, 22.0 ],
-					"text" : "sel 0 1 2 3 4"
+					"numinlets" : 7,
+					"numoutlets" : 7,
+					"outlettype" : [ "bang", "bang", "bang", "bang", "bang", "bang", "" ],
+					"patching_rect" : [ 466.0, 78.0, 291.0, 22.0 ],
+					"text" : "sel 0 1 2 3 4 5"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-15",
-					"items" : [ "Home", ",", "Tester", ",", "FD" ],
+					"items" : [ "Home", ",", "Tester", ",", "FD", ",", "Red", ",", "Green", ",", "Blue" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1145,11 +1181,11 @@
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "fd.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 1,
+					"name" : "green.maxpat",
+					"numinlets" : 2,
+					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 18.0, 18.0, 412.0, 405.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 1000.0, 800.0 ],
@@ -1207,6 +1243,27 @@
 				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
 					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-26", 0 ],
+					"source" : [ "obj-16", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-27", 0 ],
+					"source" : [ "obj-16", 4 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-31", 0 ],
+					"source" : [ "obj-16", 5 ]
 				}
 
 			}
@@ -1284,6 +1341,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-26", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-27", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-38", 0 ],
 					"source" : [ "obj-28", 0 ]
 				}
@@ -1307,6 +1378,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
 					"source" : [ "obj-30", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-31", 0 ]
 				}
 
 			}
@@ -1427,6 +1505,7 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-1::obj-51" : [ "vst~", "vst~", 0 ],
 			"obj-4" : [ "gain", "gain", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
@@ -1441,22 +1520,25 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "fd-sub.maxpat",
+				"name" : "LABS.maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../Documents/Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "green.maxpat",
 				"bootpath" : "~/GitHub/MULE-S24/subpatches",
 				"patcherrelativepath" : "./subpatches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "fd.maxpat",
+				"name" : "tree.js",
 				"bootpath" : "~/GitHub/MULE-S24/subpatches",
 				"patcherrelativepath" : "./subpatches",
-				"type" : "JSON",
+				"type" : "TEXT",
 				"implicit" : 1
-			}
-, 			{
-				"name" : "link.beat.mxo",
-				"type" : "iLaX"
 			}
  ],
 		"autosave" : 0,
