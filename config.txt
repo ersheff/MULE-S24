@@ -1,2 +1,0 @@
-Enter first name and last initial on second line
-erics
