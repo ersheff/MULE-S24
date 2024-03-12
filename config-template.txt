@@ -1,0 +1,19 @@
+Enter first name and last initial on 2nd line
+erics
+
+Enter your designated port # on 5th line
+7000
+
+Assigned port numbers:
+Will Bray           7001
+Ethan Chambers      7002
+Ethan Davila        7003
+Ian Dilenschneider  7004
+Tyler Henderson     7005
+Henry Kunkel        7006
+Evan Northcutt      7007
+Will Puchot         7008
+Isa Riddle          7009
+Ian Russell         7010
+Kyler Smart         7011
+Jack Webster        7012
