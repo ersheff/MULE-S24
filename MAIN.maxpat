@@ -109,7 +109,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 289.0, 710.5, 234.0, 63.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1000.0, 503.0, 140.0, 63.0 ],
+					"presentation_rect" : [ 1202.5, 368.5, 53.0, 63.0 ],
 					"text" : "192"
 				}
 
@@ -122,7 +122,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 149.0, 612.0, 49.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1082.0, 642.0, 40.0, 20.0 ],
+					"presentation_rect" : [ 1209.0, 460.0, 40.0, 20.0 ],
 					"text" : "OSC",
 					"textjustification" : 1
 				}
@@ -138,7 +138,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 149.0, 642.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1082.0, 664.0, 40.0, 40.0 ]
+					"presentation_rect" : [ 1209.0, 482.0, 40.0, 40.0 ]
 				}
 
 			}
@@ -931,21 +931,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-20",
-					"maxclass" : "textbutton",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 908.0, 19.0, 140.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 1000.0, 568.0, 140.0, 20.0 ],
-					"text" : "Launch CML Arpeggios"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-17",
 					"linecount" : 2,
 					"maxclass" : "message",
@@ -995,6 +980,7 @@
 			}
 , 			{
 				"box" : 				{
+					"fontsize" : 16.0,
 					"id" : "obj-15",
 					"items" : [ "Home", ",", "Tester", ",", "FD", ",", "Red", ",", "Green", ",", "Blue" ],
 					"maxclass" : "umenu",
@@ -1002,9 +988,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 466.0, 52.0, 100.0, 22.0 ],
+					"patching_rect" : [ 466.0, 52.0, 100.0, 26.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1000.0, 590.0, 100.0, 22.0 ]
+					"presentation_rect" : [ 1060.0, 0.0, 140.0, 26.0 ]
 				}
 
 			}
@@ -1016,9 +1002,10 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 524.5, 290.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1000.0, 614.0, 150.0, 20.0 ],
+					"presentation_rect" : [ 1200.0, 550.0, 80.0, 20.0 ],
 					"text" : "adjust zoom",
-					"textcolor" : [ 0.755587697029114, 0.755587697029114, 0.755587697029114, 1.0 ]
+					"textcolor" : [ 0.755587697029114, 0.755587697029114, 0.755587697029114, 1.0 ],
+					"textjustification" : 1
 				}
 
 			}
@@ -1031,25 +1018,24 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 18.0, 713.0, 45.0, 45.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1062.0, 720.0, 80.0, 80.0 ]
+					"presentation_rect" : [ 1200.0, 720.0, 80.0, 80.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"channels" : 1,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-4",
 					"lastchannelcount" : 0,
 					"maxclass" : "live.gain~",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "signal", "", "float", "list" ],
+					"numinlets" : 2,
+					"numoutlets" : 5,
+					"outlettype" : [ "signal", "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 18.0, 468.0, 62.0, 136.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1000.0, 664.0, 60.0, 136.0 ],
+					"presentation_rect" : [ 1200.0, 600.0, 80.0, 120.0 ],
 					"saved_attribute_attributes" : 					{
 						"slidercolor" : 						{
 							"expression" : ""
@@ -1068,11 +1054,11 @@
 						}
 ,
 						"valueof" : 						{
-							"parameter_longname" : "gain",
+							"parameter_longname" : "main",
 							"parameter_mmax" : 6.0,
 							"parameter_mmin" : -70.0,
 							"parameter_modmode" : 0,
-							"parameter_shortname" : "gain",
+							"parameter_shortname" : "main",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4
 						}
@@ -1127,7 +1113,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 466.5, 287.0, 56.0, 26.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1000.0, 636.0, 56.0, 26.0 ],
+					"presentation_rect" : [ 1200.0, 572.0, 80.0, 26.0 ],
 					"textcolor" : [ 0.755587697029114, 0.755587697029114, 0.755587697029114, 1.0 ],
 					"tricolor" : [ 0.755587697029114, 0.755587697029114, 0.755587697029114, 1.0 ]
 				}
@@ -1181,14 +1167,14 @@
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "green.maxpat",
-					"numinlets" : 2,
-					"numoutlets" : 2,
+					"name" : "home.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "signal", "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 18.0, 18.0, 412.0, 405.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 1000.0, 800.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 1200.0, 800.0 ],
 					"varname" : "mainb",
 					"viewvisibility" : 1
 				}
@@ -1292,22 +1278,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
 					"source" : [ "obj-19", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-17", 0 ],
-					"order" : 1,
-					"source" : [ "obj-20", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-23", 0 ],
-					"order" : 0,
-					"source" : [ "obj-20", 0 ]
 				}
 
 			}
@@ -1505,8 +1475,7 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-1::obj-51" : [ "vst~", "vst~", 0 ],
-			"obj-4" : [ "gain", "gain", 0 ],
+			"obj-4" : [ "main", "main", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
 					"index" : 0,
@@ -1520,24 +1489,10 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "LABS.maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../Documents/Max 8/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "green.maxpat",
+				"name" : "home.maxpat",
 				"bootpath" : "~/GitHub/MULE-S24/subpatches",
 				"patcherrelativepath" : "./subpatches",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "tree.js",
-				"bootpath" : "~/GitHub/MULE-S24/subpatches",
-				"patcherrelativepath" : "./subpatches",
-				"type" : "TEXT",
 				"implicit" : 1
 			}
  ],
