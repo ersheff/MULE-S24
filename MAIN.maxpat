@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 62.0, 1372.0, 804.0 ],
+		"rect" : [ 34.0, 62.0, 1106.0, 804.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,21 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1103.0, 81.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1200.0, 28.0, 80.0, 20.0 ],
+					"text" : "current patch",
+					"textjustification" : 2
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.058823529411765, 0.058823529411765, 0.058823529411765, 1.0 ],
 					"fontsize" : 16.0,
 					"format" : 6,
 					"id" : "obj-29",
@@ -52,7 +67,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 461.0, 336.0, 58.0, 26.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1200.0, 572.0, 58.0, 26.0 ]
+					"presentation_rect" : [ 1200.0, 572.0, 80.0, 26.0 ]
 				}
 
 			}
@@ -942,6 +957,15 @@
 			}
 , 			{
 				"box" : 				{
+					"align" : 2,
+					"bgcolor" : [ 0.027450980392157, 0.027450980392157, 0.027450980392157, 1.0 ],
+					"bgfillcolor_angle" : 270.0,
+					"bgfillcolor_autogradient" : 0.0,
+					"bgfillcolor_color" : [ 0.027450980392157, 0.027450980392157, 0.027450980392157, 1.0 ],
+					"bgfillcolor_color1" : [ 0.070588235294118, 0.070588235294118, 0.070588235294118, 1.0 ],
+					"bgfillcolor_color2" : [ 0.185926180762898, 0.185926127990462, 0.185926141780742, 1.0 ],
+					"bgfillcolor_proportion" : 0.5,
+					"bgfillcolor_type" : "color",
 					"fontsize" : 16.0,
 					"id" : "obj-15",
 					"items" : [ "Home", ",", "FD", ",", "Red", ",", "Green", ",", "Blue" ],
@@ -952,7 +976,8 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 466.0, 52.0, 100.0, 26.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1140.0, 0.0, 140.0, 26.0 ]
+					"presentation_rect" : [ 1200.0, 0.0, 80.0, 26.0 ],
+					"textjustification" : 2
 				}
 
 			}
@@ -966,14 +991,13 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 1200.0, 550.0, 80.0, 20.0 ],
 					"text" : "adjust zoom",
-					"textcolor" : [ 0.755587697029114, 0.755587697029114, 0.755587697029114, 1.0 ],
-					"textjustification" : 0
+					"textcolor" : [ 0.755587697029114, 0.755587697029114, 0.755587697029114, 1.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.100000008940697, 0.100000008940697, 0.100000008940697, 1.0 ],
+					"bgcolor" : [ 0.03921568627451, 0.03921568627451, 0.03921568627451, 1.0 ],
 					"id" : "obj-6",
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
@@ -1108,7 +1132,7 @@
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "home.maxpat",
+					"name" : "blue.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
@@ -1388,6 +1412,9 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-1::obj-21" : [ "vst~[1]", "vst~[1]", 0 ],
+			"obj-1::obj-27" : [ "vst~[2]", "vst~[2]", 0 ],
+			"obj-1::obj-51" : [ "vst~", "vst~", 0 ],
 			"obj-4" : [ "main", "main", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
@@ -1402,15 +1429,18 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "home.maxpat",
+				"name" : "LABS.maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../Documents/Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "blue.maxpat",
 				"bootpath" : "~/GitHub/MULE-S24/Files",
 				"patcherrelativepath" : "./Files",
 				"type" : "JSON",
 				"implicit" : 1
-			}
-, 			{
-				"name" : "link.beat.mxo",
-				"type" : "iLaX"
 			}
  ],
 		"autosave" : 0,

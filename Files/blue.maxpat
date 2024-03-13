@@ -10,8 +10,8 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 62.0, 1303.0, 804.0 ],
-		"bglocked" : 0,
+		"rect" : [ 34.0, 62.0, 1106.0, 804.0 ],
+		"bglocked" : 1,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
@@ -40,14 +40,602 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-66",
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-30",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 822.0, 327.5, 76.0, 23.0 ],
+					"restore" : [ 0 ],
+					"saved_object_attributes" : 					{
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "pattr fx2-vst",
+					"varname" : "fx2-vst"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-12",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 533.0, 327.5, 76.0, 23.0 ],
+					"restore" : [ 0 ],
+					"saved_object_attributes" : 					{
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "pattr fx1-vst",
+					"varname" : "fx1-vst"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-11",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 266.0, 325.0, 120.0, 23.0 ],
+					"restore" : [ 0 ],
+					"saved_object_attributes" : 					{
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "pattr instrument-vst",
+					"varname" : "instrument-vst"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-9",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 853.333333333333258, 239.0, 92.0, 23.0 ],
+					"restore" : [ 0 ],
+					"saved_object_attributes" : 					{
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "pattr fx2-menu",
+					"varname" : "fx2-menu"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-7",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 561.0, 239.0, 92.0, 23.0 ],
+					"restore" : [ 0 ],
+					"saved_object_attributes" : 					{
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "pattr fx1-menu",
+					"varname" : "fx1-menu"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 237.666666666666686, 238.5, 136.0, 23.0 ],
+					"restore" : [ 0 ],
+					"saved_object_attributes" : 					{
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "pattr instrument-menu",
+					"varname" : "instrument-menu"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 755.0, 123.0, 45.0, 22.0 ],
+					"text" : "store 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 903.333333333333258, 78.0, 100.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 292.0, 56.0, 100.0, 20.0 ],
+					"text" : "Load Settings"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-14",
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 802.0, 78.0, 100.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 292.0, 34.0, 100.0, 20.0 ],
+					"text" : "Save Settings"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 838.0, 123.0, 33.0, 22.0 ],
+					"text" : "read"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 802.0, 123.0, 34.0, 22.0 ],
+					"text" : "write"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 802.0, 169.0, 179.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"client_rect" : [ 4, 44, 358, 172 ],
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0,
+						"storage_rect" : [ 583, 69, 1034, 197 ]
+					}
+,
+					"text" : "pattrstorage blue @savemode 0",
+					"varname" : "blue"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-54",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 231.916666666666686, 128.0, 29.5, 22.0 ],
+					"text" : "\" \""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-48",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 231.916666666666686, 163.0, 96.0, 22.0 ],
+					"text" : "prepend append"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-42",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 186.5, 476.0, 180.0, 20.0 ],
+					"patching_rect" : [ 923.333333333333258, 329.0, 80.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 186.5, 476.0, 180.0, 20.0 ],
-					"text" : "test notes with this keyboard"
+					"presentation_rect" : [ 106.0, 296.0, 80.0, 20.0 ],
+					"text" : "bypass",
+					"textjustification" : 2
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-41",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 637.0, 329.0, 80.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 139.0, 213.0, 47.0, 20.0 ],
+					"text" : "bypass",
+					"textjustification" : 2
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-37",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 897.333333333333258, 327.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 188.0, 294.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-38",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 897.333333333333258, 371.0, 63.0, 22.0 ],
+					"text" : "bypass $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-36",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 611.0, 327.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 188.0, 211.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-32",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 611.0, 371.0, 63.0, 22.0 ],
+					"text" : "bypass $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "",
+					"id" : "obj-29",
+					"index" : 0,
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 803.333333333333258, 480.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-23",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 897.333333333333258, 413.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 20.0, 248.0, 150.0, 20.0 ],
+					"text" : "load FX2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-25",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 860.333333333333258, 371.0, 35.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 177.0, 247.0, 35.0, 22.0 ],
+					"text" : "open"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-26",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 803.333333333333258, 371.0, 48.0, 22.0 ],
+					"text" : "plug $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"autosave" : 1,
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"id" : "obj-27",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 8,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "signal", "signal", "", "list", "int", "", "", "" ],
+					"patching_rect" : [ 803.333333333333258, 412.0, 92.5, 22.0 ],
+					"save" : [ "#N", "vst~", "loaduniqueid", 0, ";" ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_invisible" : 1,
+							"parameter_longname" : "vst~[2]",
+							"parameter_modmode" : 0,
+							"parameter_shortname" : "vst~[2]",
+							"parameter_type" : 3
+						}
+
+					}
+,
+					"saved_object_attributes" : 					{
+						"parameter_enable" : 1,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "vst~",
+					"varname" : "vst~[2]",
+					"viewvisibility" : 0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-28",
+					"items" : [ " ", ",", "++bubbler", ",", "++chebyshev", ",", "++compand", ",", "++decimate", ",", "++delay", ",", "++flipper", ",", "++matrix", ",", "++phasor", ",", "++pitchdelay", ",", "BPB Dirty VHS", ",", "Cardinal FX", ",", "Cardinal Synth", ",", "Cardinal", ",", "Deelay", ",", "Filterstep", ",", "Fracture", ",", "Gatelab", ",", "IVGI2", ",", "LABS", ",", "NeuralAmpModeler", ",", "Panflow", ",", "PaulXStretch", ",", "Ruina", ",", "Saturation Knob", ",", "Sinc Vereor", ",", "Surge XT Effects", ",", "Surge XT", ",", "TAL-Vocoder-2", ",", "TDR Nova", ",", "TX16Wx (legacy id)", ",", "TX16Wx", ",", "ValhallaDelay", ",", "ValhallaFreqEcho", ",", "ValhallaSupermassive", ",", "ValhallaVintageVerb_Fx", ",", "ValhallaVintageVerb_Fx_Reverb", ",", "Virt Vereor" ],
+					"maxclass" : "umenu",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "int", "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 716.333333333333258, 279.0, 192.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 20.0, 270.0, 192.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-18",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 605.0, 413.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 20.0, 165.0, 67.0, 20.0 ],
+					"text" : "load FX1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-19",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 568.0, 371.0, 35.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 177.0, 164.0, 35.0, 22.0 ],
+					"text" : "open"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-20",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 511.0, 371.0, 48.0, 22.0 ],
+					"text" : "plug $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"autosave" : 1,
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"id" : "obj-21",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 8,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "signal", "signal", "", "list", "int", "", "", "" ],
+					"patching_rect" : [ 511.0, 412.0, 92.5, 22.0 ],
+					"save" : [ "#N", "vst~", "loaduniqueid", 0, ";" ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_invisible" : 1,
+							"parameter_longname" : "vst~[1]",
+							"parameter_modmode" : 0,
+							"parameter_shortname" : "vst~[1]",
+							"parameter_type" : 3
+						}
+
+					}
+,
+					"saved_object_attributes" : 					{
+						"parameter_enable" : 1,
+						"parameter_mappable" : 0
+					}
+,
+					"snapshot" : 					{
+						"filetype" : "C74Snapshot",
+						"version" : 2,
+						"minorversion" : 0,
+						"name" : "snapshotlist",
+						"origin" : "vst~",
+						"type" : "list",
+						"subtype" : "Undefined",
+						"embed" : 1,
+						"snapshot" : 						{
+							"pluginname" : "Saturation Knob.vstinfo",
+							"plugindisplayname" : "Saturation Knob",
+							"pluginsavedname" : "",
+							"pluginsaveduniqueid" : 0,
+							"version" : 1,
+							"isbank" : 0,
+							"isbase64" : 1,
+							"blob" : "20640.CMlaKA....fQPMDZ....ALWXz4F...P.....APTYlEVcrQG...............................EYA....LUXzUmbgQWZu4FHK41ahofLtTiK0fiBB.............3O++++++++++O..........nP...............f....fD.........f9D...6A...n.....H....h....DD...vb....yA...TF....c....TA...jG....b....kA...HB...fN....f....HB...fH....r....n.....H....h....XD...PZ....rA...TF...fQ....uA...HG...Pa....gA...PG...fU....kA...HG...vb....oA...7F...fa....h....nC....H....v....vB...fB....f....HB....T....xA...TF...vb....kA...PG....S....oA...LG....c....h....nC....H....aA...n.....H....f....rG...fB....f.....B....H....h....PD...PY....yA...LF...fb....oA....G....c....oA...7F...fa....h....nC....H....h....HB....K....J.....B....H....f....HB...vP....gA...PG...PY....mA...7F...fb....4A...HB...fN....f.....C....K....J.....B....H....f....HB...PR....sA...DF...vY....kA...LD....Z....kA...LF...vZ....yA...TG...Pa....h....nC....H....h....HB....K....J.....B....H....f....HB....T....gA...HG...PX....sA...TF....c....kA...HG....Q....gA...PG...PX....h....nC....H....6A...n.....H....f.....B....H....h.....E...PX....xA...DF...Pa....kA...PG...PY....xA...LG...fH....5.....B...vV....J.....B....H....f.....B....H....aA...n.....H....f.....B....H....f.....B....L....r....n.....H....f.....B....H....f.....B....L....r....n.....H....f.....B....H....f.....B...fH....SA...DF....c....0A...HG...PX....zA...jF...va....tA...HB...fB....f.....B....H....f.....B...PW....r....n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w....vB...fB....f.....B....H....f.....B....H....v....3B...PM....r....n.....H....f.....B....H....f.....B...fH....SA...DF....c....0A...HG...PX....zA...jF...va....tA....B....U....4A....G...PY....h....n.....H....f.....B....H....f....zE...fB....f.....B....H....f....zE....K....J.....B....H....f.....B...fH....SA...TG...fX....sA...7F....Y....0A...vF...PY....yA...HB...fN....f....rE...PW....r....n.....H....f.....B....H....h....TD....d....zA...TF...fb....tA...DF....a....PA...DF...fb....gA...zF...PY....zA...TF...fb....yA...HB...fN....f....rE...PW....r....n.....H....f.....B....H....h....PE...Pd....vA...TF...fH....5.....B...fH....FA...TG....a....rA...HB...fB....f.....B....H....8A...vB...fB....f.....B....H....h....TD....d....zA...TF...fa....jA...TF....Y....FA...TF...PX....zA...TG...fb....kA...LG....T....gA...HG...PX....sA...TF....c....kA...HG....Q....gA...PG...PX....h....nC....H....6A...n.....H....f.....B....H....h....TD....d....zA...TF...fa....jA...TF....Y....FA...TF...PX....zA...TG...fb....kA...LG....T....gA...HG...PX....sA...TF....c....kA...HG...vb....h....nC....H....aA...n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w.....C....K....J.....B....H....f.....B....H....f.....C...fK....0....vB...fB....f.....B....H....f.....B....H....h....jD...fa....vA...TG....c....f....bD...PX....oA...3F...fH....J.....B....H....f.....B....H....cA...vB...fB....f.....B....H....f.....B...vV....J.....B....H....f.....B....H....f....DC...PL....r....n.....H....f.....B....H....f.....B....L....t....TC....K....J.....B....H....f.....B....H....f....HB...vS....0A...PG....b....0A...PG....H....GA...DF...PZ....tA...HB...fB....f.....B....H....f.....B...PW....r....n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w....HC....K....J.....B....H....f.....B....H....f.....C...fK....0....vB...fB....f.....B....H....f.....B....H....h....fD...PY....gA...PF...fb....uA...7F...Pa....h....n.....H....f.....B....H....f....zE....K....J.....B....H....f.....B....H....aA...n.....H....f.....B....H....f.....B...PL....y....vB...fB....f.....B....H....f.....B....H....v....vB...fB....f.....B....H....f.....B....H....h....fD...PZ....mA...fF....H....PA...DF...vb....yA...HB...fB....f.....B....H....f.....B...PW....r....n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w....PC....K....J.....B....H....f.....B....H....f.....C....K....J.....B....H....f.....B....H....f....HB....T....nA...DF...vb....kA....B...PR....tA...XG...PY....xA...PG...fH....J.....B....H....f.....B....H....cA...n.....H....f.....B....H....cA...n.....H....f.....B...Pe....r....n.....H....f.....B...fH....PA...vF...Pc....mA...jF...fa....IA...PD...fH....5.....B...fH....yA...DF....c....tA...HB....K....J.....B....H....f....HB....T....rA...TG...vY....oA...3F...fS....gA...zF...PY....h....nC....H....h....LE...PX....zA...TG...fb....gA...PG...PZ....uA...3F....H....KA...3F...va....hA...HB....K....J.....B....H....f....HB....T....rA...TG...vY....oA...3F...fU....kA...HG...vb....oA...7F...fa....h....nC....H....h....HC...fK....0....3B...PM....3....HB....K....J.....B....H....f....HB....T....xA...TF...vb....kA...PG...fS....gA...zF...PY....h....nC....H....h....HB....K....J.....B....H....f....HB....T....xA...7F...vX....kA...LG...vb....kA...PF...vT....uA...TG...fa....jA...vD...PZ....tA...rF...fH....5.....B...fH....h....vB...fB....f.....B....H....h....HE...PX....tA...rF...fH....5.....B....L....t....XC....K....J.....B....H....f....HB....U....gA...bF...vb....h....nC....H....aA...zE....K....J.....B....H....f....HB...vP....uA...vF...va....xA...HB...fN....f.....C....K....J.....B....H....f....HB...vP....uA...vF....a....kA...LF....c....oA...7F...fa....h....nC....H....h....HB....K....J.....B....H....f....HB...PU....UA...jD....Q....h....nC....H....h....HB....K....J.....B....H....f....HB...PU....tA....G...fb....uA...LF...PY....yA...LG...PY....jA...LE...va....0A...3F....Y....LA...jF...fa....qA...HB...fN....f....HB...fH....r....n.....H....f.....B...fH....NA...TG...Pa....hA...TF...fb....OA...XF....T....gA...HG...PX....sA...TF....c....kA...HG...vb....h....nC....H....v....vB...fB....f.....B....H....h....3D...Pc....sA...HF...PY....xA...7D...fY....PA...HG...va....mA...HG...PX....sA...LG...fH....5.....B....L....r....n.....H....f.....B...fH....SA...PG...va....xA...TF....Y....SA...PG...PX....zA...TF...fH....5.....B...fH....h....vB...fB....f.....B....H....h.....G...PX....xA...DF...Pa....kA...PG...PY....xA...LG...fH....5.....B...vV....cA...vB...fB....f.....B....H....h....LG...Pc....hA...zF...va....jA...TG....a....kA...LG...fH....5.....B...vV....cA...vB...fB....f.....B....H....h....TF....d....zA...TF...fb....tA...DF....a....PA...DF...fb....gA...zF...PY....zA...TF...fb....yA...HB...fN....f....rE...PW....r....n.....H....f.....B...fH....kA...fG....c....kA...3F....Y....kA...PF...fQ....kA...DF....c....0A...HG...PY....yA...HB...fN....f....rE...PW....r....n.....H....f.....B...fH....zA...jG....b....kA...HB...fN....f....HB...fH....J.....B....H....8A...n.....H....cA...vB...fB....f....HB...vT....nA...DF...fb....kA...PF....Q....gA...PG...PX....h....nC....H....6A...zG....K....J.....B...fH....CA...7F....a....uA...HG...fH....5.....B....L....r....n.....H....h....LD...va....rA...vF...PY....iA...PG...PZ....uA...3F...fH....5.....B...fH....h....vB...fB....f....HB...PS....0A...vF....c....oA...LG....c....gA...PG...PY....IA...zF...PX....mA...TF...fH....5.....B...fH....h....vB...fB....f....HB...PS....0A...vF....c....oA...LG....c....gA...PG...PY....DA...TF...fY....gA...TG....a....zA...HB...fN....f....PG...fb....0A...TF...fB....8A...n....f9D...6A...n.....H....h....DD...vb....yA...TF....c....TA...jG....b....kA...HB...fN....f....HB...fH....r....n.....H....h....XD...PZ....rA...TF...fQ....uA...HG...Pa....gA...PG...fU....kA...HG...vb....oA...7F...fa....h....nC....H....v....vB...fB....f....HB....T....xA...TF...vb....kA...PG....S....oA...LG....c....h....nC....H....aA...n.....H....f....rG...fB....f.....B....H....h....PD...PY....yA...LF...fb....oA....G....c....oA...7F...fa....h....nC....H....h....HB....K....J.....B....H....f....HB...vP....gA...PG...PY....mA...7F...fb....4A...HB...fN....f.....C....K....J.....B....H....f....HB...PR....sA...DF...vY....kA...LD....Z....kA...LF...vZ....yA...TG...Pa....h....nC....H....h....HB....K....J.....B....H....f....HB....T....gA...HG...PX....sA...TF....c....kA...HG....Q....gA...PG...PX....h....nC....H....6A...n.....H....f.....B....H....h.....E...PX....xA...DF...Pa....kA...PG...PY....xA...LG...fH....5.....B...vV....J.....B....H....f.....B....H....aA...n.....H....f.....B....H....f.....B....L....r....n.....H....f.....B....H....f.....B....L....r....n.....H....f.....B....H....f.....B...fH....SA...DF....c....0A...HG...PX....zA...jF...va....tA...HB...fB....f.....B....H....f.....B...PW....r....n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w....vB...fB....f.....B....H....f.....B....H....v....3B...PM....r....n.....H....f.....B....H....f.....B...fH....SA...DF....c....0A...HG...PX....zA...jF...va....tA....B....U....4A....G...PY....h....n.....H....f.....B....H....f....zE...fB....f.....B....H....f....zE....K....J.....B....H....f.....B...fH....SA...TG...fX....sA...7F....Y....0A...vF...PY....yA...HB...fN....f....rE...PW....r....n.....H....f.....B....H....h....TD....d....zA...TF...fb....tA...DF....a....PA...DF...fb....gA...zF...PY....zA...TF...fb....yA...HB...fN....f....rE...PW....r....n.....H....f.....B....H....h....PE...Pd....vA...TF...fH....5.....B...fH....FA...TG....a....rA...HB...fB....f.....B....H....8A...vB...fB....f.....B....H....h....TD....d....zA...TF...fa....jA...TF....Y....FA...TF...PX....zA...TG...fb....kA...LG....T....gA...HG...PX....sA...TF....c....kA...HG....Q....gA...PG...PX....h....nC....H....6A...n.....H....f.....B....H....h....TD....d....zA...TF...fa....jA...TF....Y....FA...TF...PX....zA...TG...fb....kA...LG....T....gA...HG...PX....sA...TF....c....kA...HG...vb....h....nC....H....aA...n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w.....C....K....J.....B....H....f.....B....H....f.....C...fK....0....vB...fB....f.....B....H....f.....B....H....h....jD...fa....vA...TG....c....f....bD...PX....oA...3F...fH....J.....B....H....f.....B....H....cA...vB...fB....f.....B....H....f.....B...vV....J.....B....H....f.....B....H....f....DC...PL....r....n.....H....f.....B....H....f.....B....L....t....TC....K....J.....B....H....f.....B....H....f....HB...vS....0A...PG....b....0A...PG....H....GA...DF...PZ....tA...HB...fB....f.....B....H....f.....B...PW....r....n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w....HC....K....J.....B....H....f.....B....H....f.....C...fK....0....vB...fB....f.....B....H....f.....B....H....h....fD...PY....gA...PF...fb....uA...7F...Pa....h....n.....H....f.....B....H....f....zE....K....J.....B....H....f.....B....H....aA...n.....H....f.....B....H....f.....B...PL....y....vB...fB....f.....B....H....f.....B....H....v....vB...fB....f.....B....H....f.....B....H....h....fD...PZ....mA...fF....H....PA...DF...vb....yA...HB...fB....f.....B....H....f.....B...PW....r....n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w....PC....K....J.....B....H....f.....B....H....f.....C....K....J.....B....H....f.....B....H....f....HB....T....nA...DF...vb....kA....B...PR....tA...XG...PY....xA...PG...fH....J.....B....H....f.....B....H....cA...n.....H....f.....B....H....cA...n.....H....f.....B...Pe....r....n.....H....f.....B...fH....PA...vF...Pc....mA...jF...fa....IA...PD...fH....5.....B...fH....yA...DF....c....tA...HB....K....J.....B....H....f....HB....T....rA...TG...vY....oA...3F...fS....gA...zF...PY....h....nC....H....h....LE...PX....zA...TG...fb....gA...PG...PZ....uA...3F....H....KA...3F...va....hA...HB....K....J.....B....H....f....HB....T....rA...TG...vY....oA...3F...fU....kA...HG...vb....oA...7F...fa....h....nC....H....h....HC...fK....0....3B...PM....3....HB....K....J.....B....H....f....HB....T....xA...TF...vb....kA...PG...fS....gA...zF...PY....h....nC....H....h....HB....K....J.....B....H....f....HB....T....xA...7F...vX....kA...LG...vb....kA...PF...vT....uA...TG...fa....jA...vD...PZ....tA...rF...fH....5.....B...fH....h....vB...fB....f.....B....H....h....HE...PX....tA...rF...fH....5.....B....L....t....XC....K....J.....B....H....f....HB....U....gA...bF...vb....h....nC....H....aA...zE....K....J.....B....H....f....HB...vP....uA...vF...va....xA...HB...fN....f.....C....K....J.....B....H....f....HB...vP....uA...vF....a....kA...LF....c....oA...7F...fa....h....nC....H....h....HB....K....J.....B....H....f....HB...PU....UA...jD....Q....h....nC....H....h....HB....K....J.....B....H....f....HB...PU....tA....G...fb....uA...LF...PY....yA...LG...PY....jA...LE...va....0A...3F....Y....LA...jF...fa....qA...HB...fN....f....HB...fH....r....n.....H....f.....B...fH....NA...TG...Pa....hA...TF...fb....OA...XF....T....gA...HG...PX....sA...TF....c....kA...HG...vb....h....nC....H....v....vB...fB....f.....B....H....h....3D...Pc....sA...HF...PY....xA...7D...fY....PA...HG...va....mA...HG...PX....sA...LG...fH....5.....B....L....r....n.....H....f.....B...fH....SA...PG...va....xA...TF....Y....SA...PG...PX....zA...TF...fH....5.....B...fH....h....vB...fB....f.....B....H....h.....G...PX....xA...DF...Pa....kA...PG...PY....xA...LG...fH....5.....B...vV....cA...vB...fB....f.....B....H....h....LG...Pc....hA...zF...va....jA...TG....a....kA...LG...fH....5.....B...vV....cA...vB...fB....f.....B....H....h....TF....d....zA...TF...fb....tA...DF....a....PA...DF...fb....gA...zF...PY....zA...TF...fb....yA...HB...fN....f....rE...PW....r....n.....H....f.....B...fH....kA...fG....c....kA...3F....Y....kA...PF...fQ....kA...DF....c....0A...HG...PY....yA...HB...fN....f....rE...PW....r....n.....H....f.....B...fH....zA...jG....b....kA...HB...fN....f....HB...fH....J.....B....H....8A...n.....H....cA...vB...fB....f....HB...vT....nA...DF...fb....kA...PF....Q....gA...PG...PX....h....nC....H....6A...zG....K....J.....B...fH....CA...7F....a....uA...HG...fH....5.....B....L....r....n.....H....h....LD...va....rA...vF...PY....iA...PG...PZ....uA...3F...fH....5.....B...fH....h....vB...fB....f....HB...PS....0A...vF....c....oA...LG....c....gA...PG...PY....IA...zF...PX....mA...TF...fH....5.....B...fH....h....vB...fB....f....HB...PS....0A...vF....c....oA...LG....c....gA...PG...PY....DA...TF...fY....gA...TG....a....zA...HB...fN....f....PG...fb....0A...TF...fB....8A...n....f9D...6A...n.....H....h....DD...vb....yA...TF....c....TA...jG....b....kA...HB...fN....f....HB...fH....r....n.....H....h....XD...PZ....rA...TF...fQ....uA...HG...Pa....gA...PG...fU....kA...HG...vb....oA...7F...fa....h....nC....H....v....vB...fB....f....HB....T....xA...TF...vb....kA...PG....S....oA...LG....c....h....nC....H....aA...n.....H....f....rG...fB....f.....B....H....h....PD...PY....yA...LF...fb....oA....G....c....oA...7F...fa....h....nC....H....h....HB....K....J.....B....H....f....HB...vP....gA...PG...PY....mA...7F...fb....4A...HB...fN....f.....C....K....J.....B....H....f....HB...PR....sA...DF...vY....kA...LD....Z....kA...LF...vZ....yA...TG...Pa....h....nC....H....h....HB....K....J.....B....H....f....HB....T....gA...HG...PX....sA...TF....c....kA...HG....Q....gA...PG...PX....h....nC....H....6A...n.....H....f.....B....H....h.....E...PX....xA...DF...Pa....kA...PG...PY....xA...LG...fH....5.....B...vV....J.....B....H....f.....B....H....aA...n.....H....f.....B....H....f.....B....L....r....n.....H....f.....B....H....f.....B....L....r....n.....H....f.....B....H....f.....B...fH....SA...DF....c....0A...HG...PX....zA...jF...va....tA...HB...fB....f.....B....H....f.....B...PW....r....n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w....vB...fB....f.....B....H....f.....B....H....v....3B...PM....r....n.....H....f.....B....H....f.....B...fH....SA...DF....c....0A...HG...PX....zA...jF...va....tA....B....U....4A....G...PY....h....n.....H....f.....B....H....f....zE...fB....f.....B....H....f....zE....K....J.....B....H....f.....B...fH....SA...TG...fX....sA...7F....Y....0A...vF...PY....yA...HB...fN....f....rE...PW....r....n.....H....f.....B....H....h....TD....d....zA...TF...fb....tA...DF....a....PA...DF...fb....gA...zF...PY....zA...TF...fb....yA...HB...fN....f....rE...PW....r....n.....H....f.....B....H....h....PE...Pd....vA...TF...fH....5.....B...fH....FA...TG....a....rA...HB...fB....f.....B....H....8A...vB...fB....f.....B....H....h....TD....d....zA...TF...fa....jA...TF....Y....FA...TF...PX....zA...TG...fb....kA...LG....T....gA...HG...PX....sA...TF....c....kA...HG....Q....gA...PG...PX....h....nC....H....6A...n.....H....f.....B....H....h....TD....d....zA...TF...fa....jA...TF....Y....FA...TF...PX....zA...TG...fb....kA...LG....T....gA...HG...PX....sA...TF....c....kA...HG...vb....h....nC....H....aA...n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w.....C....K....J.....B....H....f.....B....H....f.....C...fK....0....vB...fB....f.....B....H....f.....B....H....h....jD...fa....vA...TG....c....f....bD...PX....oA...3F...fH....J.....B....H....f.....B....H....cA...vB...fB....f.....B....H....f.....B...vV....J.....B....H....f.....B....H....f....DC...PL....r....n.....H....f.....B....H....f.....B....L....t....TC....K....J.....B....H....f.....B....H....f....HB...vS....0A...PG....b....0A...PG....H....GA...DF...PZ....tA...HB...fB....f.....B....H....f.....B...PW....r....n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w....HC....K....J.....B....H....f.....B....H....f.....C...fK....0....vB...fB....f.....B....H....f.....B....H....h....fD...PY....gA...PF...fb....uA...7F...Pa....h....n.....H....f.....B....H....f....zE....K....J.....B....H....f.....B....H....aA...n.....H....f.....B....H....f.....B...PL....y....vB...fB....f.....B....H....f.....B....H....v....vB...fB....f.....B....H....f.....B....H....h....fD...PZ....mA...fF....H....PA...DF...vb....yA...HB...fB....f.....B....H....f.....B...PW....r....n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w....PC....K....J.....B....H....f.....B....H....f.....C....K....J.....B....H....f.....B....H....f....HB....T....nA...DF...vb....kA....B...PR....tA...XG...PY....xA...PG...fH....J.....B....H....f.....B....H....cA...n.....H....f.....B....H....cA...n.....H....f.....B...Pe....r....n.....H....f.....B...fH....PA...vF...Pc....mA...jF...fa....IA...PD...fH....5.....B...fH....yA...DF....c....tA...HB....K....J.....B....H....f....HB....T....rA...TG...vY....oA...3F...fS....gA...zF...PY....h....nC....H....h....LE...PX....zA...TG...fb....gA...PG...PZ....uA...3F....H....KA...3F...va....hA...HB....K....J.....B....H....f....HB....T....rA...TG...vY....oA...3F...fU....kA...HG...vb....oA...7F...fa....h....nC....H....h....HC...fK....0....3B...PM....3....HB....K....J.....B....H....f....HB....T....xA...TF...vb....kA...PG...fS....gA...zF...PY....h....nC....H....h....HB....K....J.....B....H....f....HB....T....xA...7F...vX....kA...LG...vb....kA...PF...vT....uA...TG...fa....jA...vD...PZ....tA...rF...fH....5.....B...fH....h....vB...fB....f.....B....H....h....HE...PX....tA...rF...fH....5.....B....L....t....XC....K....J.....B....H....f....HB....U....gA...bF...vb....h....nC....H....aA...zE....K....J.....B....H....f....HB...vP....uA...vF...va....xA...HB...fN....f.....C....K....J.....B....H....f....HB...vP....uA...vF....a....kA...LF....c....oA...7F...fa....h....nC....H....h....HB....K....J.....B....H....f....HB...PU....UA...jD....Q....h....nC....H....h....HB....K....J.....B....H....f....HB...PU....tA....G...fb....uA...LF...PY....yA...LG...PY....jA...LE...va....0A...3F....Y....LA...jF...fa....qA...HB...fN....f....HB...fH....r....n.....H....f.....B...fH....NA...TG...Pa....hA...TF...fb....OA...XF....T....gA...HG...PX....sA...TF....c....kA...HG...vb....h....nC....H....v....vB...fB....f.....B....H....h....3D...Pc....sA...HF...PY....xA...7D...fY....PA...HG...va....mA...HG...PX....sA...LG...fH....5.....B....L....r....n.....H....f.....B...fH....SA...PG...va....xA...TF....Y....SA...PG...PX....zA...TF...fH....5.....B...fH....h....vB...fB....f.....B....H....h.....G...PX....xA...DF...Pa....kA...PG...PY....xA...LG...fH....5.....B...vV....cA...vB...fB....f.....B....H....h....LG...Pc....hA...zF...va....jA...TG....a....kA...LG...fH....5.....B...vV....cA...vB...fB....f.....B....H....h....TF....d....zA...TF...fb....tA...DF....a....PA...DF...fb....gA...zF...PY....zA...TF...fb....yA...HB...fN....f....rE...PW....r....n.....H....f.....B...fH....kA...fG....c....kA...3F....Y....kA...PF...fQ....kA...DF....c....0A...HG...PY....yA...HB...fN....f....rE...PW....r....n.....H....f.....B...fH....zA...jG....b....kA...HB...fN....f....HB...fH....J.....B....H....8A...n.....H....cA...vB...fB....f....HB...vT....nA...DF...fb....kA...PF....Q....gA...PG...PX....h....nC....H....6A...zG....K....J.....B...fH....CA...7F....a....uA...HG...fH....5.....B....L....r....n.....H....h....LD...va....rA...vF...PY....iA...PG...PZ....uA...3F...fH....5.....B...fH....h....vB...fB....f....HB...PS....0A...vF....c....oA...LG....c....gA...PG...PY....IA...zF...PX....mA...TF...fH....5.....B...fH....h....vB...fB....f....HB...PS....0A...vF....c....oA...LG....c....gA...PG...PY....DA...TF...fY....gA...TG....a....zA...HB...fN....f....PG...fb....0A...TF...fB....8A...n....f9D...6A...n.....H....h....DD...vb....yA...TF....c....TA...jG....b....kA...HB...fN....f....HB...fH....r....n.....H....h....XD...PZ....rA...TF...fQ....uA...HG...Pa....gA...PG...fU....kA...HG...vb....oA...7F...fa....h....nC....H....v....vB...fB....f....HB....T....xA...TF...vb....kA...PG....S....oA...LG....c....h....nC....H....aA...n.....H....f....rG...fB....f.....B....H....h....PD...PY....yA...LF...fb....oA....G....c....oA...7F...fa....h....nC....H....h....HB....K....J.....B....H....f....HB...vP....gA...PG...PY....mA...7F...fb....4A...HB...fN....f.....C....K....J.....B....H....f....HB...PR....sA...DF...vY....kA...LD....Z....kA...LF...vZ....yA...TG...Pa....h....nC....H....h....HB....K....J.....B....H....f....HB....T....gA...HG...PX....sA...TF....c....kA...HG....Q....gA...PG...PX....h....nC....H....6A...n.....H....f.....B....H....h.....E...PX....xA...DF...Pa....kA...PG...PY....xA...LG...fH....5.....B...vV....J.....B....H....f.....B....H....aA...n.....H....f.....B....H....f.....B....L....r....n.....H....f.....B....H....f.....B....L....r....n.....H....f.....B....H....f.....B...fH....SA...DF....c....0A...HG...PX....zA...jF...va....tA...HB...fB....f.....B....H....f.....B...PW....r....n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w....vB...fB....f.....B....H....f.....B....H....v....3B...PM....r....n.....H....f.....B....H....f.....B...fH....SA...DF....c....0A...HG...PX....zA...jF...va....tA....B....U....4A....G...PY....h....n.....H....f.....B....H....f....zE...fB....f.....B....H....f....zE....K....J.....B....H....f.....B...fH....SA...TG...fX....sA...7F....Y....0A...vF...PY....yA...HB...fN....f....rE...PW....r....n.....H....f.....B....H....h....TD....d....zA...TF...fb....tA...DF....a....PA...DF...fb....gA...zF...PY....zA...TF...fb....yA...HB...fN....f....rE...PW....r....n.....H....f.....B....H....h....PE...Pd....vA...TF...fH....5.....B...fH....FA...TG....a....rA...HB...fB....f.....B....H....8A...vB...fB....f.....B....H....h....TD....d....zA...TF...fa....jA...TF....Y....FA...TF...PX....zA...TG...fb....kA...LG....T....gA...HG...PX....sA...TF....c....kA...HG....Q....gA...PG...PX....h....nC....H....6A...n.....H....f.....B....H....h....TD....d....zA...TF...fa....jA...TF....Y....FA...TF...PX....zA...TG...fb....kA...LG....T....gA...HG...PX....sA...TF....c....kA...HG...vb....h....nC....H....aA...n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w.....C....K....J.....B....H....f.....B....H....f.....C...fK....0....vB...fB....f.....B....H....f.....B....H....h....jD...fa....vA...TG....c....f....bD...PX....oA...3F...fH....J.....B....H....f.....B....H....cA...vB...fB....f.....B....H....f.....B...vV....J.....B....H....f.....B....H....f....DC...PL....r....n.....H....f.....B....H....f.....B....L....t....TC....K....J.....B....H....f.....B....H....f....HB...vS....0A...PG....b....0A...PG....H....GA...DF...PZ....tA...HB...fB....f.....B....H....f.....B...PW....r....n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w....HC....K....J.....B....H....f.....B....H....f.....C...fK....0....vB...fB....f.....B....H....f.....B....H....h....fD...PY....gA...PF...fb....uA...7F...Pa....h....n.....H....f.....B....H....f....zE....K....J.....B....H....f.....B....H....aA...n.....H....f.....B....H....f.....B...PL....y....vB...fB....f.....B....H....f.....B....H....v....vB...fB....f.....B....H....f.....B....H....h....fD...PZ....mA...fF....H....PA...DF...vb....yA...HB...fB....f.....B....H....f.....B...PW....r....n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w....PC....K....J.....B....H....f.....B....H....f.....C....K....J.....B....H....f.....B....H....f....HB....T....nA...DF...vb....kA....B...PR....tA...XG...PY....xA...PG...fH....J.....B....H....f.....B....H....cA...n.....H....f.....B....H....cA...n.....H....f.....B...Pe....r....n.....H....f.....B...fH....PA...vF...Pc....mA...jF...fa....IA...PD...fH....5.....B...fH....yA...DF....c....tA...HB....K....J.....B....H....f....HB....T....rA...TG...vY....oA...3F...fS....gA...zF...PY....h....nC....H....h....LE...PX....zA...TG...fb....gA...PG...PZ....uA...3F....H....KA...3F...va....hA...HB....K....J.....B....H....f....HB....T....rA...TG...vY....oA...3F...fU....kA...HG...vb....oA...7F...fa....h....nC....H....h....HC...fK....0....3B...PM....3....HB....K....J.....B....H....f....HB....T....xA...TF...vb....kA...PG...fS....gA...zF...PY....h....nC....H....h....HB....K....J.....B....H....f....HB....T....xA...7F...vX....kA...LG...vb....kA...PF...vT....uA...TG...fa....jA...vD...PZ....tA...rF...fH....5.....B...fH....h....vB...fB....f.....B....H....h....HE...PX....tA...rF...fH....5.....B....L....t....XC....K....J.....B....H....f....HB....U....gA...bF...vb....h....nC....H....aA...zE....K....J.....B....H....f....HB...vP....uA...vF...va....xA...HB...fN....f.....C....K....J.....B....H....f....HB...vP....uA...vF....a....kA...LF....c....oA...7F...fa....h....nC....H....h....HB....K....J.....B....H....f....HB...PU....UA...jD....Q....h....nC....H....h....HB....K....J.....B....H....f....HB...PU....tA....G...fb....uA...LF...PY....yA...LG...PY....jA...LE...va....0A...3F....Y....LA...jF...fa....qA...HB...fN....f....HB...fH....r....n.....H....f.....B...fH....NA...TG...Pa....hA...TF...fb....OA...XF....T....gA...HG...PX....sA...TF....c....kA...HG...vb....h....nC....H....v....vB...fB....f.....B....H....h....3D...Pc....sA...HF...PY....xA...7D...fY....PA...HG...va....mA...HG...PX....sA...LG...fH....5.....B....L....r....n.....H....f.....B...fH....SA...PG...va....xA...TF....Y....SA...PG...PX....zA...TF...fH....5.....B...fH....h....vB...fB....f.....B....H....h.....G...PX....xA...DF...Pa....kA...PG...PY....xA...LG...fH....5.....B...vV....cA...vB...fB....f.....B....H....h....LG...Pc....hA...zF...va....jA...TG....a....kA...LG...fH....5.....B...vV....cA...vB...fB....f.....B....H....h....TF....d....zA...TF...fb....tA...DF....a....PA...DF...fb....gA...zF...PY....zA...TF...fb....yA...HB...fN....f....rE...PW....r....n.....H....f.....B...fH....kA...fG....c....kA...3F....Y....kA...PF...fQ....kA...DF....c....0A...HG...PY....yA...HB...fN....f....rE...PW....r....n.....H....f.....B...fH....zA...jG....b....kA...HB...fN....f....HB...fH....J.....B....H....8A...n.....H....cA...vB...fB....f....HB...vT....nA...DF...fb....kA...PF....Q....gA...PG...PX....h....nC....H....6A...zG....K....J.....B...fH....CA...7F....a....uA...HG...fH....5.....B....L....r....n.....H....h....LD...va....rA...vF...PY....iA...PG...PZ....uA...3F...fH....5.....B...fH....h....vB...fB....f....HB...PS....0A...vF....c....oA...LG....c....gA...PG...PY....IA...zF...PX....mA...TF...fH....5.....B...fH....h....vB...fB....f....HB...PS....0A...vF....c....oA...LG....c....gA...PG...PY....DA...TF...fY....gA...TG....a....zA...HB...fN....f....PG...fb....0A...TF...fB....8A...n....v....fA.........P.....A....7..............................................................+....7C...vO................A....F....X....f"
+						}
+,
+						"snapshotlist" : 						{
+							"current_snapshot" : 0,
+							"entries" : [ 								{
+									"filetype" : "C74Snapshot",
+									"version" : 2,
+									"minorversion" : 0,
+									"name" : "Saturation Knob",
+									"origin" : "Saturation Knob.vstinfo",
+									"type" : "VST",
+									"subtype" : "AudioEffect",
+									"embed" : 1,
+									"snapshot" : 									{
+										"pluginname" : "Saturation Knob.vstinfo",
+										"plugindisplayname" : "Saturation Knob",
+										"pluginsavedname" : "",
+										"pluginsaveduniqueid" : 0,
+										"version" : 1,
+										"isbank" : 0,
+										"isbase64" : 1,
+										"blob" : "20640.CMlaKA....fQPMDZ....ALWXz4F...P.....APTYlEVcrQG...............................EYA....LUXzUmbgQWZu4FHK41ahofLtTiK0fiBB.............3O++++++++++O..........nP...............f....fD.........f9D...6A...n.....H....h....DD...vb....yA...TF....c....TA...jG....b....kA...HB...fN....f....HB...fH....r....n.....H....h....XD...PZ....rA...TF...fQ....uA...HG...Pa....gA...PG...fU....kA...HG...vb....oA...7F...fa....h....nC....H....v....vB...fB....f....HB....T....xA...TF...vb....kA...PG....S....oA...LG....c....h....nC....H....aA...n.....H....f....rG...fB....f.....B....H....h....PD...PY....yA...LF...fb....oA....G....c....oA...7F...fa....h....nC....H....h....HB....K....J.....B....H....f....HB...vP....gA...PG...PY....mA...7F...fb....4A...HB...fN....f.....C....K....J.....B....H....f....HB...PR....sA...DF...vY....kA...LD....Z....kA...LF...vZ....yA...TG...Pa....h....nC....H....h....HB....K....J.....B....H....f....HB....T....gA...HG...PX....sA...TF....c....kA...HG....Q....gA...PG...PX....h....nC....H....6A...n.....H....f.....B....H....h.....E...PX....xA...DF...Pa....kA...PG...PY....xA...LG...fH....5.....B...vV....J.....B....H....f.....B....H....aA...n.....H....f.....B....H....f.....B....L....r....n.....H....f.....B....H....f.....B....L....r....n.....H....f.....B....H....f.....B...fH....SA...DF....c....0A...HG...PX....zA...jF...va....tA...HB...fB....f.....B....H....f.....B...PW....r....n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w....vB...fB....f.....B....H....f.....B....H....v....3B...PM....r....n.....H....f.....B....H....f.....B...fH....SA...DF....c....0A...HG...PX....zA...jF...va....tA....B....U....4A....G...PY....h....n.....H....f.....B....H....f....zE...fB....f.....B....H....f....zE....K....J.....B....H....f.....B...fH....SA...TG...fX....sA...7F....Y....0A...vF...PY....yA...HB...fN....f....rE...PW....r....n.....H....f.....B....H....h....TD....d....zA...TF...fb....tA...DF....a....PA...DF...fb....gA...zF...PY....zA...TF...fb....yA...HB...fN....f....rE...PW....r....n.....H....f.....B....H....h....PE...Pd....vA...TF...fH....5.....B...fH....FA...TG....a....rA...HB...fB....f.....B....H....8A...vB...fB....f.....B....H....h....TD....d....zA...TF...fa....jA...TF....Y....FA...TF...PX....zA...TG...fb....kA...LG....T....gA...HG...PX....sA...TF....c....kA...HG....Q....gA...PG...PX....h....nC....H....6A...n.....H....f.....B....H....h....TD....d....zA...TF...fa....jA...TF....Y....FA...TF...PX....zA...TG...fb....kA...LG....T....gA...HG...PX....sA...TF....c....kA...HG...vb....h....nC....H....aA...n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w.....C....K....J.....B....H....f.....B....H....f.....C...fK....0....vB...fB....f.....B....H....f.....B....H....h....jD...fa....vA...TG....c....f....bD...PX....oA...3F...fH....J.....B....H....f.....B....H....cA...vB...fB....f.....B....H....f.....B...vV....J.....B....H....f.....B....H....f....DC...PL....r....n.....H....f.....B....H....f.....B....L....t....TC....K....J.....B....H....f.....B....H....f....HB...vS....0A...PG....b....0A...PG....H....GA...DF...PZ....tA...HB...fB....f.....B....H....f.....B...PW....r....n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w....HC....K....J.....B....H....f.....B....H....f.....C...fK....0....vB...fB....f.....B....H....f.....B....H....h....fD...PY....gA...PF...fb....uA...7F...Pa....h....n.....H....f.....B....H....f....zE....K....J.....B....H....f.....B....H....aA...n.....H....f.....B....H....f.....B...PL....y....vB...fB....f.....B....H....f.....B....H....v....vB...fB....f.....B....H....f.....B....H....h....fD...PZ....mA...fF....H....PA...DF...vb....yA...HB...fB....f.....B....H....f.....B...PW....r....n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w....PC....K....J.....B....H....f.....B....H....f.....C....K....J.....B....H....f.....B....H....f....HB....T....nA...DF...vb....kA....B...PR....tA...XG...PY....xA...PG...fH....J.....B....H....f.....B....H....cA...n.....H....f.....B....H....cA...n.....H....f.....B...Pe....r....n.....H....f.....B...fH....PA...vF...Pc....mA...jF...fa....IA...PD...fH....5.....B...fH....yA...DF....c....tA...HB....K....J.....B....H....f....HB....T....rA...TG...vY....oA...3F...fS....gA...zF...PY....h....nC....H....h....LE...PX....zA...TG...fb....gA...PG...PZ....uA...3F....H....KA...3F...va....hA...HB....K....J.....B....H....f....HB....T....rA...TG...vY....oA...3F...fU....kA...HG...vb....oA...7F...fa....h....nC....H....h....HC...fK....0....3B...PM....3....HB....K....J.....B....H....f....HB....T....xA...TF...vb....kA...PG...fS....gA...zF...PY....h....nC....H....h....HB....K....J.....B....H....f....HB....T....xA...7F...vX....kA...LG...vb....kA...PF...vT....uA...TG...fa....jA...vD...PZ....tA...rF...fH....5.....B...fH....h....vB...fB....f.....B....H....h....HE...PX....tA...rF...fH....5.....B....L....t....XC....K....J.....B....H....f....HB....U....gA...bF...vb....h....nC....H....aA...zE....K....J.....B....H....f....HB...vP....uA...vF...va....xA...HB...fN....f.....C....K....J.....B....H....f....HB...vP....uA...vF....a....kA...LF....c....oA...7F...fa....h....nC....H....h....HB....K....J.....B....H....f....HB...PU....UA...jD....Q....h....nC....H....h....HB....K....J.....B....H....f....HB...PU....tA....G...fb....uA...LF...PY....yA...LG...PY....jA...LE...va....0A...3F....Y....LA...jF...fa....qA...HB...fN....f....HB...fH....r....n.....H....f.....B...fH....NA...TG...Pa....hA...TF...fb....OA...XF....T....gA...HG...PX....sA...TF....c....kA...HG...vb....h....nC....H....v....vB...fB....f.....B....H....h....3D...Pc....sA...HF...PY....xA...7D...fY....PA...HG...va....mA...HG...PX....sA...LG...fH....5.....B....L....r....n.....H....f.....B...fH....SA...PG...va....xA...TF....Y....SA...PG...PX....zA...TF...fH....5.....B...fH....h....vB...fB....f.....B....H....h.....G...PX....xA...DF...Pa....kA...PG...PY....xA...LG...fH....5.....B...vV....cA...vB...fB....f.....B....H....h....LG...Pc....hA...zF...va....jA...TG....a....kA...LG...fH....5.....B...vV....cA...vB...fB....f.....B....H....h....TF....d....zA...TF...fb....tA...DF....a....PA...DF...fb....gA...zF...PY....zA...TF...fb....yA...HB...fN....f....rE...PW....r....n.....H....f.....B...fH....kA...fG....c....kA...3F....Y....kA...PF...fQ....kA...DF....c....0A...HG...PY....yA...HB...fN....f....rE...PW....r....n.....H....f.....B...fH....zA...jG....b....kA...HB...fN....f....HB...fH....J.....B....H....8A...n.....H....cA...vB...fB....f....HB...vT....nA...DF...fb....kA...PF....Q....gA...PG...PX....h....nC....H....6A...zG....K....J.....B...fH....CA...7F....a....uA...HG...fH....5.....B....L....r....n.....H....h....LD...va....rA...vF...PY....iA...PG...PZ....uA...3F...fH....5.....B...fH....h....vB...fB....f....HB...PS....0A...vF....c....oA...LG....c....gA...PG...PY....IA...zF...PX....mA...TF...fH....5.....B...fH....h....vB...fB....f....HB...PS....0A...vF....c....oA...LG....c....gA...PG...PY....DA...TF...fY....gA...TG....a....zA...HB...fN....f....PG...fb....0A...TF...fB....8A...n....f9D...6A...n.....H....h....DD...vb....yA...TF....c....TA...jG....b....kA...HB...fN....f....HB...fH....r....n.....H....h....XD...PZ....rA...TF...fQ....uA...HG...Pa....gA...PG...fU....kA...HG...vb....oA...7F...fa....h....nC....H....v....vB...fB....f....HB....T....xA...TF...vb....kA...PG....S....oA...LG....c....h....nC....H....aA...n.....H....f....rG...fB....f.....B....H....h....PD...PY....yA...LF...fb....oA....G....c....oA...7F...fa....h....nC....H....h....HB....K....J.....B....H....f....HB...vP....gA...PG...PY....mA...7F...fb....4A...HB...fN....f.....C....K....J.....B....H....f....HB...PR....sA...DF...vY....kA...LD....Z....kA...LF...vZ....yA...TG...Pa....h....nC....H....h....HB....K....J.....B....H....f....HB....T....gA...HG...PX....sA...TF....c....kA...HG....Q....gA...PG...PX....h....nC....H....6A...n.....H....f.....B....H....h.....E...PX....xA...DF...Pa....kA...PG...PY....xA...LG...fH....5.....B...vV....J.....B....H....f.....B....H....aA...n.....H....f.....B....H....f.....B....L....r....n.....H....f.....B....H....f.....B....L....r....n.....H....f.....B....H....f.....B...fH....SA...DF....c....0A...HG...PX....zA...jF...va....tA...HB...fB....f.....B....H....f.....B...PW....r....n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w....vB...fB....f.....B....H....f.....B....H....v....3B...PM....r....n.....H....f.....B....H....f.....B...fH....SA...DF....c....0A...HG...PX....zA...jF...va....tA....B....U....4A....G...PY....h....n.....H....f.....B....H....f....zE...fB....f.....B....H....f....zE....K....J.....B....H....f.....B...fH....SA...TG...fX....sA...7F....Y....0A...vF...PY....yA...HB...fN....f....rE...PW....r....n.....H....f.....B....H....h....TD....d....zA...TF...fb....tA...DF....a....PA...DF...fb....gA...zF...PY....zA...TF...fb....yA...HB...fN....f....rE...PW....r....n.....H....f.....B....H....h....PE...Pd....vA...TF...fH....5.....B...fH....FA...TG....a....rA...HB...fB....f.....B....H....8A...vB...fB....f.....B....H....h....TD....d....zA...TF...fa....jA...TF....Y....FA...TF...PX....zA...TG...fb....kA...LG....T....gA...HG...PX....sA...TF....c....kA...HG....Q....gA...PG...PX....h....nC....H....6A...n.....H....f.....B....H....h....TD....d....zA...TF...fa....jA...TF....Y....FA...TF...PX....zA...TG...fb....kA...LG....T....gA...HG...PX....sA...TF....c....kA...HG...vb....h....nC....H....aA...n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w.....C....K....J.....B....H....f.....B....H....f.....C...fK....0....vB...fB....f.....B....H....f.....B....H....h....jD...fa....vA...TG....c....f....bD...PX....oA...3F...fH....J.....B....H....f.....B....H....cA...vB...fB....f.....B....H....f.....B...vV....J.....B....H....f.....B....H....f....DC...PL....r....n.....H....f.....B....H....f.....B....L....t....TC....K....J.....B....H....f.....B....H....f....HB...vS....0A...PG....b....0A...PG....H....GA...DF...PZ....tA...HB...fB....f.....B....H....f.....B...PW....r....n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w....HC....K....J.....B....H....f.....B....H....f.....C...fK....0....vB...fB....f.....B....H....f.....B....H....h....fD...PY....gA...PF...fb....uA...7F...Pa....h....n.....H....f.....B....H....f....zE....K....J.....B....H....f.....B....H....aA...n.....H....f.....B....H....f.....B...PL....y....vB...fB....f.....B....H....f.....B....H....v....vB...fB....f.....B....H....f.....B....H....h....fD...PZ....mA...fF....H....PA...DF...vb....yA...HB...fB....f.....B....H....f.....B...PW....r....n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w....PC....K....J.....B....H....f.....B....H....f.....C....K....J.....B....H....f.....B....H....f....HB....T....nA...DF...vb....kA....B...PR....tA...XG...PY....xA...PG...fH....J.....B....H....f.....B....H....cA...n.....H....f.....B....H....cA...n.....H....f.....B...Pe....r....n.....H....f.....B...fH....PA...vF...Pc....mA...jF...fa....IA...PD...fH....5.....B...fH....yA...DF....c....tA...HB....K....J.....B....H....f....HB....T....rA...TG...vY....oA...3F...fS....gA...zF...PY....h....nC....H....h....LE...PX....zA...TG...fb....gA...PG...PZ....uA...3F....H....KA...3F...va....hA...HB....K....J.....B....H....f....HB....T....rA...TG...vY....oA...3F...fU....kA...HG...vb....oA...7F...fa....h....nC....H....h....HC...fK....0....3B...PM....3....HB....K....J.....B....H....f....HB....T....xA...TF...vb....kA...PG...fS....gA...zF...PY....h....nC....H....h....HB....K....J.....B....H....f....HB....T....xA...7F...vX....kA...LG...vb....kA...PF...vT....uA...TG...fa....jA...vD...PZ....tA...rF...fH....5.....B...fH....h....vB...fB....f.....B....H....h....HE...PX....tA...rF...fH....5.....B....L....t....XC....K....J.....B....H....f....HB....U....gA...bF...vb....h....nC....H....aA...zE....K....J.....B....H....f....HB...vP....uA...vF...va....xA...HB...fN....f.....C....K....J.....B....H....f....HB...vP....uA...vF....a....kA...LF....c....oA...7F...fa....h....nC....H....h....HB....K....J.....B....H....f....HB...PU....UA...jD....Q....h....nC....H....h....HB....K....J.....B....H....f....HB...PU....tA....G...fb....uA...LF...PY....yA...LG...PY....jA...LE...va....0A...3F....Y....LA...jF...fa....qA...HB...fN....f....HB...fH....r....n.....H....f.....B...fH....NA...TG...Pa....hA...TF...fb....OA...XF....T....gA...HG...PX....sA...TF....c....kA...HG...vb....h....nC....H....v....vB...fB....f.....B....H....h....3D...Pc....sA...HF...PY....xA...7D...fY....PA...HG...va....mA...HG...PX....sA...LG...fH....5.....B....L....r....n.....H....f.....B...fH....SA...PG...va....xA...TF....Y....SA...PG...PX....zA...TF...fH....5.....B...fH....h....vB...fB....f.....B....H....h.....G...PX....xA...DF...Pa....kA...PG...PY....xA...LG...fH....5.....B...vV....cA...vB...fB....f.....B....H....h....LG...Pc....hA...zF...va....jA...TG....a....kA...LG...fH....5.....B...vV....cA...vB...fB....f.....B....H....h....TF....d....zA...TF...fb....tA...DF....a....PA...DF...fb....gA...zF...PY....zA...TF...fb....yA...HB...fN....f....rE...PW....r....n.....H....f.....B...fH....kA...fG....c....kA...3F....Y....kA...PF...fQ....kA...DF....c....0A...HG...PY....yA...HB...fN....f....rE...PW....r....n.....H....f.....B...fH....zA...jG....b....kA...HB...fN....f....HB...fH....J.....B....H....8A...n.....H....cA...vB...fB....f....HB...vT....nA...DF...fb....kA...PF....Q....gA...PG...PX....h....nC....H....6A...zG....K....J.....B...fH....CA...7F....a....uA...HG...fH....5.....B....L....r....n.....H....h....LD...va....rA...vF...PY....iA...PG...PZ....uA...3F...fH....5.....B...fH....h....vB...fB....f....HB...PS....0A...vF....c....oA...LG....c....gA...PG...PY....IA...zF...PX....mA...TF...fH....5.....B...fH....h....vB...fB....f....HB...PS....0A...vF....c....oA...LG....c....gA...PG...PY....DA...TF...fY....gA...TG....a....zA...HB...fN....f....PG...fb....0A...TF...fB....8A...n....f9D...6A...n.....H....h....DD...vb....yA...TF....c....TA...jG....b....kA...HB...fN....f....HB...fH....r....n.....H....h....XD...PZ....rA...TF...fQ....uA...HG...Pa....gA...PG...fU....kA...HG...vb....oA...7F...fa....h....nC....H....v....vB...fB....f....HB....T....xA...TF...vb....kA...PG....S....oA...LG....c....h....nC....H....aA...n.....H....f....rG...fB....f.....B....H....h....PD...PY....yA...LF...fb....oA....G....c....oA...7F...fa....h....nC....H....h....HB....K....J.....B....H....f....HB...vP....gA...PG...PY....mA...7F...fb....4A...HB...fN....f.....C....K....J.....B....H....f....HB...PR....sA...DF...vY....kA...LD....Z....kA...LF...vZ....yA...TG...Pa....h....nC....H....h....HB....K....J.....B....H....f....HB....T....gA...HG...PX....sA...TF....c....kA...HG....Q....gA...PG...PX....h....nC....H....6A...n.....H....f.....B....H....h.....E...PX....xA...DF...Pa....kA...PG...PY....xA...LG...fH....5.....B...vV....J.....B....H....f.....B....H....aA...n.....H....f.....B....H....f.....B....L....r....n.....H....f.....B....H....f.....B....L....r....n.....H....f.....B....H....f.....B...fH....SA...DF....c....0A...HG...PX....zA...jF...va....tA...HB...fB....f.....B....H....f.....B...PW....r....n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w....vB...fB....f.....B....H....f.....B....H....v....3B...PM....r....n.....H....f.....B....H....f.....B...fH....SA...DF....c....0A...HG...PX....zA...jF...va....tA....B....U....4A....G...PY....h....n.....H....f.....B....H....f....zE...fB....f.....B....H....f....zE....K....J.....B....H....f.....B...fH....SA...TG...fX....sA...7F....Y....0A...vF...PY....yA...HB...fN....f....rE...PW....r....n.....H....f.....B....H....h....TD....d....zA...TF...fb....tA...DF....a....PA...DF...fb....gA...zF...PY....zA...TF...fb....yA...HB...fN....f....rE...PW....r....n.....H....f.....B....H....h....PE...Pd....vA...TF...fH....5.....B...fH....FA...TG....a....rA...HB...fB....f.....B....H....8A...vB...fB....f.....B....H....h....TD....d....zA...TF...fa....jA...TF....Y....FA...TF...PX....zA...TG...fb....kA...LG....T....gA...HG...PX....sA...TF....c....kA...HG....Q....gA...PG...PX....h....nC....H....6A...n.....H....f.....B....H....h....TD....d....zA...TF...fa....jA...TF....Y....FA...TF...PX....zA...TG...fb....kA...LG....T....gA...HG...PX....sA...TF....c....kA...HG...vb....h....nC....H....aA...n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w.....C....K....J.....B....H....f.....B....H....f.....C...fK....0....vB...fB....f.....B....H....f.....B....H....h....jD...fa....vA...TG....c....f....bD...PX....oA...3F...fH....J.....B....H....f.....B....H....cA...vB...fB....f.....B....H....f.....B...vV....J.....B....H....f.....B....H....f....DC...PL....r....n.....H....f.....B....H....f.....B....L....t....TC....K....J.....B....H....f.....B....H....f....HB...vS....0A...PG....b....0A...PG....H....GA...DF...PZ....tA...HB...fB....f.....B....H....f.....B...PW....r....n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w....HC....K....J.....B....H....f.....B....H....f.....C...fK....0....vB...fB....f.....B....H....f.....B....H....h....fD...PY....gA...PF...fb....uA...7F...Pa....h....n.....H....f.....B....H....f....zE....K....J.....B....H....f.....B....H....aA...n.....H....f.....B....H....f.....B...PL....y....vB...fB....f.....B....H....f.....B....H....v....vB...fB....f.....B....H....f.....B....H....h....fD...PZ....mA...fF....H....PA...DF...vb....yA...HB...fB....f.....B....H....f.....B...PW....r....n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w....PC....K....J.....B....H....f.....B....H....f.....C....K....J.....B....H....f.....B....H....f....HB....T....nA...DF...vb....kA....B...PR....tA...XG...PY....xA...PG...fH....J.....B....H....f.....B....H....cA...n.....H....f.....B....H....cA...n.....H....f.....B...Pe....r....n.....H....f.....B...fH....PA...vF...Pc....mA...jF...fa....IA...PD...fH....5.....B...fH....yA...DF....c....tA...HB....K....J.....B....H....f....HB....T....rA...TG...vY....oA...3F...fS....gA...zF...PY....h....nC....H....h....LE...PX....zA...TG...fb....gA...PG...PZ....uA...3F....H....KA...3F...va....hA...HB....K....J.....B....H....f....HB....T....rA...TG...vY....oA...3F...fU....kA...HG...vb....oA...7F...fa....h....nC....H....h....HC...fK....0....3B...PM....3....HB....K....J.....B....H....f....HB....T....xA...TF...vb....kA...PG...fS....gA...zF...PY....h....nC....H....h....HB....K....J.....B....H....f....HB....T....xA...7F...vX....kA...LG...vb....kA...PF...vT....uA...TG...fa....jA...vD...PZ....tA...rF...fH....5.....B...fH....h....vB...fB....f.....B....H....h....HE...PX....tA...rF...fH....5.....B....L....t....XC....K....J.....B....H....f....HB....U....gA...bF...vb....h....nC....H....aA...zE....K....J.....B....H....f....HB...vP....uA...vF...va....xA...HB...fN....f.....C....K....J.....B....H....f....HB...vP....uA...vF....a....kA...LF....c....oA...7F...fa....h....nC....H....h....HB....K....J.....B....H....f....HB...PU....UA...jD....Q....h....nC....H....h....HB....K....J.....B....H....f....HB...PU....tA....G...fb....uA...LF...PY....yA...LG...PY....jA...LE...va....0A...3F....Y....LA...jF...fa....qA...HB...fN....f....HB...fH....r....n.....H....f.....B...fH....NA...TG...Pa....hA...TF...fb....OA...XF....T....gA...HG...PX....sA...TF....c....kA...HG...vb....h....nC....H....v....vB...fB....f.....B....H....h....3D...Pc....sA...HF...PY....xA...7D...fY....PA...HG...va....mA...HG...PX....sA...LG...fH....5.....B....L....r....n.....H....f.....B...fH....SA...PG...va....xA...TF....Y....SA...PG...PX....zA...TF...fH....5.....B...fH....h....vB...fB....f.....B....H....h.....G...PX....xA...DF...Pa....kA...PG...PY....xA...LG...fH....5.....B...vV....cA...vB...fB....f.....B....H....h....LG...Pc....hA...zF...va....jA...TG....a....kA...LG...fH....5.....B...vV....cA...vB...fB....f.....B....H....h....TF....d....zA...TF...fb....tA...DF....a....PA...DF...fb....gA...zF...PY....zA...TF...fb....yA...HB...fN....f....rE...PW....r....n.....H....f.....B...fH....kA...fG....c....kA...3F....Y....kA...PF...fQ....kA...DF....c....0A...HG...PY....yA...HB...fN....f....rE...PW....r....n.....H....f.....B...fH....zA...jG....b....kA...HB...fN....f....HB...fH....J.....B....H....8A...n.....H....cA...vB...fB....f....HB...vT....nA...DF...fb....kA...PF....Q....gA...PG...PX....h....nC....H....6A...zG....K....J.....B...fH....CA...7F....a....uA...HG...fH....5.....B....L....r....n.....H....h....LD...va....rA...vF...PY....iA...PG...PZ....uA...3F...fH....5.....B...fH....h....vB...fB....f....HB...PS....0A...vF....c....oA...LG....c....gA...PG...PY....IA...zF...PX....mA...TF...fH....5.....B...fH....h....vB...fB....f....HB...PS....0A...vF....c....oA...LG....c....gA...PG...PY....DA...TF...fY....gA...TG....a....zA...HB...fN....f....PG...fb....0A...TF...fB....8A...n....f9D...6A...n.....H....h....DD...vb....yA...TF....c....TA...jG....b....kA...HB...fN....f....HB...fH....r....n.....H....h....XD...PZ....rA...TF...fQ....uA...HG...Pa....gA...PG...fU....kA...HG...vb....oA...7F...fa....h....nC....H....v....vB...fB....f....HB....T....xA...TF...vb....kA...PG....S....oA...LG....c....h....nC....H....aA...n.....H....f....rG...fB....f.....B....H....h....PD...PY....yA...LF...fb....oA....G....c....oA...7F...fa....h....nC....H....h....HB....K....J.....B....H....f....HB...vP....gA...PG...PY....mA...7F...fb....4A...HB...fN....f.....C....K....J.....B....H....f....HB...PR....sA...DF...vY....kA...LD....Z....kA...LF...vZ....yA...TG...Pa....h....nC....H....h....HB....K....J.....B....H....f....HB....T....gA...HG...PX....sA...TF....c....kA...HG....Q....gA...PG...PX....h....nC....H....6A...n.....H....f.....B....H....h.....E...PX....xA...DF...Pa....kA...PG...PY....xA...LG...fH....5.....B...vV....J.....B....H....f.....B....H....aA...n.....H....f.....B....H....f.....B....L....r....n.....H....f.....B....H....f.....B....L....r....n.....H....f.....B....H....f.....B...fH....SA...DF....c....0A...HG...PX....zA...jF...va....tA...HB...fB....f.....B....H....f.....B...PW....r....n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w....vB...fB....f.....B....H....f.....B....H....v....3B...PM....r....n.....H....f.....B....H....f.....B...fH....SA...DF....c....0A...HG...PX....zA...jF...va....tA....B....U....4A....G...PY....h....n.....H....f.....B....H....f....zE...fB....f.....B....H....f....zE....K....J.....B....H....f.....B...fH....SA...TG...fX....sA...7F....Y....0A...vF...PY....yA...HB...fN....f....rE...PW....r....n.....H....f.....B....H....h....TD....d....zA...TF...fb....tA...DF....a....PA...DF...fb....gA...zF...PY....zA...TF...fb....yA...HB...fN....f....rE...PW....r....n.....H....f.....B....H....h....PE...Pd....vA...TF...fH....5.....B...fH....FA...TG....a....rA...HB...fB....f.....B....H....8A...vB...fB....f.....B....H....h....TD....d....zA...TF...fa....jA...TF....Y....FA...TF...PX....zA...TG...fb....kA...LG....T....gA...HG...PX....sA...TF....c....kA...HG....Q....gA...PG...PX....h....nC....H....6A...n.....H....f.....B....H....h....TD....d....zA...TF...fa....jA...TF....Y....FA...TF...PX....zA...TG...fb....kA...LG....T....gA...HG...PX....sA...TF....c....kA...HG...vb....h....nC....H....aA...n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w.....C....K....J.....B....H....f.....B....H....f.....C...fK....0....vB...fB....f.....B....H....f.....B....H....h....jD...fa....vA...TG....c....f....bD...PX....oA...3F...fH....J.....B....H....f.....B....H....cA...vB...fB....f.....B....H....f.....B...vV....J.....B....H....f.....B....H....f....DC...PL....r....n.....H....f.....B....H....f.....B....L....t....TC....K....J.....B....H....f.....B....H....f....HB...vS....0A...PG....b....0A...PG....H....GA...DF...PZ....tA...HB...fB....f.....B....H....f.....B...PW....r....n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w....HC....K....J.....B....H....f.....B....H....f.....C...fK....0....vB...fB....f.....B....H....f.....B....H....h....fD...PY....gA...PF...fb....uA...7F...Pa....h....n.....H....f.....B....H....f....zE....K....J.....B....H....f.....B....H....aA...n.....H....f.....B....H....f.....B...PL....y....vB...fB....f.....B....H....f.....B....H....v....vB...fB....f.....B....H....f.....B....H....h....fD...PZ....mA...fF....H....PA...DF...vb....yA...HB...fB....f.....B....H....f.....B...PW....r....n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w....PC....K....J.....B....H....f.....B....H....f.....C....K....J.....B....H....f.....B....H....f....HB....T....nA...DF...vb....kA....B...PR....tA...XG...PY....xA...PG...fH....J.....B....H....f.....B....H....cA...n.....H....f.....B....H....cA...n.....H....f.....B...Pe....r....n.....H....f.....B...fH....PA...vF...Pc....mA...jF...fa....IA...PD...fH....5.....B...fH....yA...DF....c....tA...HB....K....J.....B....H....f....HB....T....rA...TG...vY....oA...3F...fS....gA...zF...PY....h....nC....H....h....LE...PX....zA...TG...fb....gA...PG...PZ....uA...3F....H....KA...3F...va....hA...HB....K....J.....B....H....f....HB....T....rA...TG...vY....oA...3F...fU....kA...HG...vb....oA...7F...fa....h....nC....H....h....HC...fK....0....3B...PM....3....HB....K....J.....B....H....f....HB....T....xA...TF...vb....kA...PG...fS....gA...zF...PY....h....nC....H....h....HB....K....J.....B....H....f....HB....T....xA...7F...vX....kA...LG...vb....kA...PF...vT....uA...TG...fa....jA...vD...PZ....tA...rF...fH....5.....B...fH....h....vB...fB....f.....B....H....h....HE...PX....tA...rF...fH....5.....B....L....t....XC....K....J.....B....H....f....HB....U....gA...bF...vb....h....nC....H....aA...zE....K....J.....B....H....f....HB...vP....uA...vF...va....xA...HB...fN....f.....C....K....J.....B....H....f....HB...vP....uA...vF....a....kA...LF....c....oA...7F...fa....h....nC....H....h....HB....K....J.....B....H....f....HB...PU....UA...jD....Q....h....nC....H....h....HB....K....J.....B....H....f....HB...PU....tA....G...fb....uA...LF...PY....yA...LG...PY....jA...LE...va....0A...3F....Y....LA...jF...fa....qA...HB...fN....f....HB...fH....r....n.....H....f.....B...fH....NA...TG...Pa....hA...TF...fb....OA...XF....T....gA...HG...PX....sA...TF....c....kA...HG...vb....h....nC....H....v....vB...fB....f.....B....H....h....3D...Pc....sA...HF...PY....xA...7D...fY....PA...HG...va....mA...HG...PX....sA...LG...fH....5.....B....L....r....n.....H....f.....B...fH....SA...PG...va....xA...TF....Y....SA...PG...PX....zA...TF...fH....5.....B...fH....h....vB...fB....f.....B....H....h.....G...PX....xA...DF...Pa....kA...PG...PY....xA...LG...fH....5.....B...vV....cA...vB...fB....f.....B....H....h....LG...Pc....hA...zF...va....jA...TG....a....kA...LG...fH....5.....B...vV....cA...vB...fB....f.....B....H....h....TF....d....zA...TF...fb....tA...DF....a....PA...DF...fb....gA...zF...PY....zA...TF...fb....yA...HB...fN....f....rE...PW....r....n.....H....f.....B...fH....kA...fG....c....kA...3F....Y....kA...PF...fQ....kA...DF....c....0A...HG...PY....yA...HB...fN....f....rE...PW....r....n.....H....f.....B...fH....zA...jG....b....kA...HB...fN....f....HB...fH....J.....B....H....8A...n.....H....cA...vB...fB....f....HB...vT....nA...DF...fb....kA...PF....Q....gA...PG...PX....h....nC....H....6A...zG....K....J.....B...fH....CA...7F....a....uA...HG...fH....5.....B....L....r....n.....H....h....LD...va....rA...vF...PY....iA...PG...PZ....uA...3F...fH....5.....B...fH....h....vB...fB....f....HB...PS....0A...vF....c....oA...LG....c....gA...PG...PY....IA...zF...PX....mA...TF...fH....5.....B...fH....h....vB...fB....f....HB...PS....0A...vF....c....oA...LG....c....gA...PG...PY....DA...TF...fY....gA...TG....a....zA...HB...fN....f....PG...fb....0A...TF...fB....8A...n....v....fA.........P.....A....7..............................................................+....7C...vO................A....F....X....f"
+									}
+,
+									"fileref" : 									{
+										"name" : "Saturation Knob",
+										"filename" : "Saturation Knob.maxsnap",
+										"filepath" : "~/Documents/Max 8/Snapshots",
+										"filepos" : -1,
+										"snapshotfileid" : "338e9687a7385a1563002f76fda334db"
+									}
+
+								}
+ ]
+						}
+
+					}
+,
+					"text" : "vst~",
+					"varname" : "vst~[1]",
+					"viewvisibility" : 0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-22",
+					"items" : [ " ", ",", "++bubbler", ",", "++chebyshev", ",", "++compand", ",", "++decimate", ",", "++delay", ",", "++flipper", ",", "++matrix", ",", "++phasor", ",", "++pitchdelay", ",", "BPB Dirty VHS", ",", "Cardinal FX", ",", "Cardinal Synth", ",", "Cardinal", ",", "Deelay", ",", "Filterstep", ",", "Fracture", ",", "Gatelab", ",", "IVGI2", ",", "LABS", ",", "NeuralAmpModeler", ",", "Panflow", ",", "PaulXStretch", ",", "Ruina", ",", "Saturation Knob", ",", "Sinc Vereor", ",", "Surge XT Effects", ",", "Surge XT", ",", "TAL-Vocoder-2", ",", "TDR Nova", ",", "TX16Wx (legacy id)", ",", "TX16Wx", ",", "ValhallaDelay", ",", "ValhallaFreqEcho", ",", "ValhallaSupermassive", ",", "ValhallaVintageVerb_Fx", ",", "ValhallaVintageVerb_Fx_Reverb", ",", "Virt Vereor" ],
+					"maxclass" : "umenu",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "int", "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 424.0, 279.0, 192.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 20.0, 187.0, 192.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-17",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 313.166666666666686, 413.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 20.0, 108.0, 150.0, 20.0 ],
+					"text" : "load instrument"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-15",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 21.0, 52.0, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 345.0, 128.0, 35.0, 22.0 ],
+					"text" : "clear"
 				}
 
 			}
@@ -59,10 +647,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 75.5, 396.0, 101.0, 51.0 ],
+					"patching_rect" : [ 75.5, 311.0, 101.0, 51.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 75.5, 396.0, 101.0, 51.0 ],
+					"presentation_rect" : [ 73.0, 34.0, 101.0, 51.0 ],
 					"text" : "double-click to choose\nMIDI input"
 				}
 
@@ -76,9 +664,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 22.5, 413.0, 50.0, 22.0 ],
+					"patching_rect" : [ 22.5, 328.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 22.5, 413.0, 50.0, 22.0 ],
+					"presentation_rect" : [ 20.0, 51.0, 50.0, 22.0 ],
 					"text" : "midiin"
 				}
 
@@ -92,90 +680,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 8,
 					"outlettype" : [ "", "", "", "int", "int", "", "int", "" ],
-					"patching_rect" : [ 22.5, 465.0, 143.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 22.5, 465.0, 143.0, 22.0 ],
+					"patching_rect" : [ 22.5, 380.0, 143.0, 22.0 ],
 					"text" : "midiparse"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 13.0,
-					"id" : "obj-61",
-					"maxclass" : "newobj",
-					"numinlets" : 7,
-					"numoutlets" : 2,
-					"outlettype" : [ "int", "" ],
-					"patching_rect" : [ 188.0, 650.0, 108.0, 23.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 188.0, 650.0, 108.0, 23.0 ],
-					"text" : "midiformat"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 13.0,
-					"id" : "obj-62",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 188.0, 620.0, 32.5, 23.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 188.0, 620.0, 32.5, 23.0 ],
-					"text" : "join"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 13.0,
-					"id" : "obj-63",
-					"maxclass" : "newobj",
-					"numinlets" : 3,
-					"numoutlets" : 2,
-					"outlettype" : [ "float", "float" ],
-					"patching_rect" : [ 188.0, 590.0, 109.0, 23.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 188.0, 590.0, 109.0, 23.0 ],
-					"text" : "makenote 60 500"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-64",
-					"maxclass" : "kslider",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "int", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 188.0, 500.0, 336.0, 53.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 188.0, 500.0, 336.0, 53.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bubble" : 1,
-					"fontname" : "Arial",
-					"fontsize" : 13.0,
-					"id" : "obj-56",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 644.0, 471.0, 144.0, 40.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 644.0, 471.0, 144.0, 40.0 ],
-					"text" : "open the instrument window"
 				}
 
 			}
@@ -186,9 +692,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 607.0, 480.0, 35.0, 22.0 ],
+					"patching_rect" : [ 275.666666666666686, 371.0, 35.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 607.0, 480.0, 35.0, 22.0 ],
+					"presentation_rect" : [ 177.0, 107.0, 35.0, 22.0 ],
 					"text" : "open"
 				}
 
@@ -200,9 +706,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 550.0, 480.0, 48.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 550.0, 480.0, 48.0, 22.0 ],
+					"patching_rect" : [ 218.666666666666686, 371.0, 48.0, 22.0 ],
 					"text" : "plug $1"
 				}
 
@@ -219,9 +723,7 @@
 					"numoutlets" : 8,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "signal", "", "list", "int", "", "", "" ],
-					"patching_rect" : [ 550.0, 511.0, 92.5, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 550.0, 511.0, 92.5, 22.0 ],
+					"patching_rect" : [ 218.666666666666686, 412.0, 92.5, 22.0 ],
 					"save" : [ "#N", "vst~", "loaduniqueid", 0, ";" ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
@@ -303,235 +805,16 @@
 			}
 , 			{
 				"box" : 				{
-					"bubble" : 1,
-					"fontname" : "Arial",
-					"fontsize" : 13.0,
-					"id" : "obj-48",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 657.0, 422.0, 141.0, 40.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 657.0, 422.0, 141.0, 40.0 ],
-					"text" : "choose your plugin to open in vst~"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-29",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 513.0, 447.0, 92.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 513.0, 447.0, 92.0, 20.0 ],
-					"style" : "helpfile_label",
-					"text" : "VST3 plug-ins"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-42",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 508.0, 322.0, 43.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 508.0, 322.0, 43.0, 20.0 ],
-					"style" : "helpfile_label",
-					"text" : "plugin"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-41",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 254.0, 322.0, 45.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 254.0, 322.0, 45.0, 20.0 ],
-					"style" : "helpfile_label",
-					"text" : "format"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-36",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 128.0, 322.0, 43.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 128.0, 322.0, 43.0, 20.0 ],
-					"style" : "helpfile_label",
-					"text" : "status"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-33",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 50.0, 322.0, 61.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 50.0, 322.0, 61.0, 20.0 ],
-					"style" : "helpfile_label",
-					"text" : "progress"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"dontreplace" : 1,
-					"id" : "obj-28",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 356.0, 300.0, 347.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 356.0, 300.0, 347.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"dontreplace" : 1,
-					"id" : "obj-23",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 234.0, 300.0, 85.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 234.0, 300.0, 85.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"dontreplace" : 1,
-					"id" : "obj-22",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 111.0, 300.0, 85.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 111.0, 300.0, 85.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"format" : 6,
-					"id" : "obj-20",
-					"maxclass" : "flonum",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 55.0, 300.0, 50.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 55.0, 300.0, 50.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-13",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "float", "", "", "" ],
-					"patching_rect" : [ 55.0, 264.0, 386.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 55.0, 264.0, 386.0, 22.0 ],
-					"text" : "unpack 0. s s s"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bubble" : 1,
-					"fontname" : "Arial",
-					"fontsize" : 13.0,
-					"id" : "obj-38",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 146.0, 142.0, 160.0, 25.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 146.0, 142.0, 160.0, 25.0 ],
-					"text" : "fill list of VST3 names"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-37",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 448.0, 264.0, 76.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 448.0, 264.0, 76.0, 20.0 ],
-					"style" : "helpfile_label",
-					"text" : "Scan status"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bubble" : 1,
-					"fontname" : "Arial",
-					"fontsize" : 13.0,
-					"id" : "obj-10",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 54.0, 80.0, 323.0, 25.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 54.0, 80.0, 323.0, 25.0 ],
-					"text" : "initiate a vst scan (should only need to do once)"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-30",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 575.0, 381.0, 37.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 575.0, 381.0, 37.0, 22.0 ],
-					"text" : "clear"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-34",
-					"items" : [ "++bubbler", ",", "++chebyshev", ",", "++compand", ",", "++decimate", ",", "++delay", ",", "++flipper", ",", "++matrix", ",", "++phasor", ",", "++pitchdelay", ",", "AmpliTube 5", ",", "BPB Dirty VHS", ",", "Cardinal", ",", "CardinalFX", ",", "CardinalSynth", ",", "DDSP Effect", ",", "DDSP Synth", ",", "Deelay", ",", "Filterstep", ",", "Fracture", ",", "Gatelab", ",", "IVGI2", ",", "LABS", ",", "NeuralAmpModeler", ",", "Panflow", ",", "PaulXStretch", ",", "Ruina", ",", "Saturation Knob", ",", "Sinc Vereor", ",", "Surge XT Effects", ",", "Surge XT", ",", "TAL-Vocoder-2", ",", "TDR Nova", ",", "TX16Wx", ",", "ValhallaDelay", ",", "ValhallaFreqEcho", ",", "ValhallaSupermassive", ",", "ValhallaVintageVerb", ",", "Virt Vereor", ",", "Vital" ],
+					"items" : [ " ", ",", "++bubbler", ",", "++chebyshev", ",", "++compand", ",", "++decimate", ",", "++delay", ",", "++flipper", ",", "++matrix", ",", "++phasor", ",", "++pitchdelay", ",", "BPB Dirty VHS", ",", "Cardinal FX", ",", "Cardinal Synth", ",", "Cardinal", ",", "Deelay", ",", "Filterstep", ",", "Fracture", ",", "Gatelab", ",", "IVGI2", ",", "LABS", ",", "NeuralAmpModeler", ",", "Panflow", ",", "PaulXStretch", ",", "Ruina", ",", "Saturation Knob", ",", "Sinc Vereor", ",", "Surge XT Effects", ",", "Surge XT", ",", "TAL-Vocoder-2", ",", "TDR Nova", ",", "TX16Wx (legacy id)", ",", "TX16Wx", ",", "ValhallaDelay", ",", "ValhallaFreqEcho", ",", "ValhallaSupermassive", ",", "ValhallaVintageVerb_Fx", ",", "ValhallaVintageVerb_Fx_Reverb", ",", "Virt Vereor" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 463.0, 422.0, 192.0, 22.0 ],
+					"patching_rect" : [ 131.666666666666686, 279.0, 192.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 463.0, 422.0, 192.0, 22.0 ]
+					"presentation_rect" : [ 20.0, 130.0, 192.0, 22.0 ]
 				}
 
 			}
@@ -542,9 +825,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 463.0, 381.0, 104.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 463.0, 381.0, 104.0, 22.0 ],
+					"patching_rect" : [ 131.666666666666686, 239.0, 104.0, 22.0 ],
 					"text" : "prepend append"
 				}
 
@@ -556,24 +837,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 93.0, 142.0, 49.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 93.0, 142.0, 49.0, 22.0 ],
+					"patching_rect" : [ 21.0, 128.0, 49.0, 22.0 ],
 					"text" : "listvst3"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-15",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 21.0, 81.0, 29.5, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 21.0, 81.0, 29.5, 22.0 ],
-					"text" : "0"
 				}
 
 			}
@@ -584,24 +849,8 @@
 					"numinlets" : 4,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 21.0, 348.0, 682.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 21.0, 348.0, 682.0, 22.0 ],
+					"patching_rect" : [ 21.0, 207.0, 185.0, 22.0 ],
 					"text" : "route plug_vst plug_au plug_vst3"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-45",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 21.0, 142.0, 55.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 21.0, 142.0, 55.0, 22.0 ],
-					"text" : "scan $1"
 				}
 
 			}
@@ -612,23 +861,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 21.0, 233.0, 53.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 21.0, 233.0, 53.0, 22.0 ],
+					"patching_rect" : [ 21.0, 180.0, 53.0, 22.0 ],
 					"text" : "vstscan"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"comment" : "",
-					"id" : "obj-6",
-					"index" : 0,
-					"maxclass" : "inlet",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 834.0, 0.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -641,31 +875,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 802.0, 0.0, 30.0, 30.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"comment" : "",
-					"id" : "obj-4",
-					"index" : 0,
-					"maxclass" : "outlet",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 582.0, 574.0, 30.0, 30.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"comment" : "",
-					"id" : "obj-1",
-					"index" : 0,
-					"maxclass" : "outlet",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 550.0, 574.0, 30.0, 30.0 ]
+					"patching_rect" : [ 1170.0, 0.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -673,10 +883,9 @@
 				"box" : 				{
 					"angle" : 270.0,
 					"background" : 1,
-					"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
+					"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"border" : 1,
 					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"hidden" : 1,
 					"id" : "obj-3",
 					"maxclass" : "panel",
 					"mode" : 0,
@@ -693,37 +902,133 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-20", 0 ],
+					"destination" : [ "obj-34", 0 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-51", 0 ],
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-22", 0 ],
+					"order" : 1,
 					"source" : [ "obj-13", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-22", 1 ],
-					"midpoints" : [ 186.833333333333314, 292.0, 186.5, 292.0 ],
-					"source" : [ "obj-13", 1 ]
+					"destination" : [ "obj-28", 0 ],
+					"order" : 0,
+					"source" : [ "obj-13", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-23", 1 ],
-					"source" : [ "obj-13", 2 ]
+					"destination" : [ "obj-34", 0 ],
+					"order" : 2,
+					"source" : [ "obj-13", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-28", 1 ],
-					"source" : [ "obj-13", 3 ]
+					"destination" : [ "obj-8", 0 ],
+					"source" : [ "obj-14", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-45", 0 ],
+					"destination" : [ "obj-13", 0 ],
+					"order" : 0,
 					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-24", 0 ],
+					"order" : 2,
+					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-54", 0 ],
+					"order" : 1,
+					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
+					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"source" : [ "obj-20", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-27", 1 ],
+					"source" : [ "obj-21", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-27", 0 ],
+					"source" : [ "obj-21", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-20", 0 ],
+					"source" : [ "obj-22", 1 ]
 				}
 
 			}
@@ -736,8 +1041,50 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-34", 0 ],
+					"destination" : [ "obj-27", 0 ],
+					"source" : [ "obj-25", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-27", 0 ],
+					"source" : [ "obj-26", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-29", 0 ],
+					"source" : [ "obj-27", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-29", 0 ],
+					"source" : [ "obj-27", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-26", 0 ],
+					"source" : [ "obj-28", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-27", 0 ],
 					"source" : [ "obj-30", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"source" : [ "obj-32", 0 ]
 				}
 
 			}
@@ -750,8 +1097,46 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-34", 0 ],
+					"destination" : [ "obj-22", 0 ],
+					"order" : 1,
 					"source" : [ "obj-35", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-28", 0 ],
+					"order" : 0,
+					"source" : [ "obj-35", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-34", 0 ],
+					"order" : 2,
+					"source" : [ "obj-35", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-32", 0 ],
+					"source" : [ "obj-36", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-38", 0 ],
+					"source" : [ "obj-37", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-27", 0 ],
+					"source" : [ "obj-38", 0 ]
 				}
 
 			}
@@ -771,20 +1156,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-46", 0 ],
-					"source" : [ "obj-45", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-13", 0 ],
-					"source" : [ "obj-46", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-44", 0 ],
 					"source" : [ "obj-46", 0 ]
 				}
@@ -792,15 +1163,39 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"source" : [ "obj-51", 0 ]
+					"destination" : [ "obj-22", 0 ],
+					"order" : 1,
+					"source" : [ "obj-48", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-4", 0 ],
+					"destination" : [ "obj-28", 0 ],
+					"order" : 0,
+					"source" : [ "obj-48", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-34", 0 ],
+					"order" : 2,
+					"source" : [ "obj-48", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-21", 1 ],
 					"source" : [ "obj-51", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"source" : [ "obj-51", 0 ]
 				}
 
 			}
@@ -808,6 +1203,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-51", 0 ],
 					"source" : [ "obj-53", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-48", 0 ],
+					"source" : [ "obj-54", 0 ]
 				}
 
 			}
@@ -827,52 +1229,29 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-51", 0 ],
-					"source" : [ "obj-61", 1 ]
+					"destination" : [ "obj-22", 0 ],
+					"source" : [ "obj-7", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-61", 0 ],
-					"midpoints" : [ 197.5, 644.5, 197.5, 644.5 ],
-					"source" : [ "obj-62", 0 ]
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-8", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-62", 1 ],
-					"midpoints" : [ 287.5, 615.5, 211.0, 615.5 ],
-					"source" : [ "obj-63", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-62", 0 ],
-					"midpoints" : [ 197.5, 614.5, 197.5, 614.5 ],
-					"source" : [ "obj-63", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-63", 1 ],
-					"midpoints" : [ 514.5, 564.0, 242.5, 564.0 ],
-					"source" : [ "obj-64", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-63", 0 ],
-					"source" : [ "obj-64", 0 ]
+					"destination" : [ "obj-28", 0 ],
+					"source" : [ "obj-9", 0 ]
 				}
 
 			}
  ],
 		"parameters" : 		{
+			"obj-21" : [ "vst~[1]", "vst~[1]", 0 ],
+			"obj-27" : [ "vst~[2]", "vst~[2]", 0 ],
 			"obj-51" : [ "vst~", "vst~", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
@@ -891,6 +1270,20 @@
 				"bootpath" : "~/Documents/Max 8/Snapshots",
 				"patcherrelativepath" : "../../../Documents/Max 8/Snapshots",
 				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Saturation Knob.maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../../Documents/Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "blue.json",
+				"bootpath" : "~/GitHub/MULE-S24",
+				"patcherrelativepath" : "..",
+				"type" : "JSON",
 				"implicit" : 1
 			}
  ],
