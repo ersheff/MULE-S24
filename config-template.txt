@@ -1,10 +1,12 @@
-Enter first name and last initial on 2nd line
+Enter first name and last initial on line 2:
 erics
 
-Enter your designated port # on 5th line
+Enter your assigned port # line 5:
 7000
 
-Assigned port numbers:
+Make sure this file is named config.txt and save your changes
+
+Assigned port #:
 Will Bray           7001
 Ethan Chambers      7002
 Ethan Davila        7003
