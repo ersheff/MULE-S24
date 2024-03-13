@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 62.0, 1106.0, 804.0 ],
+		"rect" : [ 34.0, 62.0, 840.0, 804.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,81 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-58",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1214.0, 499.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1200.0, 498.0, 150.0, 20.0 ],
+					"text" : "osc"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-51",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 189.0, 595.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1200.0, 520.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-48",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 283.0, 817.0, 46.0, 22.0 ],
+					"text" : "port $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-45",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 283.0, 781.0, 55.0, 22.0 ],
+					"text" : "route set"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-35",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 313.0, 729.0, 37.0, 22.0 ],
+					"text" : "line 5"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-36",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "bang", "int" ],
+					"patching_rect" : [ 283.0, 698.0, 79.0, 22.0 ],
+					"text" : "text config.txt"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-11",
 					"maxclass" : "comment",
@@ -104,30 +179,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 531.0, 120.0, 29.5, 22.0 ],
 					"text" : "red"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-35",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 289.0, 786.0, 59.0, 22.0 ],
-					"text" : "route text"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-30",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 289.0, 822.0, 79.0, 22.0 ],
-					"text" : "prepend host"
 				}
 
 			}
@@ -221,8 +272,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 233.0, 857.0, 165.0, 22.0 ],
-					"text" : "udpsend 192.168.0.181 8001"
+					"patching_rect" : [ 233.0, 857.0, 193.0, 22.0 ],
+					"text" : "udpsend SHEFFIEMBA.local 8001"
 				}
 
 			}
@@ -1132,7 +1183,7 @@
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "blue.maxpat",
+					"name" : "home.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
@@ -1297,13 +1348,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-32", 0 ],
-					"source" : [ "obj-30", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
 					"source" : [ "obj-31", 0 ]
 				}
@@ -1318,8 +1362,23 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-30", 0 ],
+					"destination" : [ "obj-36", 0 ],
+					"midpoints" : [ 322.5, 773.0, 384.0, 773.0, 384.0, 682.0, 292.5, 682.0 ],
 					"source" : [ "obj-35", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-35", 0 ],
+					"source" : [ "obj-36", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-45", 0 ],
+					"source" : [ "obj-36", 0 ]
 				}
 
 			}
@@ -1369,9 +1428,23 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-48", 0 ],
+					"source" : [ "obj-45", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-44", 0 ],
 					"midpoints" : [ 540.5, 535.0, 602.0, 535.0, 602.0, 444.0, 510.5, 444.0 ],
 					"source" : [ "obj-46", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-32", 0 ],
+					"source" : [ "obj-48", 0 ]
 				}
 
 			}
@@ -1386,6 +1459,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-33", 0 ],
 					"source" : [ "obj-50", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-53", 0 ],
+					"source" : [ "obj-51", 0 ]
 				}
 
 			}
@@ -1412,9 +1492,6 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-1::obj-21" : [ "vst~[1]", "vst~[1]", 0 ],
-			"obj-1::obj-27" : [ "vst~[2]", "vst~[2]", 0 ],
-			"obj-1::obj-51" : [ "vst~", "vst~", 0 ],
 			"obj-4" : [ "main", "main", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
@@ -1429,18 +1506,15 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "LABS.maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../Documents/Max 8/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "blue.maxpat",
+				"name" : "home.maxpat",
 				"bootpath" : "~/GitHub/MULE-S24/Files",
 				"patcherrelativepath" : "./Files",
 				"type" : "JSON",
 				"implicit" : 1
+			}
+, 			{
+				"name" : "link.beat.mxo",
+				"type" : "iLaX"
 			}
  ],
 		"autosave" : 0,
