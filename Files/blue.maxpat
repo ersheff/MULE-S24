@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 70.0, 62.0, 1106.0, 804.0 ],
+		"rect" : [ 34.0, 62.0, 1106.0, 804.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,155 +40,201 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-54",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 231.916666666666686, 128.0, 29.5, 22.0 ],
-					"text" : "\" \""
+					"id" : "obj-71",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 945.833333333333258, 393.0, 80.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 239.0, 301.0, 47.0, 20.0 ],
+					"text" : "bypass",
+					"textjustification" : 2
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-48",
+					"id" : "obj-72",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 919.833333333333258, 391.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 288.0, 299.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-73",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 919.833333333333258, 435.0, 63.0, 22.0 ],
+					"text" : "bypass $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-45",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 231.916666666666686, 163.0, 96.0, 22.0 ],
-					"text" : "prepend append"
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 798.833333333333258, 573.0, 58.0, 22.0 ],
+					"text" : "loadbang"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-42",
+					"id" : "obj-56",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 858.833333333333258, 573.0, 40.0, 22.0 ],
+					"text" : "set \" \""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-59",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 871.833333333333258, 435.0, 46.0, 22.0 ],
+					"text" : "route 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-61",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 923.333333333333258, 329.0, 80.0, 20.0 ],
+					"patching_rect" : [ 898.833333333333258, 552.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 106.0, 296.0, 80.0, 20.0 ],
-					"text" : "bypass",
+					"presentation_rect" : [ 20.0, 276.0, 56.0, 20.0 ],
+					"text" : "Current:",
 					"textjustification" : 2
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-41",
+					"id" : "obj-62",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 898.833333333333258, 470.0, 41.0, 22.0 ],
+					"text" : "set $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-63",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 637.0, 329.0, 80.0, 20.0 ],
+					"patching_rect" : [ 898.833333333333258, 574.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 139.0, 213.0, 47.0, 20.0 ],
-					"text" : "bypass",
-					"textjustification" : 2
+					"presentation_rect" : [ 78.0, 276.0, 192.0, 20.0 ],
+					"text" : " "
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-37",
-					"maxclass" : "toggle",
+					"id" : "obj-64",
+					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 871.833333333333258, 404.0, 40.0, 22.0 ],
+					"restore" : [ "TX16Wx" ],
+					"saved_object_attributes" : 					{
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "pattr",
+					"varname" : "u041004227[2]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-65",
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 897.333333333333258, 327.0, 24.0, 24.0 ],
+					"patching_rect" : [ 777.833333333333258, 311.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 188.0, 294.0, 24.0, 24.0 ]
+					"presentation_rect" : [ 272.0, 252.0, 40.0, 22.0 ],
+					"text" : "Load"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-38",
-					"maxclass" : "message",
+					"id" : "obj-66",
+					"maxclass" : "newobj",
 					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 897.333333333333258, 371.0, 63.0, 22.0 ],
-					"text" : "bypass $1"
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 777.833333333333258, 346.0, 44.0, 22.0 ],
+					"text" : "list.reg"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-36",
-					"maxclass" : "toggle",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 611.0, 327.0, 24.0, 24.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 188.0, 211.0, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-32",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 611.0, 371.0, 63.0, 22.0 ],
-					"text" : "bypass $1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"comment" : "",
-					"id" : "obj-29",
-					"index" : 0,
-					"maxclass" : "outlet",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 803.333333333333258, 480.0, 30.0, 30.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-23",
+					"id" : "obj-67",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 897.333333333333258, 413.0, 150.0, 20.0 ],
+					"patching_rect" : [ 898.833333333333258, 530.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 20.0, 248.0, 150.0, 20.0 ],
-					"text" : "load FX2"
+					"presentation_rect" : [ 78.0, 230.0, 150.0, 20.0 ],
+					"text" : "fx2"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-25",
+					"id" : "obj-68",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 860.333333333333258, 371.0, 35.0, 22.0 ],
+					"patching_rect" : [ 827.833333333333258, 404.0, 35.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 177.0, 247.0, 35.0, 22.0 ],
-					"text" : "open"
+					"presentation_rect" : [ 272.0, 275.0, 40.0, 22.0 ],
+					"text" : "open",
+					"textjustification" : 1
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-26",
+					"id" : "obj-69",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 803.333333333333258, 371.0, 48.0, 22.0 ],
+					"patching_rect" : [ 777.833333333333258, 404.0, 48.0, 22.0 ],
 					"text" : "plug $1"
 				}
 
@@ -199,13 +245,13 @@
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
-					"id" : "obj-27",
+					"id" : "obj-70",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 8,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "signal", "", "list", "int", "", "", "" ],
-					"patching_rect" : [ 803.333333333333258, 412.0, 92.5, 22.0 ],
+					"patching_rect" : [ 777.833333333333258, 488.0, 92.5, 22.0 ],
 					"save" : [ "#N", "vst~", "loaduniqueid", 0, ";" ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
@@ -231,54 +277,161 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-28",
-					"items" : [ " ", ",", "++bubbler", ",", "++chebyshev", ",", "++compand", ",", "++decimate", ",", "++delay", ",", "++flipper", ",", "++matrix", ",", "++phasor", ",", "++pitchdelay", ",", "BPB Dirty VHS", ",", "Cardinal FX", ",", "Cardinal Synth", ",", "Cardinal", ",", "Deelay", ",", "Filterstep", ",", "Fracture", ",", "Gatelab", ",", "IVGI2", ",", "LABS", ",", "NeuralAmpModeler", ",", "Panflow", ",", "PaulXStretch", ",", "Ruina", ",", "Saturation Knob", ",", "Sinc Vereor", ",", "Surge XT Effects", ",", "Surge XT", ",", "TAL-Vocoder-2", ",", "TDR Nova", ",", "TX16Wx (legacy id)", ",", "TX16Wx", ",", "ValhallaDelay", ",", "ValhallaFreqEcho", ",", "ValhallaSupermassive", ",", "ValhallaVintageVerb_Fx", ",", "ValhallaVintageVerb_Fx_Reverb", ",", "Virt Vereor" ],
-					"maxclass" : "umenu",
+					"id" : "obj-7",
+					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "int", "", "" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 716.333333333333258, 279.0, 192.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 20.0, 270.0, 192.0, 22.0 ]
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 506.5, 573.0, 58.0, 22.0 ],
+					"text" : "loadbang"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-18",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 605.0, 413.0, 150.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 20.0, 165.0, 67.0, 20.0 ],
-					"text" : "load FX1"
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 566.5, 573.0, 40.0, 22.0 ],
+					"text" : "set \" \""
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-19",
-					"maxclass" : "message",
+					"maxclass" : "newobj",
 					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 568.0, 371.0, 35.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 177.0, 164.0, 35.0, 22.0 ],
-					"text" : "open"
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 579.5, 435.0, 46.0, 22.0 ],
+					"text" : "route 0"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-20",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 606.5, 552.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 20.0, 176.0, 56.0, 20.0 ],
+					"text" : "Current:",
+					"textjustification" : 2
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-21",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 511.0, 371.0, 48.0, 22.0 ],
+					"patching_rect" : [ 606.5, 470.0, 41.0, 22.0 ],
+					"text" : "set $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-23",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 606.5, 574.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 78.0, 176.0, 192.0, 20.0 ],
+					"text" : " "
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-25",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 579.5, 404.0, 40.0, 22.0 ],
+					"restore" : [ "TX16Wx" ],
+					"saved_object_attributes" : 					{
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "pattr",
+					"varname" : "u041004227[1]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-26",
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 485.5, 311.0, 100.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 272.0, 153.0, 40.0, 20.0 ],
+					"text" : "Load"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-27",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 485.5, 346.0, 44.0, 22.0 ],
+					"text" : "list.reg"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-37",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 606.5, 530.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 78.0, 130.0, 150.0, 20.0 ],
+					"text" : "fx1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-38",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 535.5, 404.0, 35.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 272.0, 175.0, 40.0, 22.0 ],
+					"text" : "open",
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-42",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 485.5, 404.0, 48.0, 22.0 ],
 					"text" : "plug $1"
 				}
 
@@ -289,13 +442,13 @@
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
-					"id" : "obj-21",
+					"id" : "obj-43",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 8,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "signal", "", "list", "int", "", "", "" ],
-					"patching_rect" : [ 511.0, 412.0, 92.5, 22.0 ],
+					"patching_rect" : [ 485.5, 488.0, 92.5, 22.0 ],
 					"save" : [ "#N", "vst~", "loaduniqueid", 0, ";" ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
@@ -313,65 +466,396 @@
 						"parameter_mappable" : 0
 					}
 ,
-					"snapshot" : 					{
-						"filetype" : "C74Snapshot",
-						"version" : 2,
-						"minorversion" : 0,
-						"name" : "snapshotlist",
-						"origin" : "vst~",
-						"type" : "list",
-						"subtype" : "Undefined",
-						"embed" : 1,
-						"snapshot" : 						{
-							"pluginname" : "Saturation Knob.vstinfo",
-							"plugindisplayname" : "Saturation Knob",
-							"pluginsavedname" : "",
-							"pluginsaveduniqueid" : 0,
-							"version" : 1,
-							"isbank" : 0,
-							"isbase64" : 1,
-							"blob" : "20640.CMlaKA....fQPMDZ....ALWXz4F...P.....APTYlEVcrQG...............................EYA....LUXzUmbgQWZu4FHK41ahofLtTiK0fiBB.............3O++++++++++O..........nP...............f....fD.........f9D...6A...n.....H....h....DD...vb....yA...TF....c....TA...jG....b....kA...HB...fN....f....HB...fH....r....n.....H....h....XD...PZ....rA...TF...fQ....uA...HG...Pa....gA...PG...fU....kA...HG...vb....oA...7F...fa....h....nC....H....v....vB...fB....f....HB....T....xA...TF...vb....kA...PG....S....oA...LG....c....h....nC....H....aA...n.....H....f....rG...fB....f.....B....H....h....PD...PY....yA...LF...fb....oA....G....c....oA...7F...fa....h....nC....H....h....HB....K....J.....B....H....f....HB...vP....gA...PG...PY....mA...7F...fb....4A...HB...fN....f.....C....K....J.....B....H....f....HB...PR....sA...DF...vY....kA...LD....Z....kA...LF...vZ....yA...TG...Pa....h....nC....H....h....HB....K....J.....B....H....f....HB....T....gA...HG...PX....sA...TF....c....kA...HG....Q....gA...PG...PX....h....nC....H....6A...n.....H....f.....B....H....h.....E...PX....xA...DF...Pa....kA...PG...PY....xA...LG...fH....5.....B...vV....J.....B....H....f.....B....H....aA...n.....H....f.....B....H....f.....B....L....r....n.....H....f.....B....H....f.....B....L....r....n.....H....f.....B....H....f.....B...fH....SA...DF....c....0A...HG...PX....zA...jF...va....tA...HB...fB....f.....B....H....f.....B...PW....r....n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w....vB...fB....f.....B....H....f.....B....H....v....3B...PM....r....n.....H....f.....B....H....f.....B...fH....SA...DF....c....0A...HG...PX....zA...jF...va....tA....B....U....4A....G...PY....h....n.....H....f.....B....H....f....zE...fB....f.....B....H....f....zE....K....J.....B....H....f.....B...fH....SA...TG...fX....sA...7F....Y....0A...vF...PY....yA...HB...fN....f....rE...PW....r....n.....H....f.....B....H....h....TD....d....zA...TF...fb....tA...DF....a....PA...DF...fb....gA...zF...PY....zA...TF...fb....yA...HB...fN....f....rE...PW....r....n.....H....f.....B....H....h....PE...Pd....vA...TF...fH....5.....B...fH....FA...TG....a....rA...HB...fB....f.....B....H....8A...vB...fB....f.....B....H....h....TD....d....zA...TF...fa....jA...TF....Y....FA...TF...PX....zA...TG...fb....kA...LG....T....gA...HG...PX....sA...TF....c....kA...HG....Q....gA...PG...PX....h....nC....H....6A...n.....H....f.....B....H....h....TD....d....zA...TF...fa....jA...TF....Y....FA...TF...PX....zA...TG...fb....kA...LG....T....gA...HG...PX....sA...TF....c....kA...HG...vb....h....nC....H....aA...n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w.....C....K....J.....B....H....f.....B....H....f.....C...fK....0....vB...fB....f.....B....H....f.....B....H....h....jD...fa....vA...TG....c....f....bD...PX....oA...3F...fH....J.....B....H....f.....B....H....cA...vB...fB....f.....B....H....f.....B...vV....J.....B....H....f.....B....H....f....DC...PL....r....n.....H....f.....B....H....f.....B....L....t....TC....K....J.....B....H....f.....B....H....f....HB...vS....0A...PG....b....0A...PG....H....GA...DF...PZ....tA...HB...fB....f.....B....H....f.....B...PW....r....n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w....HC....K....J.....B....H....f.....B....H....f.....C...fK....0....vB...fB....f.....B....H....f.....B....H....h....fD...PY....gA...PF...fb....uA...7F...Pa....h....n.....H....f.....B....H....f....zE....K....J.....B....H....f.....B....H....aA...n.....H....f.....B....H....f.....B...PL....y....vB...fB....f.....B....H....f.....B....H....v....vB...fB....f.....B....H....f.....B....H....h....fD...PZ....mA...fF....H....PA...DF...vb....yA...HB...fB....f.....B....H....f.....B...PW....r....n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w....PC....K....J.....B....H....f.....B....H....f.....C....K....J.....B....H....f.....B....H....f....HB....T....nA...DF...vb....kA....B...PR....tA...XG...PY....xA...PG...fH....J.....B....H....f.....B....H....cA...n.....H....f.....B....H....cA...n.....H....f.....B...Pe....r....n.....H....f.....B...fH....PA...vF...Pc....mA...jF...fa....IA...PD...fH....5.....B...fH....yA...DF....c....tA...HB....K....J.....B....H....f....HB....T....rA...TG...vY....oA...3F...fS....gA...zF...PY....h....nC....H....h....LE...PX....zA...TG...fb....gA...PG...PZ....uA...3F....H....KA...3F...va....hA...HB....K....J.....B....H....f....HB....T....rA...TG...vY....oA...3F...fU....kA...HG...vb....oA...7F...fa....h....nC....H....h....HC...fK....0....3B...PM....3....HB....K....J.....B....H....f....HB....T....xA...TF...vb....kA...PG...fS....gA...zF...PY....h....nC....H....h....HB....K....J.....B....H....f....HB....T....xA...7F...vX....kA...LG...vb....kA...PF...vT....uA...TG...fa....jA...vD...PZ....tA...rF...fH....5.....B...fH....h....vB...fB....f.....B....H....h....HE...PX....tA...rF...fH....5.....B....L....t....XC....K....J.....B....H....f....HB....U....gA...bF...vb....h....nC....H....aA...zE....K....J.....B....H....f....HB...vP....uA...vF...va....xA...HB...fN....f.....C....K....J.....B....H....f....HB...vP....uA...vF....a....kA...LF....c....oA...7F...fa....h....nC....H....h....HB....K....J.....B....H....f....HB...PU....UA...jD....Q....h....nC....H....h....HB....K....J.....B....H....f....HB...PU....tA....G...fb....uA...LF...PY....yA...LG...PY....jA...LE...va....0A...3F....Y....LA...jF...fa....qA...HB...fN....f....HB...fH....r....n.....H....f.....B...fH....NA...TG...Pa....hA...TF...fb....OA...XF....T....gA...HG...PX....sA...TF....c....kA...HG...vb....h....nC....H....v....vB...fB....f.....B....H....h....3D...Pc....sA...HF...PY....xA...7D...fY....PA...HG...va....mA...HG...PX....sA...LG...fH....5.....B....L....r....n.....H....f.....B...fH....SA...PG...va....xA...TF....Y....SA...PG...PX....zA...TF...fH....5.....B...fH....h....vB...fB....f.....B....H....h.....G...PX....xA...DF...Pa....kA...PG...PY....xA...LG...fH....5.....B...vV....cA...vB...fB....f.....B....H....h....LG...Pc....hA...zF...va....jA...TG....a....kA...LG...fH....5.....B...vV....cA...vB...fB....f.....B....H....h....TF....d....zA...TF...fb....tA...DF....a....PA...DF...fb....gA...zF...PY....zA...TF...fb....yA...HB...fN....f....rE...PW....r....n.....H....f.....B...fH....kA...fG....c....kA...3F....Y....kA...PF...fQ....kA...DF....c....0A...HG...PY....yA...HB...fN....f....rE...PW....r....n.....H....f.....B...fH....zA...jG....b....kA...HB...fN....f....HB...fH....J.....B....H....8A...n.....H....cA...vB...fB....f....HB...vT....nA...DF...fb....kA...PF....Q....gA...PG...PX....h....nC....H....6A...zG....K....J.....B...fH....CA...7F....a....uA...HG...fH....5.....B....L....r....n.....H....h....LD...va....rA...vF...PY....iA...PG...PZ....uA...3F...fH....5.....B...fH....h....vB...fB....f....HB...PS....0A...vF....c....oA...LG....c....gA...PG...PY....IA...zF...PX....mA...TF...fH....5.....B...fH....h....vB...fB....f....HB...PS....0A...vF....c....oA...LG....c....gA...PG...PY....DA...TF...fY....gA...TG....a....zA...HB...fN....f....PG...fb....0A...TF...fB....8A...n....f9D...6A...n.....H....h....DD...vb....yA...TF....c....TA...jG....b....kA...HB...fN....f....HB...fH....r....n.....H....h....XD...PZ....rA...TF...fQ....uA...HG...Pa....gA...PG...fU....kA...HG...vb....oA...7F...fa....h....nC....H....v....vB...fB....f....HB....T....xA...TF...vb....kA...PG....S....oA...LG....c....h....nC....H....aA...n.....H....f....rG...fB....f.....B....H....h....PD...PY....yA...LF...fb....oA....G....c....oA...7F...fa....h....nC....H....h....HB....K....J.....B....H....f....HB...vP....gA...PG...PY....mA...7F...fb....4A...HB...fN....f.....C....K....J.....B....H....f....HB...PR....sA...DF...vY....kA...LD....Z....kA...LF...vZ....yA...TG...Pa....h....nC....H....h....HB....K....J.....B....H....f....HB....T....gA...HG...PX....sA...TF....c....kA...HG....Q....gA...PG...PX....h....nC....H....6A...n.....H....f.....B....H....h.....E...PX....xA...DF...Pa....kA...PG...PY....xA...LG...fH....5.....B...vV....J.....B....H....f.....B....H....aA...n.....H....f.....B....H....f.....B....L....r....n.....H....f.....B....H....f.....B....L....r....n.....H....f.....B....H....f.....B...fH....SA...DF....c....0A...HG...PX....zA...jF...va....tA...HB...fB....f.....B....H....f.....B...PW....r....n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w....vB...fB....f.....B....H....f.....B....H....v....3B...PM....r....n.....H....f.....B....H....f.....B...fH....SA...DF....c....0A...HG...PX....zA...jF...va....tA....B....U....4A....G...PY....h....n.....H....f.....B....H....f....zE...fB....f.....B....H....f....zE....K....J.....B....H....f.....B...fH....SA...TG...fX....sA...7F....Y....0A...vF...PY....yA...HB...fN....f....rE...PW....r....n.....H....f.....B....H....h....TD....d....zA...TF...fb....tA...DF....a....PA...DF...fb....gA...zF...PY....zA...TF...fb....yA...HB...fN....f....rE...PW....r....n.....H....f.....B....H....h....PE...Pd....vA...TF...fH....5.....B...fH....FA...TG....a....rA...HB...fB....f.....B....H....8A...vB...fB....f.....B....H....h....TD....d....zA...TF...fa....jA...TF....Y....FA...TF...PX....zA...TG...fb....kA...LG....T....gA...HG...PX....sA...TF....c....kA...HG....Q....gA...PG...PX....h....nC....H....6A...n.....H....f.....B....H....h....TD....d....zA...TF...fa....jA...TF....Y....FA...TF...PX....zA...TG...fb....kA...LG....T....gA...HG...PX....sA...TF....c....kA...HG...vb....h....nC....H....aA...n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w.....C....K....J.....B....H....f.....B....H....f.....C...fK....0....vB...fB....f.....B....H....f.....B....H....h....jD...fa....vA...TG....c....f....bD...PX....oA...3F...fH....J.....B....H....f.....B....H....cA...vB...fB....f.....B....H....f.....B...vV....J.....B....H....f.....B....H....f....DC...PL....r....n.....H....f.....B....H....f.....B....L....t....TC....K....J.....B....H....f.....B....H....f....HB...vS....0A...PG....b....0A...PG....H....GA...DF...PZ....tA...HB...fB....f.....B....H....f.....B...PW....r....n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w....HC....K....J.....B....H....f.....B....H....f.....C...fK....0....vB...fB....f.....B....H....f.....B....H....h....fD...PY....gA...PF...fb....uA...7F...Pa....h....n.....H....f.....B....H....f....zE....K....J.....B....H....f.....B....H....aA...n.....H....f.....B....H....f.....B...PL....y....vB...fB....f.....B....H....f.....B....H....v....vB...fB....f.....B....H....f.....B....H....h....fD...PZ....mA...fF....H....PA...DF...vb....yA...HB...fB....f.....B....H....f.....B...PW....r....n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w....PC....K....J.....B....H....f.....B....H....f.....C....K....J.....B....H....f.....B....H....f....HB....T....nA...DF...vb....kA....B...PR....tA...XG...PY....xA...PG...fH....J.....B....H....f.....B....H....cA...n.....H....f.....B....H....cA...n.....H....f.....B...Pe....r....n.....H....f.....B...fH....PA...vF...Pc....mA...jF...fa....IA...PD...fH....5.....B...fH....yA...DF....c....tA...HB....K....J.....B....H....f....HB....T....rA...TG...vY....oA...3F...fS....gA...zF...PY....h....nC....H....h....LE...PX....zA...TG...fb....gA...PG...PZ....uA...3F....H....KA...3F...va....hA...HB....K....J.....B....H....f....HB....T....rA...TG...vY....oA...3F...fU....kA...HG...vb....oA...7F...fa....h....nC....H....h....HC...fK....0....3B...PM....3....HB....K....J.....B....H....f....HB....T....xA...TF...vb....kA...PG...fS....gA...zF...PY....h....nC....H....h....HB....K....J.....B....H....f....HB....T....xA...7F...vX....kA...LG...vb....kA...PF...vT....uA...TG...fa....jA...vD...PZ....tA...rF...fH....5.....B...fH....h....vB...fB....f.....B....H....h....HE...PX....tA...rF...fH....5.....B....L....t....XC....K....J.....B....H....f....HB....U....gA...bF...vb....h....nC....H....aA...zE....K....J.....B....H....f....HB...vP....uA...vF...va....xA...HB...fN....f.....C....K....J.....B....H....f....HB...vP....uA...vF....a....kA...LF....c....oA...7F...fa....h....nC....H....h....HB....K....J.....B....H....f....HB...PU....UA...jD....Q....h....nC....H....h....HB....K....J.....B....H....f....HB...PU....tA....G...fb....uA...LF...PY....yA...LG...PY....jA...LE...va....0A...3F....Y....LA...jF...fa....qA...HB...fN....f....HB...fH....r....n.....H....f.....B...fH....NA...TG...Pa....hA...TF...fb....OA...XF....T....gA...HG...PX....sA...TF....c....kA...HG...vb....h....nC....H....v....vB...fB....f.....B....H....h....3D...Pc....sA...HF...PY....xA...7D...fY....PA...HG...va....mA...HG...PX....sA...LG...fH....5.....B....L....r....n.....H....f.....B...fH....SA...PG...va....xA...TF....Y....SA...PG...PX....zA...TF...fH....5.....B...fH....h....vB...fB....f.....B....H....h.....G...PX....xA...DF...Pa....kA...PG...PY....xA...LG...fH....5.....B...vV....cA...vB...fB....f.....B....H....h....LG...Pc....hA...zF...va....jA...TG....a....kA...LG...fH....5.....B...vV....cA...vB...fB....f.....B....H....h....TF....d....zA...TF...fb....tA...DF....a....PA...DF...fb....gA...zF...PY....zA...TF...fb....yA...HB...fN....f....rE...PW....r....n.....H....f.....B...fH....kA...fG....c....kA...3F....Y....kA...PF...fQ....kA...DF....c....0A...HG...PY....yA...HB...fN....f....rE...PW....r....n.....H....f.....B...fH....zA...jG....b....kA...HB...fN....f....HB...fH....J.....B....H....8A...n.....H....cA...vB...fB....f....HB...vT....nA...DF...fb....kA...PF....Q....gA...PG...PX....h....nC....H....6A...zG....K....J.....B...fH....CA...7F....a....uA...HG...fH....5.....B....L....r....n.....H....h....LD...va....rA...vF...PY....iA...PG...PZ....uA...3F...fH....5.....B...fH....h....vB...fB....f....HB...PS....0A...vF....c....oA...LG....c....gA...PG...PY....IA...zF...PX....mA...TF...fH....5.....B...fH....h....vB...fB....f....HB...PS....0A...vF....c....oA...LG....c....gA...PG...PY....DA...TF...fY....gA...TG....a....zA...HB...fN....f....PG...fb....0A...TF...fB....8A...n....f9D...6A...n.....H....h....DD...vb....yA...TF....c....TA...jG....b....kA...HB...fN....f....HB...fH....r....n.....H....h....XD...PZ....rA...TF...fQ....uA...HG...Pa....gA...PG...fU....kA...HG...vb....oA...7F...fa....h....nC....H....v....vB...fB....f....HB....T....xA...TF...vb....kA...PG....S....oA...LG....c....h....nC....H....aA...n.....H....f....rG...fB....f.....B....H....h....PD...PY....yA...LF...fb....oA....G....c....oA...7F...fa....h....nC....H....h....HB....K....J.....B....H....f....HB...vP....gA...PG...PY....mA...7F...fb....4A...HB...fN....f.....C....K....J.....B....H....f....HB...PR....sA...DF...vY....kA...LD....Z....kA...LF...vZ....yA...TG...Pa....h....nC....H....h....HB....K....J.....B....H....f....HB....T....gA...HG...PX....sA...TF....c....kA...HG....Q....gA...PG...PX....h....nC....H....6A...n.....H....f.....B....H....h.....E...PX....xA...DF...Pa....kA...PG...PY....xA...LG...fH....5.....B...vV....J.....B....H....f.....B....H....aA...n.....H....f.....B....H....f.....B....L....r....n.....H....f.....B....H....f.....B....L....r....n.....H....f.....B....H....f.....B...fH....SA...DF....c....0A...HG...PX....zA...jF...va....tA...HB...fB....f.....B....H....f.....B...PW....r....n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w....vB...fB....f.....B....H....f.....B....H....v....3B...PM....r....n.....H....f.....B....H....f.....B...fH....SA...DF....c....0A...HG...PX....zA...jF...va....tA....B....U....4A....G...PY....h....n.....H....f.....B....H....f....zE...fB....f.....B....H....f....zE....K....J.....B....H....f.....B...fH....SA...TG...fX....sA...7F....Y....0A...vF...PY....yA...HB...fN....f....rE...PW....r....n.....H....f.....B....H....h....TD....d....zA...TF...fb....tA...DF....a....PA...DF...fb....gA...zF...PY....zA...TF...fb....yA...HB...fN....f....rE...PW....r....n.....H....f.....B....H....h....PE...Pd....vA...TF...fH....5.....B...fH....FA...TG....a....rA...HB...fB....f.....B....H....8A...vB...fB....f.....B....H....h....TD....d....zA...TF...fa....jA...TF....Y....FA...TF...PX....zA...TG...fb....kA...LG....T....gA...HG...PX....sA...TF....c....kA...HG....Q....gA...PG...PX....h....nC....H....6A...n.....H....f.....B....H....h....TD....d....zA...TF...fa....jA...TF....Y....FA...TF...PX....zA...TG...fb....kA...LG....T....gA...HG...PX....sA...TF....c....kA...HG...vb....h....nC....H....aA...n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w.....C....K....J.....B....H....f.....B....H....f.....C...fK....0....vB...fB....f.....B....H....f.....B....H....h....jD...fa....vA...TG....c....f....bD...PX....oA...3F...fH....J.....B....H....f.....B....H....cA...vB...fB....f.....B....H....f.....B...vV....J.....B....H....f.....B....H....f....DC...PL....r....n.....H....f.....B....H....f.....B....L....t....TC....K....J.....B....H....f.....B....H....f....HB...vS....0A...PG....b....0A...PG....H....GA...DF...PZ....tA...HB...fB....f.....B....H....f.....B...PW....r....n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w....HC....K....J.....B....H....f.....B....H....f.....C...fK....0....vB...fB....f.....B....H....f.....B....H....h....fD...PY....gA...PF...fb....uA...7F...Pa....h....n.....H....f.....B....H....f....zE....K....J.....B....H....f.....B....H....aA...n.....H....f.....B....H....f.....B...PL....y....vB...fB....f.....B....H....f.....B....H....v....vB...fB....f.....B....H....f.....B....H....h....fD...PZ....mA...fF....H....PA...DF...vb....yA...HB...fB....f.....B....H....f.....B...PW....r....n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w....PC....K....J.....B....H....f.....B....H....f.....C....K....J.....B....H....f.....B....H....f....HB....T....nA...DF...vb....kA....B...PR....tA...XG...PY....xA...PG...fH....J.....B....H....f.....B....H....cA...n.....H....f.....B....H....cA...n.....H....f.....B...Pe....r....n.....H....f.....B...fH....PA...vF...Pc....mA...jF...fa....IA...PD...fH....5.....B...fH....yA...DF....c....tA...HB....K....J.....B....H....f....HB....T....rA...TG...vY....oA...3F...fS....gA...zF...PY....h....nC....H....h....LE...PX....zA...TG...fb....gA...PG...PZ....uA...3F....H....KA...3F...va....hA...HB....K....J.....B....H....f....HB....T....rA...TG...vY....oA...3F...fU....kA...HG...vb....oA...7F...fa....h....nC....H....h....HC...fK....0....3B...PM....3....HB....K....J.....B....H....f....HB....T....xA...TF...vb....kA...PG...fS....gA...zF...PY....h....nC....H....h....HB....K....J.....B....H....f....HB....T....xA...7F...vX....kA...LG...vb....kA...PF...vT....uA...TG...fa....jA...vD...PZ....tA...rF...fH....5.....B...fH....h....vB...fB....f.....B....H....h....HE...PX....tA...rF...fH....5.....B....L....t....XC....K....J.....B....H....f....HB....U....gA...bF...vb....h....nC....H....aA...zE....K....J.....B....H....f....HB...vP....uA...vF...va....xA...HB...fN....f.....C....K....J.....B....H....f....HB...vP....uA...vF....a....kA...LF....c....oA...7F...fa....h....nC....H....h....HB....K....J.....B....H....f....HB...PU....UA...jD....Q....h....nC....H....h....HB....K....J.....B....H....f....HB...PU....tA....G...fb....uA...LF...PY....yA...LG...PY....jA...LE...va....0A...3F....Y....LA...jF...fa....qA...HB...fN....f....HB...fH....r....n.....H....f.....B...fH....NA...TG...Pa....hA...TF...fb....OA...XF....T....gA...HG...PX....sA...TF....c....kA...HG...vb....h....nC....H....v....vB...fB....f.....B....H....h....3D...Pc....sA...HF...PY....xA...7D...fY....PA...HG...va....mA...HG...PX....sA...LG...fH....5.....B....L....r....n.....H....f.....B...fH....SA...PG...va....xA...TF....Y....SA...PG...PX....zA...TF...fH....5.....B...fH....h....vB...fB....f.....B....H....h.....G...PX....xA...DF...Pa....kA...PG...PY....xA...LG...fH....5.....B...vV....cA...vB...fB....f.....B....H....h....LG...Pc....hA...zF...va....jA...TG....a....kA...LG...fH....5.....B...vV....cA...vB...fB....f.....B....H....h....TF....d....zA...TF...fb....tA...DF....a....PA...DF...fb....gA...zF...PY....zA...TF...fb....yA...HB...fN....f....rE...PW....r....n.....H....f.....B...fH....kA...fG....c....kA...3F....Y....kA...PF...fQ....kA...DF....c....0A...HG...PY....yA...HB...fN....f....rE...PW....r....n.....H....f.....B...fH....zA...jG....b....kA...HB...fN....f....HB...fH....J.....B....H....8A...n.....H....cA...vB...fB....f....HB...vT....nA...DF...fb....kA...PF....Q....gA...PG...PX....h....nC....H....6A...zG....K....J.....B...fH....CA...7F....a....uA...HG...fH....5.....B....L....r....n.....H....h....LD...va....rA...vF...PY....iA...PG...PZ....uA...3F...fH....5.....B...fH....h....vB...fB....f....HB...PS....0A...vF....c....oA...LG....c....gA...PG...PY....IA...zF...PX....mA...TF...fH....5.....B...fH....h....vB...fB....f....HB...PS....0A...vF....c....oA...LG....c....gA...PG...PY....DA...TF...fY....gA...TG....a....zA...HB...fN....f....PG...fb....0A...TF...fB....8A...n....f9D...6A...n.....H....h....DD...vb....yA...TF....c....TA...jG....b....kA...HB...fN....f....HB...fH....r....n.....H....h....XD...PZ....rA...TF...fQ....uA...HG...Pa....gA...PG...fU....kA...HG...vb....oA...7F...fa....h....nC....H....v....vB...fB....f....HB....T....xA...TF...vb....kA...PG....S....oA...LG....c....h....nC....H....aA...n.....H....f....rG...fB....f.....B....H....h....PD...PY....yA...LF...fb....oA....G....c....oA...7F...fa....h....nC....H....h....HB....K....J.....B....H....f....HB...vP....gA...PG...PY....mA...7F...fb....4A...HB...fN....f.....C....K....J.....B....H....f....HB...PR....sA...DF...vY....kA...LD....Z....kA...LF...vZ....yA...TG...Pa....h....nC....H....h....HB....K....J.....B....H....f....HB....T....gA...HG...PX....sA...TF....c....kA...HG....Q....gA...PG...PX....h....nC....H....6A...n.....H....f.....B....H....h.....E...PX....xA...DF...Pa....kA...PG...PY....xA...LG...fH....5.....B...vV....J.....B....H....f.....B....H....aA...n.....H....f.....B....H....f.....B....L....r....n.....H....f.....B....H....f.....B....L....r....n.....H....f.....B....H....f.....B...fH....SA...DF....c....0A...HG...PX....zA...jF...va....tA...HB...fB....f.....B....H....f.....B...PW....r....n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w....vB...fB....f.....B....H....f.....B....H....v....3B...PM....r....n.....H....f.....B....H....f.....B...fH....SA...DF....c....0A...HG...PX....zA...jF...va....tA....B....U....4A....G...PY....h....n.....H....f.....B....H....f....zE...fB....f.....B....H....f....zE....K....J.....B....H....f.....B...fH....SA...TG...fX....sA...7F....Y....0A...vF...PY....yA...HB...fN....f....rE...PW....r....n.....H....f.....B....H....h....TD....d....zA...TF...fb....tA...DF....a....PA...DF...fb....gA...zF...PY....zA...TF...fb....yA...HB...fN....f....rE...PW....r....n.....H....f.....B....H....h....PE...Pd....vA...TF...fH....5.....B...fH....FA...TG....a....rA...HB...fB....f.....B....H....8A...vB...fB....f.....B....H....h....TD....d....zA...TF...fa....jA...TF....Y....FA...TF...PX....zA...TG...fb....kA...LG....T....gA...HG...PX....sA...TF....c....kA...HG....Q....gA...PG...PX....h....nC....H....6A...n.....H....f.....B....H....h....TD....d....zA...TF...fa....jA...TF....Y....FA...TF...PX....zA...TG...fb....kA...LG....T....gA...HG...PX....sA...TF....c....kA...HG...vb....h....nC....H....aA...n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w.....C....K....J.....B....H....f.....B....H....f.....C...fK....0....vB...fB....f.....B....H....f.....B....H....h....jD...fa....vA...TG....c....f....bD...PX....oA...3F...fH....J.....B....H....f.....B....H....cA...vB...fB....f.....B....H....f.....B...vV....J.....B....H....f.....B....H....f....DC...PL....r....n.....H....f.....B....H....f.....B....L....t....TC....K....J.....B....H....f.....B....H....f....HB...vS....0A...PG....b....0A...PG....H....GA...DF...PZ....tA...HB...fB....f.....B....H....f.....B...PW....r....n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w....HC....K....J.....B....H....f.....B....H....f.....C...fK....0....vB...fB....f.....B....H....f.....B....H....h....fD...PY....gA...PF...fb....uA...7F...Pa....h....n.....H....f.....B....H....f....zE....K....J.....B....H....f.....B....H....aA...n.....H....f.....B....H....f.....B...PL....y....vB...fB....f.....B....H....f.....B....H....v....vB...fB....f.....B....H....f.....B....H....h....fD...PZ....mA...fF....H....PA...DF...vb....yA...HB...fB....f.....B....H....f.....B...PW....r....n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w....PC....K....J.....B....H....f.....B....H....f.....C....K....J.....B....H....f.....B....H....f....HB....T....nA...DF...vb....kA....B...PR....tA...XG...PY....xA...PG...fH....J.....B....H....f.....B....H....cA...n.....H....f.....B....H....cA...n.....H....f.....B...Pe....r....n.....H....f.....B...fH....PA...vF...Pc....mA...jF...fa....IA...PD...fH....5.....B...fH....yA...DF....c....tA...HB....K....J.....B....H....f....HB....T....rA...TG...vY....oA...3F...fS....gA...zF...PY....h....nC....H....h....LE...PX....zA...TG...fb....gA...PG...PZ....uA...3F....H....KA...3F...va....hA...HB....K....J.....B....H....f....HB....T....rA...TG...vY....oA...3F...fU....kA...HG...vb....oA...7F...fa....h....nC....H....h....HC...fK....0....3B...PM....3....HB....K....J.....B....H....f....HB....T....xA...TF...vb....kA...PG...fS....gA...zF...PY....h....nC....H....h....HB....K....J.....B....H....f....HB....T....xA...7F...vX....kA...LG...vb....kA...PF...vT....uA...TG...fa....jA...vD...PZ....tA...rF...fH....5.....B...fH....h....vB...fB....f.....B....H....h....HE...PX....tA...rF...fH....5.....B....L....t....XC....K....J.....B....H....f....HB....U....gA...bF...vb....h....nC....H....aA...zE....K....J.....B....H....f....HB...vP....uA...vF...va....xA...HB...fN....f.....C....K....J.....B....H....f....HB...vP....uA...vF....a....kA...LF....c....oA...7F...fa....h....nC....H....h....HB....K....J.....B....H....f....HB...PU....UA...jD....Q....h....nC....H....h....HB....K....J.....B....H....f....HB...PU....tA....G...fb....uA...LF...PY....yA...LG...PY....jA...LE...va....0A...3F....Y....LA...jF...fa....qA...HB...fN....f....HB...fH....r....n.....H....f.....B...fH....NA...TG...Pa....hA...TF...fb....OA...XF....T....gA...HG...PX....sA...TF....c....kA...HG...vb....h....nC....H....v....vB...fB....f.....B....H....h....3D...Pc....sA...HF...PY....xA...7D...fY....PA...HG...va....mA...HG...PX....sA...LG...fH....5.....B....L....r....n.....H....f.....B...fH....SA...PG...va....xA...TF....Y....SA...PG...PX....zA...TF...fH....5.....B...fH....h....vB...fB....f.....B....H....h.....G...PX....xA...DF...Pa....kA...PG...PY....xA...LG...fH....5.....B...vV....cA...vB...fB....f.....B....H....h....LG...Pc....hA...zF...va....jA...TG....a....kA...LG...fH....5.....B...vV....cA...vB...fB....f.....B....H....h....TF....d....zA...TF...fb....tA...DF....a....PA...DF...fb....gA...zF...PY....zA...TF...fb....yA...HB...fN....f....rE...PW....r....n.....H....f.....B...fH....kA...fG....c....kA...3F....Y....kA...PF...fQ....kA...DF....c....0A...HG...PY....yA...HB...fN....f....rE...PW....r....n.....H....f.....B...fH....zA...jG....b....kA...HB...fN....f....HB...fH....J.....B....H....8A...n.....H....cA...vB...fB....f....HB...vT....nA...DF...fb....kA...PF....Q....gA...PG...PX....h....nC....H....6A...zG....K....J.....B...fH....CA...7F....a....uA...HG...fH....5.....B....L....r....n.....H....h....LD...va....rA...vF...PY....iA...PG...PZ....uA...3F...fH....5.....B...fH....h....vB...fB....f....HB...PS....0A...vF....c....oA...LG....c....gA...PG...PY....IA...zF...PX....mA...TF...fH....5.....B...fH....h....vB...fB....f....HB...PS....0A...vF....c....oA...LG....c....gA...PG...PY....DA...TF...fY....gA...TG....a....zA...HB...fN....f....PG...fb....0A...TF...fB....8A...n....v....fA.........P.....A....7..............................................................+....7C...vO................A....F....X....f"
-						}
-,
-						"snapshotlist" : 						{
-							"current_snapshot" : 0,
-							"entries" : [ 								{
-									"filetype" : "C74Snapshot",
-									"version" : 2,
-									"minorversion" : 0,
-									"name" : "Saturation Knob",
-									"origin" : "Saturation Knob.vstinfo",
-									"type" : "VST",
-									"subtype" : "AudioEffect",
-									"embed" : 1,
-									"snapshot" : 									{
-										"pluginname" : "Saturation Knob.vstinfo",
-										"plugindisplayname" : "Saturation Knob",
-										"pluginsavedname" : "",
-										"pluginsaveduniqueid" : 0,
-										"version" : 1,
-										"isbank" : 0,
-										"isbase64" : 1,
-										"blob" : "20640.CMlaKA....fQPMDZ....ALWXz4F...P.....APTYlEVcrQG...............................EYA....LUXzUmbgQWZu4FHK41ahofLtTiK0fiBB.............3O++++++++++O..........nP...............f....fD.........f9D...6A...n.....H....h....DD...vb....yA...TF....c....TA...jG....b....kA...HB...fN....f....HB...fH....r....n.....H....h....XD...PZ....rA...TF...fQ....uA...HG...Pa....gA...PG...fU....kA...HG...vb....oA...7F...fa....h....nC....H....v....vB...fB....f....HB....T....xA...TF...vb....kA...PG....S....oA...LG....c....h....nC....H....aA...n.....H....f....rG...fB....f.....B....H....h....PD...PY....yA...LF...fb....oA....G....c....oA...7F...fa....h....nC....H....h....HB....K....J.....B....H....f....HB...vP....gA...PG...PY....mA...7F...fb....4A...HB...fN....f.....C....K....J.....B....H....f....HB...PR....sA...DF...vY....kA...LD....Z....kA...LF...vZ....yA...TG...Pa....h....nC....H....h....HB....K....J.....B....H....f....HB....T....gA...HG...PX....sA...TF....c....kA...HG....Q....gA...PG...PX....h....nC....H....6A...n.....H....f.....B....H....h.....E...PX....xA...DF...Pa....kA...PG...PY....xA...LG...fH....5.....B...vV....J.....B....H....f.....B....H....aA...n.....H....f.....B....H....f.....B....L....r....n.....H....f.....B....H....f.....B....L....r....n.....H....f.....B....H....f.....B...fH....SA...DF....c....0A...HG...PX....zA...jF...va....tA...HB...fB....f.....B....H....f.....B...PW....r....n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w....vB...fB....f.....B....H....f.....B....H....v....3B...PM....r....n.....H....f.....B....H....f.....B...fH....SA...DF....c....0A...HG...PX....zA...jF...va....tA....B....U....4A....G...PY....h....n.....H....f.....B....H....f....zE...fB....f.....B....H....f....zE....K....J.....B....H....f.....B...fH....SA...TG...fX....sA...7F....Y....0A...vF...PY....yA...HB...fN....f....rE...PW....r....n.....H....f.....B....H....h....TD....d....zA...TF...fb....tA...DF....a....PA...DF...fb....gA...zF...PY....zA...TF...fb....yA...HB...fN....f....rE...PW....r....n.....H....f.....B....H....h....PE...Pd....vA...TF...fH....5.....B...fH....FA...TG....a....rA...HB...fB....f.....B....H....8A...vB...fB....f.....B....H....h....TD....d....zA...TF...fa....jA...TF....Y....FA...TF...PX....zA...TG...fb....kA...LG....T....gA...HG...PX....sA...TF....c....kA...HG....Q....gA...PG...PX....h....nC....H....6A...n.....H....f.....B....H....h....TD....d....zA...TF...fa....jA...TF....Y....FA...TF...PX....zA...TG...fb....kA...LG....T....gA...HG...PX....sA...TF....c....kA...HG...vb....h....nC....H....aA...n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w.....C....K....J.....B....H....f.....B....H....f.....C...fK....0....vB...fB....f.....B....H....f.....B....H....h....jD...fa....vA...TG....c....f....bD...PX....oA...3F...fH....J.....B....H....f.....B....H....cA...vB...fB....f.....B....H....f.....B...vV....J.....B....H....f.....B....H....f....DC...PL....r....n.....H....f.....B....H....f.....B....L....t....TC....K....J.....B....H....f.....B....H....f....HB...vS....0A...PG....b....0A...PG....H....GA...DF...PZ....tA...HB...fB....f.....B....H....f.....B...PW....r....n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w....HC....K....J.....B....H....f.....B....H....f.....C...fK....0....vB...fB....f.....B....H....f.....B....H....h....fD...PY....gA...PF...fb....uA...7F...Pa....h....n.....H....f.....B....H....f....zE....K....J.....B....H....f.....B....H....aA...n.....H....f.....B....H....f.....B...PL....y....vB...fB....f.....B....H....f.....B....H....v....vB...fB....f.....B....H....f.....B....H....h....fD...PZ....mA...fF....H....PA...DF...vb....yA...HB...fB....f.....B....H....f.....B...PW....r....n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w....PC....K....J.....B....H....f.....B....H....f.....C....K....J.....B....H....f.....B....H....f....HB....T....nA...DF...vb....kA....B...PR....tA...XG...PY....xA...PG...fH....J.....B....H....f.....B....H....cA...n.....H....f.....B....H....cA...n.....H....f.....B...Pe....r....n.....H....f.....B...fH....PA...vF...Pc....mA...jF...fa....IA...PD...fH....5.....B...fH....yA...DF....c....tA...HB....K....J.....B....H....f....HB....T....rA...TG...vY....oA...3F...fS....gA...zF...PY....h....nC....H....h....LE...PX....zA...TG...fb....gA...PG...PZ....uA...3F....H....KA...3F...va....hA...HB....K....J.....B....H....f....HB....T....rA...TG...vY....oA...3F...fU....kA...HG...vb....oA...7F...fa....h....nC....H....h....HC...fK....0....3B...PM....3....HB....K....J.....B....H....f....HB....T....xA...TF...vb....kA...PG...fS....gA...zF...PY....h....nC....H....h....HB....K....J.....B....H....f....HB....T....xA...7F...vX....kA...LG...vb....kA...PF...vT....uA...TG...fa....jA...vD...PZ....tA...rF...fH....5.....B...fH....h....vB...fB....f.....B....H....h....HE...PX....tA...rF...fH....5.....B....L....t....XC....K....J.....B....H....f....HB....U....gA...bF...vb....h....nC....H....aA...zE....K....J.....B....H....f....HB...vP....uA...vF...va....xA...HB...fN....f.....C....K....J.....B....H....f....HB...vP....uA...vF....a....kA...LF....c....oA...7F...fa....h....nC....H....h....HB....K....J.....B....H....f....HB...PU....UA...jD....Q....h....nC....H....h....HB....K....J.....B....H....f....HB...PU....tA....G...fb....uA...LF...PY....yA...LG...PY....jA...LE...va....0A...3F....Y....LA...jF...fa....qA...HB...fN....f....HB...fH....r....n.....H....f.....B...fH....NA...TG...Pa....hA...TF...fb....OA...XF....T....gA...HG...PX....sA...TF....c....kA...HG...vb....h....nC....H....v....vB...fB....f.....B....H....h....3D...Pc....sA...HF...PY....xA...7D...fY....PA...HG...va....mA...HG...PX....sA...LG...fH....5.....B....L....r....n.....H....f.....B...fH....SA...PG...va....xA...TF....Y....SA...PG...PX....zA...TF...fH....5.....B...fH....h....vB...fB....f.....B....H....h.....G...PX....xA...DF...Pa....kA...PG...PY....xA...LG...fH....5.....B...vV....cA...vB...fB....f.....B....H....h....LG...Pc....hA...zF...va....jA...TG....a....kA...LG...fH....5.....B...vV....cA...vB...fB....f.....B....H....h....TF....d....zA...TF...fb....tA...DF....a....PA...DF...fb....gA...zF...PY....zA...TF...fb....yA...HB...fN....f....rE...PW....r....n.....H....f.....B...fH....kA...fG....c....kA...3F....Y....kA...PF...fQ....kA...DF....c....0A...HG...PY....yA...HB...fN....f....rE...PW....r....n.....H....f.....B...fH....zA...jG....b....kA...HB...fN....f....HB...fH....J.....B....H....8A...n.....H....cA...vB...fB....f....HB...vT....nA...DF...fb....kA...PF....Q....gA...PG...PX....h....nC....H....6A...zG....K....J.....B...fH....CA...7F....a....uA...HG...fH....5.....B....L....r....n.....H....h....LD...va....rA...vF...PY....iA...PG...PZ....uA...3F...fH....5.....B...fH....h....vB...fB....f....HB...PS....0A...vF....c....oA...LG....c....gA...PG...PY....IA...zF...PX....mA...TF...fH....5.....B...fH....h....vB...fB....f....HB...PS....0A...vF....c....oA...LG....c....gA...PG...PY....DA...TF...fY....gA...TG....a....zA...HB...fN....f....PG...fb....0A...TF...fB....8A...n....f9D...6A...n.....H....h....DD...vb....yA...TF....c....TA...jG....b....kA...HB...fN....f....HB...fH....r....n.....H....h....XD...PZ....rA...TF...fQ....uA...HG...Pa....gA...PG...fU....kA...HG...vb....oA...7F...fa....h....nC....H....v....vB...fB....f....HB....T....xA...TF...vb....kA...PG....S....oA...LG....c....h....nC....H....aA...n.....H....f....rG...fB....f.....B....H....h....PD...PY....yA...LF...fb....oA....G....c....oA...7F...fa....h....nC....H....h....HB....K....J.....B....H....f....HB...vP....gA...PG...PY....mA...7F...fb....4A...HB...fN....f.....C....K....J.....B....H....f....HB...PR....sA...DF...vY....kA...LD....Z....kA...LF...vZ....yA...TG...Pa....h....nC....H....h....HB....K....J.....B....H....f....HB....T....gA...HG...PX....sA...TF....c....kA...HG....Q....gA...PG...PX....h....nC....H....6A...n.....H....f.....B....H....h.....E...PX....xA...DF...Pa....kA...PG...PY....xA...LG...fH....5.....B...vV....J.....B....H....f.....B....H....aA...n.....H....f.....B....H....f.....B....L....r....n.....H....f.....B....H....f.....B....L....r....n.....H....f.....B....H....f.....B...fH....SA...DF....c....0A...HG...PX....zA...jF...va....tA...HB...fB....f.....B....H....f.....B...PW....r....n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w....vB...fB....f.....B....H....f.....B....H....v....3B...PM....r....n.....H....f.....B....H....f.....B...fH....SA...DF....c....0A...HG...PX....zA...jF...va....tA....B....U....4A....G...PY....h....n.....H....f.....B....H....f....zE...fB....f.....B....H....f....zE....K....J.....B....H....f.....B...fH....SA...TG...fX....sA...7F....Y....0A...vF...PY....yA...HB...fN....f....rE...PW....r....n.....H....f.....B....H....h....TD....d....zA...TF...fb....tA...DF....a....PA...DF...fb....gA...zF...PY....zA...TF...fb....yA...HB...fN....f....rE...PW....r....n.....H....f.....B....H....h....PE...Pd....vA...TF...fH....5.....B...fH....FA...TG....a....rA...HB...fB....f.....B....H....8A...vB...fB....f.....B....H....h....TD....d....zA...TF...fa....jA...TF....Y....FA...TF...PX....zA...TG...fb....kA...LG....T....gA...HG...PX....sA...TF....c....kA...HG....Q....gA...PG...PX....h....nC....H....6A...n.....H....f.....B....H....h....TD....d....zA...TF...fa....jA...TF....Y....FA...TF...PX....zA...TG...fb....kA...LG....T....gA...HG...PX....sA...TF....c....kA...HG...vb....h....nC....H....aA...n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w.....C....K....J.....B....H....f.....B....H....f.....C...fK....0....vB...fB....f.....B....H....f.....B....H....h....jD...fa....vA...TG....c....f....bD...PX....oA...3F...fH....J.....B....H....f.....B....H....cA...vB...fB....f.....B....H....f.....B...vV....J.....B....H....f.....B....H....f....DC...PL....r....n.....H....f.....B....H....f.....B....L....t....TC....K....J.....B....H....f.....B....H....f....HB...vS....0A...PG....b....0A...PG....H....GA...DF...PZ....tA...HB...fB....f.....B....H....f.....B...PW....r....n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w....HC....K....J.....B....H....f.....B....H....f.....C...fK....0....vB...fB....f.....B....H....f.....B....H....h....fD...PY....gA...PF...fb....uA...7F...Pa....h....n.....H....f.....B....H....f....zE....K....J.....B....H....f.....B....H....aA...n.....H....f.....B....H....f.....B...PL....y....vB...fB....f.....B....H....f.....B....H....v....vB...fB....f.....B....H....f.....B....H....h....fD...PZ....mA...fF....H....PA...DF...vb....yA...HB...fB....f.....B....H....f.....B...PW....r....n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w....PC....K....J.....B....H....f.....B....H....f.....C....K....J.....B....H....f.....B....H....f....HB....T....nA...DF...vb....kA....B...PR....tA...XG...PY....xA...PG...fH....J.....B....H....f.....B....H....cA...n.....H....f.....B....H....cA...n.....H....f.....B...Pe....r....n.....H....f.....B...fH....PA...vF...Pc....mA...jF...fa....IA...PD...fH....5.....B...fH....yA...DF....c....tA...HB....K....J.....B....H....f....HB....T....rA...TG...vY....oA...3F...fS....gA...zF...PY....h....nC....H....h....LE...PX....zA...TG...fb....gA...PG...PZ....uA...3F....H....KA...3F...va....hA...HB....K....J.....B....H....f....HB....T....rA...TG...vY....oA...3F...fU....kA...HG...vb....oA...7F...fa....h....nC....H....h....HC...fK....0....3B...PM....3....HB....K....J.....B....H....f....HB....T....xA...TF...vb....kA...PG...fS....gA...zF...PY....h....nC....H....h....HB....K....J.....B....H....f....HB....T....xA...7F...vX....kA...LG...vb....kA...PF...vT....uA...TG...fa....jA...vD...PZ....tA...rF...fH....5.....B...fH....h....vB...fB....f.....B....H....h....HE...PX....tA...rF...fH....5.....B....L....t....XC....K....J.....B....H....f....HB....U....gA...bF...vb....h....nC....H....aA...zE....K....J.....B....H....f....HB...vP....uA...vF...va....xA...HB...fN....f.....C....K....J.....B....H....f....HB...vP....uA...vF....a....kA...LF....c....oA...7F...fa....h....nC....H....h....HB....K....J.....B....H....f....HB...PU....UA...jD....Q....h....nC....H....h....HB....K....J.....B....H....f....HB...PU....tA....G...fb....uA...LF...PY....yA...LG...PY....jA...LE...va....0A...3F....Y....LA...jF...fa....qA...HB...fN....f....HB...fH....r....n.....H....f.....B...fH....NA...TG...Pa....hA...TF...fb....OA...XF....T....gA...HG...PX....sA...TF....c....kA...HG...vb....h....nC....H....v....vB...fB....f.....B....H....h....3D...Pc....sA...HF...PY....xA...7D...fY....PA...HG...va....mA...HG...PX....sA...LG...fH....5.....B....L....r....n.....H....f.....B...fH....SA...PG...va....xA...TF....Y....SA...PG...PX....zA...TF...fH....5.....B...fH....h....vB...fB....f.....B....H....h.....G...PX....xA...DF...Pa....kA...PG...PY....xA...LG...fH....5.....B...vV....cA...vB...fB....f.....B....H....h....LG...Pc....hA...zF...va....jA...TG....a....kA...LG...fH....5.....B...vV....cA...vB...fB....f.....B....H....h....TF....d....zA...TF...fb....tA...DF....a....PA...DF...fb....gA...zF...PY....zA...TF...fb....yA...HB...fN....f....rE...PW....r....n.....H....f.....B...fH....kA...fG....c....kA...3F....Y....kA...PF...fQ....kA...DF....c....0A...HG...PY....yA...HB...fN....f....rE...PW....r....n.....H....f.....B...fH....zA...jG....b....kA...HB...fN....f....HB...fH....J.....B....H....8A...n.....H....cA...vB...fB....f....HB...vT....nA...DF...fb....kA...PF....Q....gA...PG...PX....h....nC....H....6A...zG....K....J.....B...fH....CA...7F....a....uA...HG...fH....5.....B....L....r....n.....H....h....LD...va....rA...vF...PY....iA...PG...PZ....uA...3F...fH....5.....B...fH....h....vB...fB....f....HB...PS....0A...vF....c....oA...LG....c....gA...PG...PY....IA...zF...PX....mA...TF...fH....5.....B...fH....h....vB...fB....f....HB...PS....0A...vF....c....oA...LG....c....gA...PG...PY....DA...TF...fY....gA...TG....a....zA...HB...fN....f....PG...fb....0A...TF...fB....8A...n....f9D...6A...n.....H....h....DD...vb....yA...TF....c....TA...jG....b....kA...HB...fN....f....HB...fH....r....n.....H....h....XD...PZ....rA...TF...fQ....uA...HG...Pa....gA...PG...fU....kA...HG...vb....oA...7F...fa....h....nC....H....v....vB...fB....f....HB....T....xA...TF...vb....kA...PG....S....oA...LG....c....h....nC....H....aA...n.....H....f....rG...fB....f.....B....H....h....PD...PY....yA...LF...fb....oA....G....c....oA...7F...fa....h....nC....H....h....HB....K....J.....B....H....f....HB...vP....gA...PG...PY....mA...7F...fb....4A...HB...fN....f.....C....K....J.....B....H....f....HB...PR....sA...DF...vY....kA...LD....Z....kA...LF...vZ....yA...TG...Pa....h....nC....H....h....HB....K....J.....B....H....f....HB....T....gA...HG...PX....sA...TF....c....kA...HG....Q....gA...PG...PX....h....nC....H....6A...n.....H....f.....B....H....h.....E...PX....xA...DF...Pa....kA...PG...PY....xA...LG...fH....5.....B...vV....J.....B....H....f.....B....H....aA...n.....H....f.....B....H....f.....B....L....r....n.....H....f.....B....H....f.....B....L....r....n.....H....f.....B....H....f.....B...fH....SA...DF....c....0A...HG...PX....zA...jF...va....tA...HB...fB....f.....B....H....f.....B...PW....r....n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w....vB...fB....f.....B....H....f.....B....H....v....3B...PM....r....n.....H....f.....B....H....f.....B...fH....SA...DF....c....0A...HG...PX....zA...jF...va....tA....B....U....4A....G...PY....h....n.....H....f.....B....H....f....zE...fB....f.....B....H....f....zE....K....J.....B....H....f.....B...fH....SA...TG...fX....sA...7F....Y....0A...vF...PY....yA...HB...fN....f....rE...PW....r....n.....H....f.....B....H....h....TD....d....zA...TF...fb....tA...DF....a....PA...DF...fb....gA...zF...PY....zA...TF...fb....yA...HB...fN....f....rE...PW....r....n.....H....f.....B....H....h....PE...Pd....vA...TF...fH....5.....B...fH....FA...TG....a....rA...HB...fB....f.....B....H....8A...vB...fB....f.....B....H....h....TD....d....zA...TF...fa....jA...TF....Y....FA...TF...PX....zA...TG...fb....kA...LG....T....gA...HG...PX....sA...TF....c....kA...HG....Q....gA...PG...PX....h....nC....H....6A...n.....H....f.....B....H....h....TD....d....zA...TF...fa....jA...TF....Y....FA...TF...PX....zA...TG...fb....kA...LG....T....gA...HG...PX....sA...TF....c....kA...HG...vb....h....nC....H....aA...n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w.....C....K....J.....B....H....f.....B....H....f.....C...fK....0....vB...fB....f.....B....H....f.....B....H....h....jD...fa....vA...TG....c....f....bD...PX....oA...3F...fH....J.....B....H....f.....B....H....cA...vB...fB....f.....B....H....f.....B...vV....J.....B....H....f.....B....H....f....DC...PL....r....n.....H....f.....B....H....f.....B....L....t....TC....K....J.....B....H....f.....B....H....f....HB...vS....0A...PG....b....0A...PG....H....GA...DF...PZ....tA...HB...fB....f.....B....H....f.....B...PW....r....n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w....HC....K....J.....B....H....f.....B....H....f.....C...fK....0....vB...fB....f.....B....H....f.....B....H....h....fD...PY....gA...PF...fb....uA...7F...Pa....h....n.....H....f.....B....H....f....zE....K....J.....B....H....f.....B....H....aA...n.....H....f.....B....H....f.....B...PL....y....vB...fB....f.....B....H....f.....B....H....v....vB...fB....f.....B....H....f.....B....H....h....fD...PZ....mA...fF....H....PA...DF...vb....yA...HB...fB....f.....B....H....f.....B...PW....r....n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w....PC....K....J.....B....H....f.....B....H....f.....C....K....J.....B....H....f.....B....H....f....HB....T....nA...DF...vb....kA....B...PR....tA...XG...PY....xA...PG...fH....J.....B....H....f.....B....H....cA...n.....H....f.....B....H....cA...n.....H....f.....B...Pe....r....n.....H....f.....B...fH....PA...vF...Pc....mA...jF...fa....IA...PD...fH....5.....B...fH....yA...DF....c....tA...HB....K....J.....B....H....f....HB....T....rA...TG...vY....oA...3F...fS....gA...zF...PY....h....nC....H....h....LE...PX....zA...TG...fb....gA...PG...PZ....uA...3F....H....KA...3F...va....hA...HB....K....J.....B....H....f....HB....T....rA...TG...vY....oA...3F...fU....kA...HG...vb....oA...7F...fa....h....nC....H....h....HC...fK....0....3B...PM....3....HB....K....J.....B....H....f....HB....T....xA...TF...vb....kA...PG...fS....gA...zF...PY....h....nC....H....h....HB....K....J.....B....H....f....HB....T....xA...7F...vX....kA...LG...vb....kA...PF...vT....uA...TG...fa....jA...vD...PZ....tA...rF...fH....5.....B...fH....h....vB...fB....f.....B....H....h....HE...PX....tA...rF...fH....5.....B....L....t....XC....K....J.....B....H....f....HB....U....gA...bF...vb....h....nC....H....aA...zE....K....J.....B....H....f....HB...vP....uA...vF...va....xA...HB...fN....f.....C....K....J.....B....H....f....HB...vP....uA...vF....a....kA...LF....c....oA...7F...fa....h....nC....H....h....HB....K....J.....B....H....f....HB...PU....UA...jD....Q....h....nC....H....h....HB....K....J.....B....H....f....HB...PU....tA....G...fb....uA...LF...PY....yA...LG...PY....jA...LE...va....0A...3F....Y....LA...jF...fa....qA...HB...fN....f....HB...fH....r....n.....H....f.....B...fH....NA...TG...Pa....hA...TF...fb....OA...XF....T....gA...HG...PX....sA...TF....c....kA...HG...vb....h....nC....H....v....vB...fB....f.....B....H....h....3D...Pc....sA...HF...PY....xA...7D...fY....PA...HG...va....mA...HG...PX....sA...LG...fH....5.....B....L....r....n.....H....f.....B...fH....SA...PG...va....xA...TF....Y....SA...PG...PX....zA...TF...fH....5.....B...fH....h....vB...fB....f.....B....H....h.....G...PX....xA...DF...Pa....kA...PG...PY....xA...LG...fH....5.....B...vV....cA...vB...fB....f.....B....H....h....LG...Pc....hA...zF...va....jA...TG....a....kA...LG...fH....5.....B...vV....cA...vB...fB....f.....B....H....h....TF....d....zA...TF...fb....tA...DF....a....PA...DF...fb....gA...zF...PY....zA...TF...fb....yA...HB...fN....f....rE...PW....r....n.....H....f.....B...fH....kA...fG....c....kA...3F....Y....kA...PF...fQ....kA...DF....c....0A...HG...PY....yA...HB...fN....f....rE...PW....r....n.....H....f.....B...fH....zA...jG....b....kA...HB...fN....f....HB...fH....J.....B....H....8A...n.....H....cA...vB...fB....f....HB...vT....nA...DF...fb....kA...PF....Q....gA...PG...PX....h....nC....H....6A...zG....K....J.....B...fH....CA...7F....a....uA...HG...fH....5.....B....L....r....n.....H....h....LD...va....rA...vF...PY....iA...PG...PZ....uA...3F...fH....5.....B...fH....h....vB...fB....f....HB...PS....0A...vF....c....oA...LG....c....gA...PG...PY....IA...zF...PX....mA...TF...fH....5.....B...fH....h....vB...fB....f....HB...PS....0A...vF....c....oA...LG....c....gA...PG...PY....DA...TF...fY....gA...TG....a....zA...HB...fN....f....PG...fb....0A...TF...fB....8A...n....f9D...6A...n.....H....h....DD...vb....yA...TF....c....TA...jG....b....kA...HB...fN....f....HB...fH....r....n.....H....h....XD...PZ....rA...TF...fQ....uA...HG...Pa....gA...PG...fU....kA...HG...vb....oA...7F...fa....h....nC....H....v....vB...fB....f....HB....T....xA...TF...vb....kA...PG....S....oA...LG....c....h....nC....H....aA...n.....H....f....rG...fB....f.....B....H....h....PD...PY....yA...LF...fb....oA....G....c....oA...7F...fa....h....nC....H....h....HB....K....J.....B....H....f....HB...vP....gA...PG...PY....mA...7F...fb....4A...HB...fN....f.....C....K....J.....B....H....f....HB...PR....sA...DF...vY....kA...LD....Z....kA...LF...vZ....yA...TG...Pa....h....nC....H....h....HB....K....J.....B....H....f....HB....T....gA...HG...PX....sA...TF....c....kA...HG....Q....gA...PG...PX....h....nC....H....6A...n.....H....f.....B....H....h.....E...PX....xA...DF...Pa....kA...PG...PY....xA...LG...fH....5.....B...vV....J.....B....H....f.....B....H....aA...n.....H....f.....B....H....f.....B....L....r....n.....H....f.....B....H....f.....B....L....r....n.....H....f.....B....H....f.....B...fH....SA...DF....c....0A...HG...PX....zA...jF...va....tA...HB...fB....f.....B....H....f.....B...PW....r....n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w....vB...fB....f.....B....H....f.....B....H....v....3B...PM....r....n.....H....f.....B....H....f.....B...fH....SA...DF....c....0A...HG...PX....zA...jF...va....tA....B....U....4A....G...PY....h....n.....H....f.....B....H....f....zE...fB....f.....B....H....f....zE....K....J.....B....H....f.....B...fH....SA...TG...fX....sA...7F....Y....0A...vF...PY....yA...HB...fN....f....rE...PW....r....n.....H....f.....B....H....h....TD....d....zA...TF...fb....tA...DF....a....PA...DF...fb....gA...zF...PY....zA...TF...fb....yA...HB...fN....f....rE...PW....r....n.....H....f.....B....H....h....PE...Pd....vA...TF...fH....5.....B...fH....FA...TG....a....rA...HB...fB....f.....B....H....8A...vB...fB....f.....B....H....h....TD....d....zA...TF...fa....jA...TF....Y....FA...TF...PX....zA...TG...fb....kA...LG....T....gA...HG...PX....sA...TF....c....kA...HG....Q....gA...PG...PX....h....nC....H....6A...n.....H....f.....B....H....h....TD....d....zA...TF...fa....jA...TF....Y....FA...TF...PX....zA...TG...fb....kA...LG....T....gA...HG...PX....sA...TF....c....kA...HG...vb....h....nC....H....aA...n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w.....C....K....J.....B....H....f.....B....H....f.....C...fK....0....vB...fB....f.....B....H....f.....B....H....h....jD...fa....vA...TG....c....f....bD...PX....oA...3F...fH....J.....B....H....f.....B....H....cA...vB...fB....f.....B....H....f.....B...vV....J.....B....H....f.....B....H....f....DC...PL....r....n.....H....f.....B....H....f.....B....L....t....TC....K....J.....B....H....f.....B....H....f....HB...vS....0A...PG....b....0A...PG....H....GA...DF...PZ....tA...HB...fB....f.....B....H....f.....B...PW....r....n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w....HC....K....J.....B....H....f.....B....H....f.....C...fK....0....vB...fB....f.....B....H....f.....B....H....h....fD...PY....gA...PF...fb....uA...7F...Pa....h....n.....H....f.....B....H....f....zE....K....J.....B....H....f.....B....H....aA...n.....H....f.....B....H....f.....B...PL....y....vB...fB....f.....B....H....f.....B....H....v....vB...fB....f.....B....H....f.....B....H....h....fD...PZ....mA...fF....H....PA...DF...vb....yA...HB...fB....f.....B....H....f.....B...PW....r....n.....H....f.....B....H....f....rE...fB....f.....B....H....f.....B....H....w....PC....K....J.....B....H....f.....B....H....f.....C....K....J.....B....H....f.....B....H....f....HB....T....nA...DF...vb....kA....B...PR....tA...XG...PY....xA...PG...fH....J.....B....H....f.....B....H....cA...n.....H....f.....B....H....cA...n.....H....f.....B...Pe....r....n.....H....f.....B...fH....PA...vF...Pc....mA...jF...fa....IA...PD...fH....5.....B...fH....yA...DF....c....tA...HB....K....J.....B....H....f....HB....T....rA...TG...vY....oA...3F...fS....gA...zF...PY....h....nC....H....h....LE...PX....zA...TG...fb....gA...PG...PZ....uA...3F....H....KA...3F...va....hA...HB....K....J.....B....H....f....HB....T....rA...TG...vY....oA...3F...fU....kA...HG...vb....oA...7F...fa....h....nC....H....h....HC...fK....0....3B...PM....3....HB....K....J.....B....H....f....HB....T....xA...TF...vb....kA...PG...fS....gA...zF...PY....h....nC....H....h....HB....K....J.....B....H....f....HB....T....xA...7F...vX....kA...LG...vb....kA...PF...vT....uA...TG...fa....jA...vD...PZ....tA...rF...fH....5.....B...fH....h....vB...fB....f.....B....H....h....HE...PX....tA...rF...fH....5.....B....L....t....XC....K....J.....B....H....f....HB....U....gA...bF...vb....h....nC....H....aA...zE....K....J.....B....H....f....HB...vP....uA...vF...va....xA...HB...fN....f.....C....K....J.....B....H....f....HB...vP....uA...vF....a....kA...LF....c....oA...7F...fa....h....nC....H....h....HB....K....J.....B....H....f....HB...PU....UA...jD....Q....h....nC....H....h....HB....K....J.....B....H....f....HB...PU....tA....G...fb....uA...LF...PY....yA...LG...PY....jA...LE...va....0A...3F....Y....LA...jF...fa....qA...HB...fN....f....HB...fH....r....n.....H....f.....B...fH....NA...TG...Pa....hA...TF...fb....OA...XF....T....gA...HG...PX....sA...TF....c....kA...HG...vb....h....nC....H....v....vB...fB....f.....B....H....h....3D...Pc....sA...HF...PY....xA...7D...fY....PA...HG...va....mA...HG...PX....sA...LG...fH....5.....B....L....r....n.....H....f.....B...fH....SA...PG...va....xA...TF....Y....SA...PG...PX....zA...TF...fH....5.....B...fH....h....vB...fB....f.....B....H....h.....G...PX....xA...DF...Pa....kA...PG...PY....xA...LG...fH....5.....B...vV....cA...vB...fB....f.....B....H....h....LG...Pc....hA...zF...va....jA...TG....a....kA...LG...fH....5.....B...vV....cA...vB...fB....f.....B....H....h....TF....d....zA...TF...fb....tA...DF....a....PA...DF...fb....gA...zF...PY....zA...TF...fb....yA...HB...fN....f....rE...PW....r....n.....H....f.....B...fH....kA...fG....c....kA...3F....Y....kA...PF...fQ....kA...DF....c....0A...HG...PY....yA...HB...fN....f....rE...PW....r....n.....H....f.....B...fH....zA...jG....b....kA...HB...fN....f....HB...fH....J.....B....H....8A...n.....H....cA...vB...fB....f....HB...vT....nA...DF...fb....kA...PF....Q....gA...PG...PX....h....nC....H....6A...zG....K....J.....B...fH....CA...7F....a....uA...HG...fH....5.....B....L....r....n.....H....h....LD...va....rA...vF...PY....iA...PG...PZ....uA...3F...fH....5.....B...fH....h....vB...fB....f....HB...PS....0A...vF....c....oA...LG....c....gA...PG...PY....IA...zF...PX....mA...TF...fH....5.....B...fH....h....vB...fB....f....HB...PS....0A...vF....c....oA...LG....c....gA...PG...PY....DA...TF...fY....gA...TG....a....zA...HB...fN....f....PG...fb....0A...TF...fB....8A...n....v....fA.........P.....A....7..............................................................+....7C...vO................A....F....X....f"
-									}
-,
-									"fileref" : 									{
-										"name" : "Saturation Knob",
-										"filename" : "Saturation Knob.maxsnap",
-										"filepath" : "~/Documents/Max 8/Snapshots",
-										"filepos" : -1,
-										"snapshotfileid" : "338e9687a7385a1563002f76fda334db"
-									}
-
-								}
- ]
-						}
-
-					}
-,
 					"text" : "vst~",
 					"varname" : "vst~[1]",
 					"viewvisibility" : 0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-49",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 214.166666666666686, 573.0, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-47",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 274.166666666666686, 573.0, 40.0, 22.0 ],
+					"text" : "set \" \""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 287.166666666666686, 435.0, 46.0, 22.0 ],
+					"text" : "route 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-58",
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 878.833333000000039, 54.0, 130.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 364.0, 74.0, 130.0, 20.0 ],
+					"text" : "Load presets from file"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-57",
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 716.333333000000039, 54.0, 130.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 364.0, 52.0, 130.0, 20.0 ],
+					"text" : "Save presets to file"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-52",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 752.333333333333258, 109.0, 33.0, 22.0 ],
+					"text" : "read"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 716.333333333333258, 109.0, 34.0, 22.0 ],
+					"text" : "write"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-14",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 211.166666666666742, 651.0, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"bubblepoint" : 0.46,
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-16",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 319.166666666666742, 706.0, 182.0, 69.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 4,
+					"presentation_rect" : [ 496.0, 102.0, 182.0, 69.0 ],
+					"text" : "Shift-click to store a preset.\nClick to recall.\nMake sure audio is on when saving/recalling."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubblesize" : 21,
+					"id" : "obj-30",
+					"maxclass" : "preset",
+					"numinlets" : 1,
+					"numoutlets" : 5,
+					"outlettype" : [ "preset", "int", "preset", "int", "" ],
+					"patching_rect" : [ 211.166666666666742, 700.0, 100.0, 80.0 ],
+					"pattrstorage" : "blue",
+					"presentation" : 1,
+					"presentation_rect" : [ 364.0, 96.0, 130.0, 80.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-31",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 211.166666666666742, 675.0, 106.0, 23.0 ],
+					"text" : "pattrstorage blue"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-33",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 716.333333333333258, 212.0, 29.5, 22.0 ],
+					"text" : "0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-40",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 716.333333333333258, 177.0, 22.0, 22.0 ],
+					"text" : "t b"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-50",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 716.333333333333258, 146.0, 99.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"client_rect" : [ 100, 134, 454, 262 ],
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0,
+						"storage_rect" : [ 583, 69, 1034, 197 ]
+					}
+,
+					"text" : "pattrstorage blue",
+					"varname" : "blue"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 314.166666666666686, 552.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 17.0, 76.0, 59.0, 20.0 ],
+					"text" : "Current:",
+					"textjustification" : 2
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 314.166666666666686, 470.0, 41.0, 22.0 ],
+					"text" : "set $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 314.166666666666686, 574.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 78.0, 76.0, 192.0, 20.0 ],
+					"text" : " "
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 287.166666666666686, 404.0, 40.0, 22.0 ],
+					"restore" : [ "TX16Wx" ],
+					"saved_object_attributes" : 					{
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "pattr",
+					"varname" : "u041004227"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 193.166666666666686, 311.0, 100.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 272.0, 53.0, 40.0, 20.0 ],
+					"text" : "Load"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 193.166666666666686, 346.0, 44.0, 22.0 ],
+					"text" : "list.reg"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 98.0, 52.0, 56.0, 22.0 ],
+					"restore" : 					{
+
+					}
+,
+					"text" : "autopattr",
+					"varname" : "u170001464"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-54",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 231.916666666666686, 128.0, 29.5, 22.0 ],
+					"text" : "\" \""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-48",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 231.916666666666686, 163.0, 96.0, 22.0 ],
+					"text" : "prepend append"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-41",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 653.5, 393.0, 80.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 239.0, 202.0, 47.0, 20.0 ],
+					"text" : "bypass",
+					"textjustification" : 2
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-36",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 627.5, 391.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 288.0, 200.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-32",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 627.5, 435.0, 63.0, 22.0 ],
+					"text" : "bypass $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "",
+					"id" : "obj-29",
+					"index" : 0,
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 777.833333333333258, 647.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-28",
+					"items" : [ " ", ",", "++bubbler", ",", "++chebyshev", ",", "++compand", ",", "++decimate", ",", "++delay", ",", "++flipper", ",", "++matrix", ",", "++phasor", ",", "++pitchdelay", ",", "BPB Dirty VHS", ",", "Cardinal FX", ",", "Cardinal Synth", ",", "Cardinal", ",", "Deelay", ",", "Filterstep", ",", "Fracture", ",", "Gatelab", ",", "IVGI2", ",", "LABS", ",", "NeuralAmpModeler", ",", "Panflow", ",", "PaulXStretch", ",", "Ruina", ",", "Saturation Knob", ",", "Sinc Vereor", ",", "Surge XT Effects", ",", "Surge XT", ",", "TAL-Vocoder-2", ",", "TDR Nova", ",", "TX16Wx (legacy id)", ",", "TX16Wx", ",", "ValhallaDelay", ",", "ValhallaFreqEcho", ",", "ValhallaSupermassive", ",", "ValhallaVintageVerb_Fx", ",", "ValhallaVintageVerb_Fx_Reverb", ",", "Virt Vereor" ],
+					"maxclass" : "umenu",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "int", "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 716.333333333333258, 279.0, 192.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 78.0, 252.0, 192.0, 22.0 ]
 				}
 
 			}
@@ -386,7 +870,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 424.0, 279.0, 192.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 20.0, 187.0, 192.0, 22.0 ]
+					"presentation_rect" : [ 78.0, 152.0, 192.0, 22.0 ]
 				}
 
 			}
@@ -396,10 +880,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 313.166666666666686, 413.0, 150.0, 20.0 ],
+					"patching_rect" : [ 314.0, 530.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 20.0, 108.0, 150.0, 20.0 ],
-					"text" : "load instrument"
+					"presentation_rect" : [ 78.0, 30.0, 150.0, 20.0 ],
+					"text" : " instrument"
 				}
 
 			}
@@ -438,7 +922,7 @@
 					"patching_rect" : [ 75.5, 311.0, 101.0, 51.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 73.0, 34.0, 101.0, 51.0 ],
+					"presentation_rect" : [ 417.0, 207.0, 101.0, 51.0 ],
 					"text" : "double-click to choose\nMIDI input"
 				}
 
@@ -454,7 +938,7 @@
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 22.5, 328.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 20.0, 51.0, 50.0, 22.0 ],
+					"presentation_rect" : [ 364.0, 224.0, 50.0, 22.0 ],
 					"text" : "midiin"
 				}
 
@@ -480,10 +964,11 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 275.666666666666686, 371.0, 35.0, 22.0 ],
+					"patching_rect" : [ 243.166666666666686, 404.0, 35.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 177.0, 107.0, 35.0, 22.0 ],
-					"text" : "open"
+					"presentation_rect" : [ 272.0, 76.0, 40.0, 22.0 ],
+					"text" : "open",
+					"textjustification" : 1
 				}
 
 			}
@@ -494,7 +979,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 218.666666666666686, 371.0, 48.0, 22.0 ],
+					"patching_rect" : [ 193.166666666666686, 404.0, 48.0, 22.0 ],
 					"text" : "plug $1"
 				}
 
@@ -511,7 +996,7 @@
 					"numoutlets" : 8,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "signal", "", "list", "int", "", "", "" ],
-					"patching_rect" : [ 218.666666666666686, 412.0, 92.5, 22.0 ],
+					"patching_rect" : [ 193.0, 488.0, 92.5, 22.0 ],
 					"save" : [ "#N", "vst~", "loaduniqueid", 0, ";" ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
@@ -527,62 +1012,6 @@
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 1,
 						"parameter_mappable" : 0
-					}
-,
-					"snapshot" : 					{
-						"filetype" : "C74Snapshot",
-						"version" : 2,
-						"minorversion" : 0,
-						"name" : "snapshotlist",
-						"origin" : "vst~",
-						"type" : "list",
-						"subtype" : "Undefined",
-						"embed" : 1,
-						"snapshot" : 						{
-							"pluginname" : "LABS.vstinfo",
-							"plugindisplayname" : "LABS",
-							"pluginsavedname" : "",
-							"pluginsaveduniqueid" : 1399213154,
-							"version" : 1,
-							"isbank" : 0,
-							"isbase64" : 1,
-							"blob" : "9715.CMlaKA....fQPMDZ....ALkYLIF.ATPE....A........................................TxsVMjLg3ZI...O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOLElXy4COMUDUAAhYg0VZrkWOhL0alQGHPkVXt8lHf3VXsUVOhL0alQGHPkVXt8lHf.mbuQVciQWSuQVY8HBLh.hckI2bo8la8HRLt.iK0HBHzE1Yy0iH0.SLv.CL5.UZg41ah.RauQVZlkVYj0iHvHxK9vSUIARcoMWZ5UVOhDiKvHBH0k1XuwFagA2bkQVOhDiHu3COAIEUIMzT9vyTEQEUI4zQfjFY8HBbeMWdtMFUuQUYsA2ah.hcgwVck0iHwHxK9vyTEQEUI4zQfjFY8HBbeQVdtEVaoM1bVUFauMVZzkWSuQVYh.hcgwVck0iHC8TSPIUQSMUQDAhUEwzSCkDUYABRIcDRh7hO7LUQTQURNcDHoQVOh.2Wyg1axQmTT0zajUlHfXWXrUWY8HRKx3BLh7hO7LUQTQURNcDHoQVOh.2W1UFauMVZzk2P0ImckIBH1EFa0UVOhvTRNUTPRAhUEwzSCkDUYIxK9vyTEQEUI4zQfjFY8HBbeEWcg4FcoMWYM8FYkIBH1EFa0UVOhHxK9vyTEQEUI4zQfjFY8HBbe0VZ3UlbAQlcg41XkQlHfXWXrUWY8HRLh7hO7LUQTQURNcDHoQVOh.2WskFdkI2Qr8lXgwlHfXWXrUWY8HRLh7hO7LUQTQURNcDHoQVOh.2WskFdkIGSuM1Zh.hcgwVck0iHvHxK9vyTEQEUI4zQfjFY8HBbe0VZ3UlbPE1YkIBH1EFa0UVOhHxK9vyTEQEUI4zQfjFY8HBbeElbzk1XL81XqIBH1EFa0UVOh.iHu3COSUDUTkjSGARZj0iHv8UXxQWZiAUXmUlHfXWXrUWY8HhHu3COSUDUTkjSGARZj0iHv8EagMGcSUFakMFckQFTxkVagIWdAIGcoMlHfXWXrUWY8HBLh7hO7LUQTQURNcDHoQVOh.2WskFYoMDZg4lakwlHfXWXrUWY8HBLh7hO7LUQTQURNcDHoQVOh.2WyUFakMFckQFUgc1bh.hcgwVck0iHh7hO7LUQTQURNcDHoQVOh.2WlkFazUlbP81bh.hcgwVck0iHa0kHu3COSUDUTkjSGARZj0iHv8EbxU1bkQGTuMmHfXWXrUWY8HxVcIxK9vyTEQEUI4zQfjFY8HBbeUlcuMzatQWXo4VYxA0ayIBH1EFa0UVOhrUWh7hO7LUQTQURNcDHoQVOh.2WuMFcgYWYh.hcgwVck0iHvHxK9vyTEQEUI4zQfjFY8HBbe8FYkMGcI4FYoMVYyIBH1EFa0UVOh.CKwvhLrLCKzvRMrXCK2vBNrjCKw.CKwDCKwHCKwLCKwPCKwTCKwXCKwbCKwfCKwjCKx.CKxDCKxHCKxLCKxPCKxTCKxXCKxbCKxfCKxjCKy.CKyDCKyHCKyLCKyPCKyTCKyXCKybCKyfCKyjCKz.CKzDCKzHCKzLCKzPCKzTCKzXCKzbCKzfCKzjCK0.CK0DCK0HCK0LCK0PCK0TCK0XCK0bCK0fCK0jCK1.CK1DCK1HCK1LCK1PCK1TCK1XCK1bCK1fCK1jCK2.CK2DCK2HCK2LCK2PCK2TCK2XCK2bCK2fCK2jCK3.CK3DCK3HCK3LCK3PCK3TCK3XCK3bCK3fCK3jCK4.CK4DCK4HCK4LCK4PCK4TCK4XCK4bCK4fCK4jCKw.CLrDCLwvRLvHCKw.yLrDCLzvRLvTCKw.iMrDCL2vRLvfCKw.SNrDSLvvRLwDCKwDiLrDSLyvRLwPCKwDSMrDSL1vRLwbCKwDCNrDSL4vRLx.CKwHSLrDiLxvRLxLCKwHCMrDiL0vRLxXCKwHyMrDiL3vRLxjCKwLCLrDyLwvRLyHCKwLyLrDyLzvRLyTCKwLiMrDyL2vRLyfCKwLSNrDCMvvRLzDCKwPiLrDCMyvRLzPCKwPSMrDCM1vRLzbCKwPCNrDCM4vRL0.CKwTSLrDSMxvRL0LCKwTCMrDSM0vRL0XCKwTyMrDSM3vRL0jCKwXCLrDiMwvRL1HCKwXyLrDiMzvRL1TCKwXiMrDiM2vRL1fCKwXSNrDyMvvRL2DCKwbiLrDyMyvRL2PCKwbSMrDyM1vRL2bCKwbCNrDyM4vRL3.CKwfSLrDCNxvRL3LCKwfCMrDCN0vRL3XCKwfyMrDCN3vRL3jCKwjCLrDSNwvRL4HCKwjyLrDSNzvRL4TCKwjiMrDSN2vRL4fCKwjSNrHCLvvhLvDCKx.iLrHCLyvhLvPCKx.SMrHCL1vhLvbCKx.CNrHCL4vhLw.CKxDSLrHSLxvhLwLCKxDCMrHSL0vhLwXCKxDyMrHSL3vhLwjCKxHCLrHiLwvhLxHCKxHyLrHiLzvhLxTCKxHiMrHiL2vhLxfCKxHSNrHyLvvhLyDCKxLiLrHyLyvhLyPCKxLSMrHyL1vhLybCKxLCNrHyL4vhLz.CKxPSLrHCMxvhLzLCKxPCMrHCM0vhLzXCKxPyMrHCM3vhLzjCKxTCLrHSMwvhL0HCKxTyLrHSMzvhL0TCKxTiMrHSM2vhL0fCKxTSNrHiMvvhL1DCKxXiLrHiMyvhL1PiHu3COSUDUTkjSGARZj0iHv8Eco0VYSQmbkQ2XnIBH1EFa0UVOhPTYlEVcrQmHu3COSUDUTkjSGARZj0iHv8kcuk1XkMDZusVYh.hcgwVck0iHv3BLh7hO7LUQTQURNcDHoQVOh.2Wr81avUjajIBH1EFa0UVOh.iKvHxK9vyTEQEUI4zQfjFY8HBbeQVdtEVaoM1Ts81azglHfXWXrUWY8HBLt.iHu3COSUDUTkjSGARZj0iHv80a1UlbxkFYkMGUuEDbvwVdIQlHfXWXrUWY8HhHu3COAIEUIMjO7LUQTQURNcDHoQVOhD1WtEVakIBH1EFa0UVOhvTPBM0WS8lYz8EToElauIxK9vyTEQEUI4zQfjFY8HRXeYWYxMWZu4lHfXWXrUWY8HRL1byM3PSN1HxK9vyTEQEUI4zQfjFY8HRXeQWYsAGagQWYIQFdh.hcgwVck0iHvHxK9vyTEQEUI4zQfjFY8HRXe8FYkMGch.hcgwVck0iHRUjUEIkPh7hO7LUQTQURNcDHoQVOhD1WgMFcoYWYh.hcgwVck0iHxHxK9vyTEQEUI4zQfjFY8HRXeIVXisVPiQWZ1UlHfXWXrUWY8HBLh7hO7LUQTQURNcDHoQVOhD1Wzc2aHElajUFYh.hcgwVck0iHvHxK9vyTEQEUI4zQfjFY8HRXe8lckImboQVYyQ0aAAGbrkWRjIBH1EFa0UVOhHxK9vyTEQEUI4zQfjFY8HRXegVXrwFUxk1YmUlbh.hcgwVck0iHvHxK9vyTEQEUI4zQfjFY8HRXeEVcz8VSgsVYUAmHfXWXrUWY8HBLh7hO7LUQTQURNcDHoQVOhP2WzkGbkIBH1EFa0UVOh.iHu3COSUDUTkjSGARZj0iHz8UYtElXrUFYh.hcgwVck0iHwHxK9vyTEQEUI4zQfjFY8HBcewVXzMFZh.hcgwVck0iHvHxK9vyTEQEUI4zQfjFY8HBcesVY4M2coQ2XnIBH1EFa0UVOh.iHu3COSUDUTkjSGARZj0iHz8UaoQVZCgVXt4VYrIBH1EFa0UVOhDiHu3COSUDUTkjSGARZj0iHz8kckwlQx8Vah.hcgwVck0iHwHxK9vyTEQEUI4zQfjFY8HBceYWYrQ0ah.hcgwVck0iHwHyMh7hO7LUQTQURNcDHoQVOhP2WiMlHfXWXrUWY8HxLxHxK9vyTEQEUI4zQfjFY8HBceM1XVEFa0UlQx8Vah.hcgwVck0iHvHxK9vyTEQEUI4zQfjFY8HBceM1XVEFa0UFUuIBH1EFa0UVOhDiL2HxK9vyTEQEUI4zQfjFY8HBceMGbkUFYFI2asIBH1EFa0UVOh.iKvHxK9vyTEQEUI4zQfjFY8HBceMGbkUFYT8lHfXWXrUWY8HBLtTiHu3COSUDUTkjSGARZj0iHz8Ebx81YxEVaCgVXtcVYh.hcgwVck0iHvHxK9vyTEQEUI4zQfjFY8HBceQWYsA2aFI2asIBH1EFa0UVOh.iKvHxK9vyTEQEUI4zQfjFY8HBceQWYsA2aT8lHfXWXrUWY8HBLt.iHu3COSUDUTkjSGARZj0iHxI2WzkVak8VczIBH1EFa0UVOhzRLt.iHu3COSUDUTkjSGARZj0iHxI2WtUVZmglXuUmbMklah.hcgwVck0iHxDiHu3COSUDUTkjSGARZj0iHxI2WtUVZmglXuUmbMEFdh.hcgwVck0iHw.CNh7hO7LUQTQURNcDHoQVOhHmbeU2bk4TYocFZh8VcxIBH1EFa0UVOhDiHu3COSUDUTkjSGARZj0iHxI2Wi8VctQmHfXWXrUWY8HRKwHxK9vyTEQEUI4zQfjFY8Hhbx8UZtMlHfXWXrUWY8HRLh7hO7LUQTQURNcDHoQVOhHmbewVX4UlbyIBH1EFa0UVOhDiHu3COSUDUTkjSGARZj0iHxI2WmEVZtIBH1EFa0UVOhDiKvHxK9vyTEQEUI4zQfjFY8Hhbx80bzElbzIBH1EFa0UVOh.iHu3COSUDUTkjSGARZj0iHxI2WykmaiIBH1EFa0UVOh.iHu3COSUDUTkjSGARZj0iHxI2WvwVX4IBH1EFa0UVOhDiHu3COSUDUTkjSGARZj0iHxI2WqUVdycWZzMFZFI2asIBH1EFa0UVOhzRLh7hO7LUQTQURNcDHoQVOhHmbesVY4M2coQ2XnQ0ah.hcgwVck0iHsDiHu3COSUDUTkjSGARZj0iHxI2WqUVdycWZzMFZT8lHfXWXrUWY8HRKwHxK9vyTEQEUI4zQfjFY8Hhbx8UauQVYh.hcgwVck0iHwHxK9vyTEQEUI4zQfjFY8Hhbx8UagAmHfXWXrUWY8HBLfDCHx.xLfPCH0.hMfbCH3.RNfDCLfDSLfDiLfDyLfDCMfDSMfDiMfDyMfDCNfDSNfHCLfHSLfHiLfHyLfHCMfHSMfHiMfHyMfHCNfHSNfLCLfLSLfLiLfLyLfLCMfLSMfLiMfLyMfLCNfLSNfPCLfPSLfPiLfPyLfPCMfPSMfPiMfPyMfPCNfPSNfTCLfTSLfTiLfTyLfTCMfTSMfTiMfTyMfTCNfTSNfXCLfXSLfXiLfXyLfXCMfXSMfXiMfXyMfXCNfXSNfbCLfbSLfbiLfbyLfbCMfbSMfbiMfbyMfbCNfbSNffCLffSLffiLffyLffCMffSMffiMffyMffCNffSNfjCLfjSLfjiLfjyLfjCMfjSMfjiMfjyMfjCNfjSNfDCLv.RLvDCHw.iLfDCLy.RLvPCHw.SMfDCL1.RLvbCHw.CNfDCL4.RLw.CHwDSLfDSLx.RLwLCHwDCMfDSL0.RLwXCHwDyMfDSL3.RLwjCHwHCLfDiLw.RLxHCHwHyLfDiLz.RLxTCHwHiMfDiL2HxK9viTRAUPTQUQR4zT9viTRAUPTQUQR4DHxI2WvEFczUlbtsTY40iHsDiHfHmbeAWXzQWYx41TzElbz0iHvHBHxI2WvEFczUlbt0iHh.hbx8EbgQGckImaVEFaoQVXzk1at0iHh7hO77hTRAUPTQUQR4zT9vyTEQEUI4zQfjFY8Hhbe0VZjk1PnElatUFah.hcgwVck0iHvHxK9vyTEQEUI4zQfjFY8HhbeQmbg41bv81bkIBH1EFa0UVOh.iHu3COSUDUTkjSGARZj0iHx8EagkWYxQkbg41bv81bkIBH1EFa0UVOh.iHu3COSUDUTkjSGARZj0iHo8UY3AmbkM2bo8lah.hcgwVck0iHw3BLh7hO7LUQTQURNcDHoQVOhj1Wjkmag0VZiMmHfXWXrUWY8HBLt.iHu3COSUDUTkjSGARZj0iHo8kbkYWYxIlHfXWXrUWY8HBLt.iHu3COSUDUTkjSGARZj0iHo8kbkwVYgMWYh.hcgwVck0iHv3RMh7hO7LUQTQURNcDHoQVOhj1Wzk1YnQmHfXWXrUWY8HBLtTiHu3COSUDUTkjSGARZj0iHo8kcoIlbgQ2ah.hcgwVck0iHw3BLh7hO7LUQTQURNcDHoQVOhj1W1ElboEFco8lah.hcgwVck0iHv3BLh7hO7LUQTQURNcDHoQVOhL2WvElah.hcgwVck0iHv3RMh7hO7LUQTQURNcDHoQVOhL2W2kFYzglHfXWXrUWY8HBLtTiHu3COSUDUTkjSGARZj0iHy8kYrkFbh.hcgwVck0iHv3BLh7hO7zTRX4COSUDUTkjSGARZj0iHs8Uagklah.hcgwVck0iHw3BLh.RaoMVRj0iHwHxK9vyTEQEUI4zQfjFY8HRYe0VXo4lHfXWXrUWY8HRLh.RaoMVRj0iHwHxK9vyTEQEUI4zQfjFY8HhXe0VXo4lHfXWXrUWY8HBLh.RaoMVRj0iHwHxK9vyTEQEUI4zQfjFY8HRaeEFazEiHfXWXrUWY8HBLt.iHfzVZikDY8HhLh7hO7LUQTQURNcDHoQVOhT1WgwFcwHBH1EFa0UVOh.iHfzVZikDY8HhLh7hO7LUQTQURNcDHoQVOhH1WgwFcwHBH1EFa0UVOh.iHfzVZikDY8HhLh7hO7LUQTQURNcDHoQVOhz1WgwFcxHBH1EFa0UVOh.iKvHBHsk1XIQVOhLiHu3COSUDUTkjSGARZj0iHk8UXrQmLh.hcgwVck0iHvHBHsk1XIQVOhLiHu3COSUDUTkjSGARZj0iHh8UXrQmLh.hcgwVck0iHvHBHsk1XIQVOhLiHu3COSUDUTkjSGARZj0iHs8UXrQ2Lh.hcgwVck0iHv3BLh.RaoMVRj0iHzHxK9vyTEQEUI4zQfjFY8HRYeEFazMiHfXWXrUWY8HBLh.RaoMVRj0iHzHxK9vyTEQEUI4zQfjFY8HhXeEFazMiHfXWXrUWY8HBLh.RaoMVRj0iHzHxK9vyKMkDV9vyKAIEUIMjO77RPRQURCMkO7.UPRETSEQUQRMkO7.UPRETSfjFY8HxYecVXo4lHfXWXrUWY8HRLt.iHfL1X8HxMh.xXiYjbu0VOh.iKvHBHiMFUu0iHw3BLh.xXiM0ZkcWOhDiKvHBHiMlQrkFb8HBLh7hO7.UPRETSfjFY8HxYeAWXtIBH1EFa0UVOh.iK0HBHiMVOhDCLh.xXiYjbu0VOh.iKvHBHiMFUu0iHw3BLh.xXiM0ZkcWOhDiKvHBHiMlQrkFb8HBLh7hO7.UPRETSfjFY8HxYeQWctUlHfXWXrUWY8HBLt.iHfL1X8HRKwHBHiMlQx8Va8HBLt.iHfL1XT8VOhDiKvHBHiM1TqU1c8HRLt.iHfL1XFwVZv0iHvHxK9vCTAIUPMARZj0iHo8kbkYWYxIlHfXWXrUWY8HBLt.iHfL1X8HRL4HBHiMlQx8Va8HBLt.iHfL1XT8VOhDiKvHBHiM1TqU1c8HRLt.iHfL1XFwVZv0iHvHxK9vCTAIUPMARZj0iHo8EcocFZzIBH1EFa0UVOh.iK0HBHiMVOhDCNh.xXiYjbu0VOh.iKvHBHiMFUu0iHw3BLh.xXiM0ZkcWOhDiKvHBHiMlQrkFb8HBLh7hO7.UPRETSfjFY8HRZeMGbkUFYh.hcgwVck0iHv3BLh.xXi0iHsDiHfL1XFI2as0iHv3BLh.xXiQ0a8HRLt.iHfL1XSsVY20iHw3BLh.xXiYDaoAWOh.iHu3COPEjTA0DHoQVOhj1WxUFakE1bkIBH1EFa0UVOh.iK0HBHiMVOhDyMh.xXiYjbu0VOh.iKvHBHiMFUu0iHw3BLh.xXiM0ZkcWOhDiKvHBHiMlQrkFb8HBLh7hO7.UPRETSfjFY8HRZeUFdvIWYyMWZu4lHfXWXrUWY8HRLt.iHfL1X8HRLwHBHiMlQx8Va8HBLt.iHfL1XT8VOhDiKvHBHiM1TqU1c8HRLt.iHfL1XFwVZv0iHvHxK9vCTAIUPMARZj0iHo8EY44VXsk1XyIBH1EFa0UVOh.iKvHBHiMVOhDiHfL1XFI2as0iHv3BLh.xXiQ0a8HRLt.iHfL1XSsVY20iHw3BLh.xXiYDaoAWOh.iHu3COPEjTA0DHoQVOhj1W1ElboEFco8lah.hcgwVck0iHv3BLh.xXi0iHx.iHfL1XFI2as0iHv3BLh.xXiQ0a8HRLt.iHfL1XSsVY20iHw3BLh.xXiYDaoAWOh.iHu3COPEjTA0DHoQVOhj1W1klXxEFcuIBH1EFa0UVOhDiKvHBHiMVOhHSLh.xXiYjbu0VOh.iKvHBHiMFUu0iHw3BLh.xXiM0ZkcWOhDiKvHBHiMlQrkFb8HBLh7hO7.UPRETSfjFY8HRZeUla1EFczIBH1EFa0UVOh.iKvjSN4jSN4fiM0fCN4TCM4LiHfL1X8HRKwHBHiMlQx8Va8HBLt.iHfL1XT8VOhDiKvHBHiM1TqU1c8HRLt.iHfL1XFwVZv0iHvHxK9vCTAIUPMARZj0iHo8UYtYGYkMlHfXWXrUWY8HBLt.SN4jSN4jSNz.yL4TyL0TiLh.xXi0iHsDiHfL1XFI2as0iHv3BLh.xXiQ0a8HRLt.iHfL1XSsVY20iHw3BLh.xXiYDaoAWOh.iHu3COPEjTA0DHoQVOhj1Wk4lcyU2bh.hcgwVck0iHw3BLh.xXi0iHsDiHfL1XFI2as0iHv3BLh.xXiQ0a8HRLt.iHfL1XSsVY20iHw3BLh.xXiYDaoAWOh.iHu3COPEjTA0DHoQVOhj1Wk4lcxUFah.hcgwVck0iHx3BLh.xXi0iHsDiHfL1XFI2as0iHv3BLh.xXiQ0a8HRLt.iHfL1XSsVY20iHw3BLh.xXiYDaoAWOh.iHu3COPEjTA0DHoQVOhj1WskFdykVavwVYh.hcgwVck0iHv3RMh.xXi0iHsDiHfL1XFI2as0iHv3BLh.xXiQ0a8HRLt.iHfL1XSsVY20iHw3BLh.xXiYDaoAWOh.iHu3COPEjTA0DHoQVOhL2WlwVZvIBH1EFa0UVOh.iKvHBHiMVOhzRLh.xXiYjbu0VOh.iKvHBHiMFUu0iHw3BLh.xXiM0ZkcWOhDiKvHBHiMlQrkFb8HBLh7hO7.UPRETSfjFY8HxbecWZjQGZh.hcgwVck0iHv3RMh.xXi0iHsDiHfL1XFI2as0iHv3BLh.xXiQ0a8HRLt.iHfL1XSsVY20iHw3BLh.xXiYDaoAWOh.iHu3COPEjTA0DHoQVOhL2WvElah.hcgwVck0iHv3RMh.xXi0iHsDiHfL1XFI2as0iHv3BLh.xXiQ0a8HRLt.iHfL1XSsVY20iHw3BLh.xXiYDaoAWOh.iHu3COPEjTA0DHoQVOhj1WjUFagkmHfXWXrUWY8HBLt.iHfL1X8HRKwHBHiMlQx8Va8HBLt.iHfL1XT8VOhDiKvHBHiM1TqU1c8HRLt.iHfL1XFwVZv0iHvHxK9vCTAIUPMARZj0iHo8UXs8VctQmHfXWXrUWY8HBLt.iHfL1X8HRKwHBHiMlQx8Va8HBLt.iHfL1XT8VOhDiKvHBHiM1TqU1c8HRLt.iHfL1XFwVZv0iHvHxK9vCTAIUPMARZj0iHo8EYoMGcuIGch.hcgwVck0iHv3BLh.xXi0iHsDiHfL1XFI2as0iHv3BLh.xXiQ0a8HRLt.iHfL1XSsVY20iHw3BLh.xXiYDaoAWOh.iHu3COPEjTA0DHoQVOhj1WrU2bnYUYxIlHfXWXrUWY8HBLt.iHfL1X8HRKwHBHiMlQx8Va8HBLt.iHfL1XT8VOhDiKvHBHiM1TqU1c8HRLt.iHfL1XFwVZv0iHvHxK9vCTAIUPMARZj0iHo8EbkQlcuwlHfXWXrUWY8HBLtTiHfL1X8HRKwHBHiMlQx8Va8HBLt.iHfL1XT8VOhDiKvHBHiM1TqU1c8HRLt.iHfL1XFwVZv0iHvHxK9vCTAIUPMARZj0iHo8EbkQFQ44lHfXWXrUWY8HBLtTiHfL1X8HRKwHBHiMlQx8Va8HBLt.iHfL1XT8VOhDiKvHBHiM1TqU1c8HRLt.iHfL1XFwVZv0iHvHxK9vCTAIUPMARZj0iHo8Eak41YzglHfXWXrUWY8HBLt.iHfL1X8HRKwHBHiMlQx8Va8HBLt.iHfL1XT8VOhDiKvHBHiM1TqU1c8HRLt.iHfL1XFwVZv0iHvHxK9vCTAIUPMARZj0iHo8Eco0VYME1XnklakIBH1EFa0UVOh.iKvHBHiMVOhzRLh.xXiYjbu0VOh.iKvHBHiMFUu0iHw3BLh.xXiM0ZkcWOhDiKvHBHiMlQrkFb8HBLh7hO7.UPRETSfjFY8HRZeMGcxUFciglHfXWXrUWY8HBLt.iHfL1X8HRKwHBHiMlQx8Va8HBLt.iHfL1XT8VOhDiKvHBHiM1TqU1c8HRLt.iHfL1XFwVZv0iHvHxK9vCTAIUPMARZj0iHo80buYFcPUFYgwlHfXWXrUWY8HBLt.iHfL1X8HRKwHBHiMlQx8Va8HBLt.iHfL1XT8VOhDiKvHBHiM1TqU1c8HRLt.iHfL1XFwVZv0iHvHxK9vCTAIUPMARZj0iHo8kbkMGbu41bkIBH1EFa0UVOh.iKvHBHiMVOhzRLh.xXiYjbu0VOh.iKvHBHiMFUu0iHw3BLh.xXiM0ZkcWOhDiKvHBHiMlQrkFb8HBLh7hO7.UPRETSfjFY8HRZe0VXrwVYzIBH1EFa0UVOh.iKvHBHiMVOhzRLh.xXiYjbu0VOh.iKvHBHiMFUu0iHw3BLh.xXiM0ZkcWOhDiKvHBHiMlQrkFb8HBLh7hO7.UPRETSfjFY8HRZeMGcuAWYMUGckIBH1EFa0UVOh.iKvHBHiMVOhzRLh.xXiYjbu0VOh.iKvHBHiMFUu0iHw3BLh.xXiM0ZkcWOhDiKvHBHiMlQrkFb8HBLh7hO7.UPRETSfjFY8HRZeQVZxU1Xzk1atIBH1EFa0UVOh.iKvHBHiMVOhzRLh.xXiYjbu0VOh.iKvHBHiMFUu0iHw3BLh.xXiM0ZkcWOhDiKvHBHiMlQrkFb8HBLh7hO7.UPRETSfjFY8HRZewFbFkFazUlbh.hcgwVck0iHv3BLh.xXi0iHsDiHfL1XFI2as0iHv3BLh.xXiQ0a8HRLt.iHfL1XSsVY20iHw3BLh.xXiYDaoAWOh.iHu3COPEjTA0DHoQVOhj1Wv8lbzEVak4FcuIBH1EFa0UVOh.iKvHBHiMVOhzRLh.xXiYjbu0VOh.iKvHBHiMFUu0iHw3BLh.xXiM0ZkcWOhDiKvHBHiMlQrkFb8HBLh7hO7.UPRETSfjFY8HRZe0VYzE1VwfSWh.hcgwVck0iHv3BLh.xXi0iHsDiHfL1XFI2as0iHv3BLh.xXiQ0a8HRLt.iHfL1XSsVY20iHw3BLh.xXiYDaoAWOh.iHu3COPEjTA0DHoQVOhj1WsUFcgsUL4zkHfXWXrUWY8HBLt.iHfL1X8HRKwHBHiMlQx8Va8HBLt.iHfL1XT8VOhDiKvHBHiM1TqU1c8HRLt.iHfL1XFwVZv0iHvHxK9vCTAIUPMARZj0iHo8UakQWXaICLcIBH1EFa0UVOh.iKvHBHiMVOhzRLh.xXiYjbu0VOh.iKvHBHiMFUu0iHw3BLh.xXiM0ZkcWOhDiKvHBHiMlQrkFb8HBLh7hO7.UPRETSfjFY8HRZe0VYzE1VxDSWh.hcgwVck0iHv3BLh.xXi0iHsDiHfL1XFI2as0iHv3BLh.xXiQ0a8HRLt.iHfL1XSsVY20iHw3BLh.xXiYDaoAWOh.iHu3COPEjTA0DHoQVOhj1WsUFcgskLxzkHfXWXrUWY8HBLt.iHfL1X8HRKwHBHiMlQx8Va8HBLt.iHfL1XT8VOhDiKvHBHiM1TqU1c8HRLt.iHfL1XFwVZv0iHvHxK9vCTAIUPMARZj0iHo8UakQWXaIyLcIBH1EFa0UVOh.iKvHBHiMVOhzRLh.xXiYjbu0VOh.iKvHBHiMFUu0iHw3BLh.xXiM0ZkcWOhDiKvHBHiMlQrkFb8HBLh7hO7.UPRETSfjFY8HRZe0VYzE1VxPSWh.hcgwVck0iHv3BLh.xXi0iHsDiHfL1XFI2as0iHv3BLh.xXiQ0a8HRLt.iHfL1XSsVY20iHw3BLh.xXiYDaoAWOh.iHu3COPEjTA0DHoQVOhj1WsUFcgskL0zkHfXWXrUWY8HBLt.iHfL1X8HRKwHBHiMlQx8Va8HBLt.iHfL1XT8VOhDiKvHBHiM1TqU1c8HRLt.iHfL1XFwVZv0iHvHxK9vCTAIUPMARZj0iHo8UakQWXaIiMcIBH1EFa0UVOh.iKvHBHiMVOhzRLh.xXiYjbu0VOh.iKvHBHiMFUu0iHw3BLh.xXiM0ZkcWOhDiKvHBHiMlQrkFb8HBLh7hO7.UPRETSfjFY8HRae0VXo4lHfXWXrUWY8HRLt.iHfL1X8HRKwHBHiMlQx8Va8HBLt.iHfL1XT8VOhDiKvHBHiM1TqU1c8HRLt.iHfL1XFwVZv0iHvHxK9vCTAIUPMARZj0iHs8UXrQWLh.hcgwVck0iHv3BLh.xXi0iHsDiHfL1XFI2as0iHv3BLh.xXiQ0a8HRLt.iHfL1XSsVY20iHw3BLh.xXiYDaoAWOh.iHu3COPEjTA0DHoQVOhz1WgwFcxHBH1EFa0UVOh.iKvHBHiMVOhzRLh.xXiYjbu0VOh.iKvHBHiMFUu0iHw3BLh.xXiM0ZkcWOhDiKvHBHiMlQrkFb8HBLh7hO7.UPRETSfjFY8HRaeEFazMiHfXWXrUWY8HBLt.iHfL1X8HRKwHBHiMlQx8Va8HBLt.iHfL1XT8VOhDiKvHBHiM1TqU1c8HRLt.iHfL1XFwVZv0iHvHxK9vyKPEjTA0TQTUjTS4COuvTXhMmO.."
-						}
-,
-						"snapshotlist" : 						{
-							"current_snapshot" : 0,
-							"entries" : [ 								{
-									"filetype" : "C74Snapshot",
-									"version" : 2,
-									"minorversion" : 0,
-									"name" : "LABS",
-									"origin" : "LABS.vstinfo",
-									"type" : "VST",
-									"subtype" : "Instrument",
-									"embed" : 1,
-									"snapshot" : 									{
-										"pluginname" : "LABS.vstinfo",
-										"plugindisplayname" : "LABS",
-										"pluginsavedname" : "",
-										"pluginsaveduniqueid" : 1399213154,
-										"version" : 1,
-										"isbank" : 0,
-										"isbase64" : 1,
-										"blob" : "9715.CMlaKA....fQPMDZ....ALkYLIF.ATPE....A........................................TxsVMjLg3ZI...O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOLElXy4COMUDUAAhYg0VZrkWOhL0alQGHPkVXt8lHf3VXsUVOhL0alQGHPkVXt8lHf.mbuQVciQWSuQVY8HBLh.hckI2bo8la8HRLt.iK0HBHzE1Yy0iH0.SLv.CL5.UZg41ah.RauQVZlkVYj0iHvHxK9vSUIARcoMWZ5UVOhDiKvHBH0k1XuwFagA2bkQVOhDiHu3COAIEUIMzT9vyTEQEUI4zQfjFY8HBbeMWdtMFUuQUYsA2ah.hcgwVck0iHwHxK9vyTEQEUI4zQfjFY8HBbeQVdtEVaoM1bVUFauMVZzkWSuQVYh.hcgwVck0iHC8TSPIUQSMUQDAhUEwzSCkDUYABRIcDRh7hO7LUQTQURNcDHoQVOh.2Wyg1axQmTT0zajUlHfXWXrUWY8HRKx3BLh7hO7LUQTQURNcDHoQVOh.2W1UFauMVZzk2P0ImckIBH1EFa0UVOhvTRNUTPRAhUEwzSCkDUYIxK9vyTEQEUI4zQfjFY8HBbeEWcg4FcoMWYM8FYkIBH1EFa0UVOhHxK9vyTEQEUI4zQfjFY8HBbe0VZ3UlbAQlcg41XkQlHfXWXrUWY8HRLh7hO7LUQTQURNcDHoQVOh.2WskFdkI2Qr8lXgwlHfXWXrUWY8HRLh7hO7LUQTQURNcDHoQVOh.2WskFdkIGSuM1Zh.hcgwVck0iHvHxK9vyTEQEUI4zQfjFY8HBbe0VZ3UlbPE1YkIBH1EFa0UVOhHxK9vyTEQEUI4zQfjFY8HBbeElbzk1XL81XqIBH1EFa0UVOh.iHu3COSUDUTkjSGARZj0iHv8UXxQWZiAUXmUlHfXWXrUWY8HhHu3COSUDUTkjSGARZj0iHv8EagMGcSUFakMFckQFTxkVagIWdAIGcoMlHfXWXrUWY8HBLh7hO7LUQTQURNcDHoQVOh.2WskFYoMDZg4lakwlHfXWXrUWY8HBLh7hO7LUQTQURNcDHoQVOh.2WyUFakMFckQFUgc1bh.hcgwVck0iHh7hO7LUQTQURNcDHoQVOh.2WlkFazUlbP81bh.hcgwVck0iHa0kHu3COSUDUTkjSGARZj0iHv8EbxU1bkQGTuMmHfXWXrUWY8HxVcIxK9vyTEQEUI4zQfjFY8HBbeUlcuMzatQWXo4VYxA0ayIBH1EFa0UVOhrUWh7hO7LUQTQURNcDHoQVOh.2WuMFcgYWYh.hcgwVck0iHvHxK9vyTEQEUI4zQfjFY8HBbe8FYkMGcI4FYoMVYyIBH1EFa0UVOh.CKwvhLrLCKzvRMrXCK2vBNrjCKw.CKwDCKwHCKwLCKwPCKwTCKwXCKwbCKwfCKwjCKx.CKxDCKxHCKxLCKxPCKxTCKxXCKxbCKxfCKxjCKy.CKyDCKyHCKyLCKyPCKyTCKyXCKybCKyfCKyjCKz.CKzDCKzHCKzLCKzPCKzTCKzXCKzbCKzfCKzjCK0.CK0DCK0HCK0LCK0PCK0TCK0XCK0bCK0fCK0jCK1.CK1DCK1HCK1LCK1PCK1TCK1XCK1bCK1fCK1jCK2.CK2DCK2HCK2LCK2PCK2TCK2XCK2bCK2fCK2jCK3.CK3DCK3HCK3LCK3PCK3TCK3XCK3bCK3fCK3jCK4.CK4DCK4HCK4LCK4PCK4TCK4XCK4bCK4fCK4jCKw.CLrDCLwvRLvHCKw.yLrDCLzvRLvTCKw.iMrDCL2vRLvfCKw.SNrDSLvvRLwDCKwDiLrDSLyvRLwPCKwDSMrDSL1vRLwbCKwDCNrDSL4vRLx.CKwHSLrDiLxvRLxLCKwHCMrDiL0vRLxXCKwHyMrDiL3vRLxjCKwLCLrDyLwvRLyHCKwLyLrDyLzvRLyTCKwLiMrDyL2vRLyfCKwLSNrDCMvvRLzDCKwPiLrDCMyvRLzPCKwPSMrDCM1vRLzbCKwPCNrDCM4vRL0.CKwTSLrDSMxvRL0LCKwTCMrDSM0vRL0XCKwTyMrDSM3vRL0jCKwXCLrDiMwvRL1HCKwXyLrDiMzvRL1TCKwXiMrDiM2vRL1fCKwXSNrDyMvvRL2DCKwbiLrDyMyvRL2PCKwbSMrDyM1vRL2bCKwbCNrDyM4vRL3.CKwfSLrDCNxvRL3LCKwfCMrDCN0vRL3XCKwfyMrDCN3vRL3jCKwjCLrDSNwvRL4HCKwjyLrDSNzvRL4TCKwjiMrDSN2vRL4fCKwjSNrHCLvvhLvDCKx.iLrHCLyvhLvPCKx.SMrHCL1vhLvbCKx.CNrHCL4vhLw.CKxDSLrHSLxvhLwLCKxDCMrHSL0vhLwXCKxDyMrHSL3vhLwjCKxHCLrHiLwvhLxHCKxHyLrHiLzvhLxTCKxHiMrHiL2vhLxfCKxHSNrHyLvvhLyDCKxLiLrHyLyvhLyPCKxLSMrHyL1vhLybCKxLCNrHyL4vhLz.CKxPSLrHCMxvhLzLCKxPCMrHCM0vhLzXCKxPyMrHCM3vhLzjCKxTCLrHSMwvhL0HCKxTyLrHSMzvhL0TCKxTiMrHSM2vhL0fCKxTSNrHiMvvhL1DCKxXiLrHiMyvhL1PiHu3COSUDUTkjSGARZj0iHv8Eco0VYSQmbkQ2XnIBH1EFa0UVOhPTYlEVcrQmHu3COSUDUTkjSGARZj0iHv8kcuk1XkMDZusVYh.hcgwVck0iHv3BLh7hO7LUQTQURNcDHoQVOh.2Wr81avUjajIBH1EFa0UVOh.iKvHxK9vyTEQEUI4zQfjFY8HBbeQVdtEVaoM1Ts81azglHfXWXrUWY8HBLt.iHu3COSUDUTkjSGARZj0iHv80a1UlbxkFYkMGUuEDbvwVdIQlHfXWXrUWY8HhHu3COAIEUIMjO7LUQTQURNcDHoQVOhD1WtEVakIBH1EFa0UVOhvTPBM0WS8lYz8EToElauIxK9vyTEQEUI4zQfjFY8HRXeYWYxMWZu4lHfXWXrUWY8HRL1byM3PSN1HxK9vyTEQEUI4zQfjFY8HRXeQWYsAGagQWYIQFdh.hcgwVck0iHvHxK9vyTEQEUI4zQfjFY8HRXe8FYkMGch.hcgwVck0iHRUjUEIkPh7hO7LUQTQURNcDHoQVOhD1WgMFcoYWYh.hcgwVck0iHxHxK9vyTEQEUI4zQfjFY8HRXeIVXisVPiQWZ1UlHfXWXrUWY8HBLh7hO7LUQTQURNcDHoQVOhD1Wzc2aHElajUFYh.hcgwVck0iHvHxK9vyTEQEUI4zQfjFY8HRXe8lckImboQVYyQ0aAAGbrkWRjIBH1EFa0UVOhHxK9vyTEQEUI4zQfjFY8HRXegVXrwFUxk1YmUlbh.hcgwVck0iHvHxK9vyTEQEUI4zQfjFY8HRXeEVcz8VSgsVYUAmHfXWXrUWY8HBLh7hO7LUQTQURNcDHoQVOhP2WzkGbkIBH1EFa0UVOh.iHu3COSUDUTkjSGARZj0iHz8UYtElXrUFYh.hcgwVck0iHwHxK9vyTEQEUI4zQfjFY8HBcewVXzMFZh.hcgwVck0iHvHxK9vyTEQEUI4zQfjFY8HBcesVY4M2coQ2XnIBH1EFa0UVOh.iHu3COSUDUTkjSGARZj0iHz8UaoQVZCgVXt4VYrIBH1EFa0UVOhDiHu3COSUDUTkjSGARZj0iHz8kckwlQx8Vah.hcgwVck0iHwHxK9vyTEQEUI4zQfjFY8HBceYWYrQ0ah.hcgwVck0iHwHyMh7hO7LUQTQURNcDHoQVOhP2WiMlHfXWXrUWY8HxLxHxK9vyTEQEUI4zQfjFY8HBceM1XVEFa0UlQx8Vah.hcgwVck0iHvHxK9vyTEQEUI4zQfjFY8HBceM1XVEFa0UFUuIBH1EFa0UVOhDiL2HxK9vyTEQEUI4zQfjFY8HBceMGbkUFYFI2asIBH1EFa0UVOh.iKvHxK9vyTEQEUI4zQfjFY8HBceMGbkUFYT8lHfXWXrUWY8HBLtTiHu3COSUDUTkjSGARZj0iHz8Ebx81YxEVaCgVXtcVYh.hcgwVck0iHvHxK9vyTEQEUI4zQfjFY8HBceQWYsA2aFI2asIBH1EFa0UVOh.iKvHxK9vyTEQEUI4zQfjFY8HBceQWYsA2aT8lHfXWXrUWY8HBLt.iHu3COSUDUTkjSGARZj0iHxI2WzkVak8VczIBH1EFa0UVOhzRLt.iHu3COSUDUTkjSGARZj0iHxI2WtUVZmglXuUmbMklah.hcgwVck0iHxDiHu3COSUDUTkjSGARZj0iHxI2WtUVZmglXuUmbMEFdh.hcgwVck0iHw.CNh7hO7LUQTQURNcDHoQVOhHmbeU2bk4TYocFZh8VcxIBH1EFa0UVOhDiHu3COSUDUTkjSGARZj0iHxI2Wi8VctQmHfXWXrUWY8HRKwHxK9vyTEQEUI4zQfjFY8Hhbx8UZtMlHfXWXrUWY8HRLh7hO7LUQTQURNcDHoQVOhHmbewVX4UlbyIBH1EFa0UVOhDiHu3COSUDUTkjSGARZj0iHxI2WmEVZtIBH1EFa0UVOhDiKvHxK9vyTEQEUI4zQfjFY8Hhbx80bzElbzIBH1EFa0UVOh.iHu3COSUDUTkjSGARZj0iHxI2WykmaiIBH1EFa0UVOh.iHu3COSUDUTkjSGARZj0iHxI2WvwVX4IBH1EFa0UVOhDiHu3COSUDUTkjSGARZj0iHxI2WqUVdycWZzMFZFI2asIBH1EFa0UVOhzRLh7hO7LUQTQURNcDHoQVOhHmbesVY4M2coQ2XnQ0ah.hcgwVck0iHsDiHu3COSUDUTkjSGARZj0iHxI2WqUVdycWZzMFZT8lHfXWXrUWY8HRKwHxK9vyTEQEUI4zQfjFY8Hhbx8UauQVYh.hcgwVck0iHwHxK9vyTEQEUI4zQfjFY8Hhbx8UagAmHfXWXrUWY8HBLfDCHx.xLfPCH0.hMfbCH3.RNfDCLfDSLfDiLfDyLfDCMfDSMfDiMfDyMfDCNfDSNfHCLfHSLfHiLfHyLfHCMfHSMfHiMfHyMfHCNfHSNfLCLfLSLfLiLfLyLfLCMfLSMfLiMfLyMfLCNfLSNfPCLfPSLfPiLfPyLfPCMfPSMfPiMfPyMfPCNfPSNfTCLfTSLfTiLfTyLfTCMfTSMfTiMfTyMfTCNfTSNfXCLfXSLfXiLfXyLfXCMfXSMfXiMfXyMfXCNfXSNfbCLfbSLfbiLfbyLfbCMfbSMfbiMfbyMfbCNfbSNffCLffSLffiLffyLffCMffSMffiMffyMffCNffSNfjCLfjSLfjiLfjyLfjCMfjSMfjiMfjyMfjCNfjSNfDCLv.RLvDCHw.iLfDCLy.RLvPCHw.SMfDCL1.RLvbCHw.CNfDCL4.RLw.CHwDSLfDSLx.RLwLCHwDCMfDSL0.RLwXCHwDyMfDSL3.RLwjCHwHCLfDiLw.RLxHCHwHyLfDiLz.RLxTCHwHiMfDiL2HxK9viTRAUPTQUQR4zT9viTRAUPTQUQR4DHxI2WvEFczUlbtsTY40iHsDiHfHmbeAWXzQWYx41TzElbz0iHvHBHxI2WvEFczUlbt0iHh.hbx8EbgQGckImaVEFaoQVXzk1at0iHh7hO77hTRAUPTQUQR4zT9vyTEQEUI4zQfjFY8Hhbe0VZjk1PnElatUFah.hcgwVck0iHvHxK9vyTEQEUI4zQfjFY8HhbeQmbg41bv81bkIBH1EFa0UVOh.iHu3COSUDUTkjSGARZj0iHx8EagkWYxQkbg41bv81bkIBH1EFa0UVOh.iHu3COSUDUTkjSGARZj0iHo8UY3AmbkM2bo8lah.hcgwVck0iHw3BLh7hO7LUQTQURNcDHoQVOhj1Wjkmag0VZiMmHfXWXrUWY8HBLt.iHu3COSUDUTkjSGARZj0iHo8kbkYWYxIlHfXWXrUWY8HBLt.iHu3COSUDUTkjSGARZj0iHo8kbkwVYgMWYh.hcgwVck0iHv3RMh7hO7LUQTQURNcDHoQVOhj1Wzk1YnQmHfXWXrUWY8HBLtTiHu3COSUDUTkjSGARZj0iHo8kcoIlbgQ2ah.hcgwVck0iHw3BLh7hO7LUQTQURNcDHoQVOhj1W1ElboEFco8lah.hcgwVck0iHv3BLh7hO7LUQTQURNcDHoQVOhL2WvElah.hcgwVck0iHv3RMh7hO7LUQTQURNcDHoQVOhL2W2kFYzglHfXWXrUWY8HBLtTiHu3COSUDUTkjSGARZj0iHy8kYrkFbh.hcgwVck0iHv3BLh7hO7zTRX4COSUDUTkjSGARZj0iHs8Uagklah.hcgwVck0iHw3BLh.RaoMVRj0iHwHxK9vyTEQEUI4zQfjFY8HRYe0VXo4lHfXWXrUWY8HRLh.RaoMVRj0iHwHxK9vyTEQEUI4zQfjFY8HhXe0VXo4lHfXWXrUWY8HBLh.RaoMVRj0iHwHxK9vyTEQEUI4zQfjFY8HRaeEFazEiHfXWXrUWY8HBLt.iHfzVZikDY8HhLh7hO7LUQTQURNcDHoQVOhT1WgwFcwHBH1EFa0UVOh.iHfzVZikDY8HhLh7hO7LUQTQURNcDHoQVOhH1WgwFcwHBH1EFa0UVOh.iHfzVZikDY8HhLh7hO7LUQTQURNcDHoQVOhz1WgwFcxHBH1EFa0UVOh.iKvHBHsk1XIQVOhLiHu3COSUDUTkjSGARZj0iHk8UXrQmLh.hcgwVck0iHvHBHsk1XIQVOhLiHu3COSUDUTkjSGARZj0iHh8UXrQmLh.hcgwVck0iHvHBHsk1XIQVOhLiHu3COSUDUTkjSGARZj0iHs8UXrQ2Lh.hcgwVck0iHv3BLh.RaoMVRj0iHzHxK9vyTEQEUI4zQfjFY8HRYeEFazMiHfXWXrUWY8HBLh.RaoMVRj0iHzHxK9vyTEQEUI4zQfjFY8HhXeEFazMiHfXWXrUWY8HBLh.RaoMVRj0iHzHxK9vyKMkDV9vyKAIEUIMjO77RPRQURCMkO7.UPRETSEQUQRMkO7.UPRETSfjFY8HxYecVXo4lHfXWXrUWY8HRLt.iHfL1X8HxMh.xXiYjbu0VOh.iKvHBHiMFUu0iHw3BLh.xXiM0ZkcWOhDiKvHBHiMlQrkFb8HBLh7hO7.UPRETSfjFY8HxYeAWXtIBH1EFa0UVOh.iK0HBHiMVOhDCLh.xXiYjbu0VOh.iKvHBHiMFUu0iHw3BLh.xXiM0ZkcWOhDiKvHBHiMlQrkFb8HBLh7hO7.UPRETSfjFY8HxYeQWctUlHfXWXrUWY8HBLt.iHfL1X8HRKwHBHiMlQx8Va8HBLt.iHfL1XT8VOhDiKvHBHiM1TqU1c8HRLt.iHfL1XFwVZv0iHvHxK9vCTAIUPMARZj0iHo8kbkYWYxIlHfXWXrUWY8HBLt.iHfL1X8HRL4HBHiMlQx8Va8HBLt.iHfL1XT8VOhDiKvHBHiM1TqU1c8HRLt.iHfL1XFwVZv0iHvHxK9vCTAIUPMARZj0iHo8EcocFZzIBH1EFa0UVOh.iK0HBHiMVOhDCNh.xXiYjbu0VOh.iKvHBHiMFUu0iHw3BLh.xXiM0ZkcWOhDiKvHBHiMlQrkFb8HBLh7hO7.UPRETSfjFY8HRZeMGbkUFYh.hcgwVck0iHv3BLh.xXi0iHsDiHfL1XFI2as0iHv3BLh.xXiQ0a8HRLt.iHfL1XSsVY20iHw3BLh.xXiYDaoAWOh.iHu3COPEjTA0DHoQVOhj1WxUFakE1bkIBH1EFa0UVOh.iK0HBHiMVOhDyMh.xXiYjbu0VOh.iKvHBHiMFUu0iHw3BLh.xXiM0ZkcWOhDiKvHBHiMlQrkFb8HBLh7hO7.UPRETSfjFY8HRZeUFdvIWYyMWZu4lHfXWXrUWY8HRLt.iHfL1X8HRLwHBHiMlQx8Va8HBLt.iHfL1XT8VOhDiKvHBHiM1TqU1c8HRLt.iHfL1XFwVZv0iHvHxK9vCTAIUPMARZj0iHo8EY44VXsk1XyIBH1EFa0UVOh.iKvHBHiMVOhDiHfL1XFI2as0iHv3BLh.xXiQ0a8HRLt.iHfL1XSsVY20iHw3BLh.xXiYDaoAWOh.iHu3COPEjTA0DHoQVOhj1W1ElboEFco8lah.hcgwVck0iHv3BLh.xXi0iHx.iHfL1XFI2as0iHv3BLh.xXiQ0a8HRLt.iHfL1XSsVY20iHw3BLh.xXiYDaoAWOh.iHu3COPEjTA0DHoQVOhj1W1klXxEFcuIBH1EFa0UVOhDiKvHBHiMVOhHSLh.xXiYjbu0VOh.iKvHBHiMFUu0iHw3BLh.xXiM0ZkcWOhDiKvHBHiMlQrkFb8HBLh7hO7.UPRETSfjFY8HRZeUla1EFczIBH1EFa0UVOh.iKvjSN4jSN4fiM0fCN4TCM4LiHfL1X8HRKwHBHiMlQx8Va8HBLt.iHfL1XT8VOhDiKvHBHiM1TqU1c8HRLt.iHfL1XFwVZv0iHvHxK9vCTAIUPMARZj0iHo8UYtYGYkMlHfXWXrUWY8HBLt.SN4jSN4jSNz.yL4TyL0TiLh.xXi0iHsDiHfL1XFI2as0iHv3BLh.xXiQ0a8HRLt.iHfL1XSsVY20iHw3BLh.xXiYDaoAWOh.iHu3COPEjTA0DHoQVOhj1Wk4lcyU2bh.hcgwVck0iHw3BLh.xXi0iHsDiHfL1XFI2as0iHv3BLh.xXiQ0a8HRLt.iHfL1XSsVY20iHw3BLh.xXiYDaoAWOh.iHu3COPEjTA0DHoQVOhj1Wk4lcxUFah.hcgwVck0iHx3BLh.xXi0iHsDiHfL1XFI2as0iHv3BLh.xXiQ0a8HRLt.iHfL1XSsVY20iHw3BLh.xXiYDaoAWOh.iHu3COPEjTA0DHoQVOhj1WskFdykVavwVYh.hcgwVck0iHv3RMh.xXi0iHsDiHfL1XFI2as0iHv3BLh.xXiQ0a8HRLt.iHfL1XSsVY20iHw3BLh.xXiYDaoAWOh.iHu3COPEjTA0DHoQVOhL2WlwVZvIBH1EFa0UVOh.iKvHBHiMVOhzRLh.xXiYjbu0VOh.iKvHBHiMFUu0iHw3BLh.xXiM0ZkcWOhDiKvHBHiMlQrkFb8HBLh7hO7.UPRETSfjFY8HxbecWZjQGZh.hcgwVck0iHv3RMh.xXi0iHsDiHfL1XFI2as0iHv3BLh.xXiQ0a8HRLt.iHfL1XSsVY20iHw3BLh.xXiYDaoAWOh.iHu3COPEjTA0DHoQVOhL2WvElah.hcgwVck0iHv3RMh.xXi0iHsDiHfL1XFI2as0iHv3BLh.xXiQ0a8HRLt.iHfL1XSsVY20iHw3BLh.xXiYDaoAWOh.iHu3COPEjTA0DHoQVOhj1WjUFagkmHfXWXrUWY8HBLt.iHfL1X8HRKwHBHiMlQx8Va8HBLt.iHfL1XT8VOhDiKvHBHiM1TqU1c8HRLt.iHfL1XFwVZv0iHvHxK9vCTAIUPMARZj0iHo8UXs8VctQmHfXWXrUWY8HBLt.iHfL1X8HRKwHBHiMlQx8Va8HBLt.iHfL1XT8VOhDiKvHBHiM1TqU1c8HRLt.iHfL1XFwVZv0iHvHxK9vCTAIUPMARZj0iHo8EYoMGcuIGch.hcgwVck0iHv3BLh.xXi0iHsDiHfL1XFI2as0iHv3BLh.xXiQ0a8HRLt.iHfL1XSsVY20iHw3BLh.xXiYDaoAWOh.iHu3COPEjTA0DHoQVOhj1WrU2bnYUYxIlHfXWXrUWY8HBLt.iHfL1X8HRKwHBHiMlQx8Va8HBLt.iHfL1XT8VOhDiKvHBHiM1TqU1c8HRLt.iHfL1XFwVZv0iHvHxK9vCTAIUPMARZj0iHo8EbkQlcuwlHfXWXrUWY8HBLtTiHfL1X8HRKwHBHiMlQx8Va8HBLt.iHfL1XT8VOhDiKvHBHiM1TqU1c8HRLt.iHfL1XFwVZv0iHvHxK9vCTAIUPMARZj0iHo8EbkQFQ44lHfXWXrUWY8HBLtTiHfL1X8HRKwHBHiMlQx8Va8HBLt.iHfL1XT8VOhDiKvHBHiM1TqU1c8HRLt.iHfL1XFwVZv0iHvHxK9vCTAIUPMARZj0iHo8Eak41YzglHfXWXrUWY8HBLt.iHfL1X8HRKwHBHiMlQx8Va8HBLt.iHfL1XT8VOhDiKvHBHiM1TqU1c8HRLt.iHfL1XFwVZv0iHvHxK9vCTAIUPMARZj0iHo8Eco0VYME1XnklakIBH1EFa0UVOh.iKvHBHiMVOhzRLh.xXiYjbu0VOh.iKvHBHiMFUu0iHw3BLh.xXiM0ZkcWOhDiKvHBHiMlQrkFb8HBLh7hO7.UPRETSfjFY8HRZeMGcxUFciglHfXWXrUWY8HBLt.iHfL1X8HRKwHBHiMlQx8Va8HBLt.iHfL1XT8VOhDiKvHBHiM1TqU1c8HRLt.iHfL1XFwVZv0iHvHxK9vCTAIUPMARZj0iHo80buYFcPUFYgwlHfXWXrUWY8HBLt.iHfL1X8HRKwHBHiMlQx8Va8HBLt.iHfL1XT8VOhDiKvHBHiM1TqU1c8HRLt.iHfL1XFwVZv0iHvHxK9vCTAIUPMARZj0iHo8kbkMGbu41bkIBH1EFa0UVOh.iKvHBHiMVOhzRLh.xXiYjbu0VOh.iKvHBHiMFUu0iHw3BLh.xXiM0ZkcWOhDiKvHBHiMlQrkFb8HBLh7hO7.UPRETSfjFY8HRZe0VXrwVYzIBH1EFa0UVOh.iKvHBHiMVOhzRLh.xXiYjbu0VOh.iKvHBHiMFUu0iHw3BLh.xXiM0ZkcWOhDiKvHBHiMlQrkFb8HBLh7hO7.UPRETSfjFY8HRZeMGcuAWYMUGckIBH1EFa0UVOh.iKvHBHiMVOhzRLh.xXiYjbu0VOh.iKvHBHiMFUu0iHw3BLh.xXiM0ZkcWOhDiKvHBHiMlQrkFb8HBLh7hO7.UPRETSfjFY8HRZeQVZxU1Xzk1atIBH1EFa0UVOh.iKvHBHiMVOhzRLh.xXiYjbu0VOh.iKvHBHiMFUu0iHw3BLh.xXiM0ZkcWOhDiKvHBHiMlQrkFb8HBLh7hO7.UPRETSfjFY8HRZewFbFkFazUlbh.hcgwVck0iHv3BLh.xXi0iHsDiHfL1XFI2as0iHv3BLh.xXiQ0a8HRLt.iHfL1XSsVY20iHw3BLh.xXiYDaoAWOh.iHu3COPEjTA0DHoQVOhj1Wv8lbzEVak4FcuIBH1EFa0UVOh.iKvHBHiMVOhzRLh.xXiYjbu0VOh.iKvHBHiMFUu0iHw3BLh.xXiM0ZkcWOhDiKvHBHiMlQrkFb8HBLh7hO7.UPRETSfjFY8HRZe0VYzE1VwfSWh.hcgwVck0iHv3BLh.xXi0iHsDiHfL1XFI2as0iHv3BLh.xXiQ0a8HRLt.iHfL1XSsVY20iHw3BLh.xXiYDaoAWOh.iHu3COPEjTA0DHoQVOhj1WsUFcgsUL4zkHfXWXrUWY8HBLt.iHfL1X8HRKwHBHiMlQx8Va8HBLt.iHfL1XT8VOhDiKvHBHiM1TqU1c8HRLt.iHfL1XFwVZv0iHvHxK9vCTAIUPMARZj0iHo8UakQWXaICLcIBH1EFa0UVOh.iKvHBHiMVOhzRLh.xXiYjbu0VOh.iKvHBHiMFUu0iHw3BLh.xXiM0ZkcWOhDiKvHBHiMlQrkFb8HBLh7hO7.UPRETSfjFY8HRZe0VYzE1VxDSWh.hcgwVck0iHv3BLh.xXi0iHsDiHfL1XFI2as0iHv3BLh.xXiQ0a8HRLt.iHfL1XSsVY20iHw3BLh.xXiYDaoAWOh.iHu3COPEjTA0DHoQVOhj1WsUFcgskLxzkHfXWXrUWY8HBLt.iHfL1X8HRKwHBHiMlQx8Va8HBLt.iHfL1XT8VOhDiKvHBHiM1TqU1c8HRLt.iHfL1XFwVZv0iHvHxK9vCTAIUPMARZj0iHo8UakQWXaIyLcIBH1EFa0UVOh.iKvHBHiMVOhzRLh.xXiYjbu0VOh.iKvHBHiMFUu0iHw3BLh.xXiM0ZkcWOhDiKvHBHiMlQrkFb8HBLh7hO7.UPRETSfjFY8HRZe0VYzE1VxPSWh.hcgwVck0iHv3BLh.xXi0iHsDiHfL1XFI2as0iHv3BLh.xXiQ0a8HRLt.iHfL1XSsVY20iHw3BLh.xXiYDaoAWOh.iHu3COPEjTA0DHoQVOhj1WsUFcgskL0zkHfXWXrUWY8HBLt.iHfL1X8HRKwHBHiMlQx8Va8HBLt.iHfL1XT8VOhDiKvHBHiM1TqU1c8HRLt.iHfL1XFwVZv0iHvHxK9vCTAIUPMARZj0iHo8UakQWXaIiMcIBH1EFa0UVOh.iKvHBHiMVOhzRLh.xXiYjbu0VOh.iKvHBHiMFUu0iHw3BLh.xXiM0ZkcWOhDiKvHBHiMlQrkFb8HBLh7hO7.UPRETSfjFY8HRae0VXo4lHfXWXrUWY8HRLt.iHfL1X8HRKwHBHiMlQx8Va8HBLt.iHfL1XT8VOhDiKvHBHiM1TqU1c8HRLt.iHfL1XFwVZv0iHvHxK9vCTAIUPMARZj0iHs8UXrQWLh.hcgwVck0iHv3BLh.xXi0iHsDiHfL1XFI2as0iHv3BLh.xXiQ0a8HRLt.iHfL1XSsVY20iHw3BLh.xXiYDaoAWOh.iHu3COPEjTA0DHoQVOhz1WgwFcxHBH1EFa0UVOh.iKvHBHiMVOhzRLh.xXiYjbu0VOh.iKvHBHiMFUu0iHw3BLh.xXiM0ZkcWOhDiKvHBHiMlQrkFb8HBLh7hO7.UPRETSfjFY8HRaeEFazMiHfXWXrUWY8HBLt.iHfL1X8HRKwHBHiMlQx8Va8HBLt.iHfL1XT8VOhDiKvHBHiM1TqU1c8HRLt.iHfL1XFwVZv0iHvHxK9vyKPEjTA0TQTUjTS4COuvTXhMmO.."
-									}
-,
-									"fileref" : 									{
-										"name" : "LABS",
-										"filename" : "LABS.maxsnap",
-										"filepath" : "~/Documents/Max 8/Snapshots",
-										"filepos" : -1,
-										"snapshotfileid" : "9c3ec1805a22a8d239a8731cc5745e9f"
-									}
-
-								}
- ]
-						}
-
 					}
 ,
 					"text" : "vst~",
@@ -602,7 +1031,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 131.666666666666686, 279.0, 192.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 20.0, 130.0, 192.0, 22.0 ]
+					"presentation_rect" : [ 78.0, 52.0, 192.0, 22.0 ]
 				}
 
 			}
@@ -690,6 +1119,20 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-50", 0 ],
+					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-22", 0 ],
 					"order" : 1,
 					"source" : [ "obj-13", 0 ]
@@ -709,6 +1152,13 @@
 					"destination" : [ "obj-34", 0 ],
 					"order" : 2,
 					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-31", 0 ],
+					"source" : [ "obj-14", 0 ]
 				}
 
 			}
@@ -738,35 +1188,44 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-21", 0 ],
-					"source" : [ "obj-19", 0 ]
+					"destination" : [ "obj-23", 0 ],
+					"source" : [ "obj-18", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-21", 0 ],
-					"source" : [ "obj-20", 0 ]
+					"source" : [ "obj-19", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-27", 1 ],
-					"source" : [ "obj-21", 1 ]
+					"destination" : [ "obj-53", 0 ],
+					"order" : 1,
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-27", 0 ],
+					"destination" : [ "obj-6", 0 ],
+					"order" : 0,
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-23", 0 ],
 					"source" : [ "obj-21", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-20", 0 ],
+					"destination" : [ "obj-27", 1 ],
 					"source" : [ "obj-22", 1 ]
 				}
 
@@ -780,7 +1239,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-27", 0 ],
+					"destination" : [ "obj-19", 0 ],
 					"source" : [ "obj-25", 0 ]
 				}
 
@@ -794,35 +1253,69 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-29", 0 ],
-					"source" : [ "obj-27", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-29", 0 ],
+					"destination" : [ "obj-25", 0 ],
+					"order" : 0,
 					"source" : [ "obj-27", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-26", 0 ],
+					"destination" : [ "obj-42", 0 ],
+					"order" : 1,
+					"source" : [ "obj-27", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-66", 1 ],
 					"source" : [ "obj-28", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-21", 0 ],
+					"destination" : [ "obj-30", 0 ],
+					"midpoints" : [ 220.666666666666742, 698.0, 220.666666666666742, 698.0 ],
+					"source" : [ "obj-31", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-43", 0 ],
 					"source" : [ "obj-32", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-53", 0 ],
+					"destination" : [ "obj-22", 0 ],
+					"order" : 1,
+					"source" : [ "obj-33", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-28", 0 ],
+					"order" : 0,
+					"source" : [ "obj-33", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-34", 0 ],
+					"order" : 2,
+					"source" : [ "obj-33", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 1 ],
 					"source" : [ "obj-34", 1 ]
 				}
 
@@ -860,14 +1353,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-38", 0 ],
-					"source" : [ "obj-37", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-27", 0 ],
+					"destination" : [ "obj-43", 0 ],
 					"source" : [ "obj-38", 0 ]
 				}
 
@@ -881,6 +1367,41 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-33", 0 ],
+					"source" : [ "obj-40", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-43", 0 ],
+					"source" : [ "obj-42", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-70", 1 ],
+					"source" : [ "obj-43", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-70", 0 ],
+					"source" : [ "obj-43", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-35", 0 ],
 					"source" : [ "obj-44", 2 ]
 				}
@@ -888,8 +1409,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-56", 0 ],
+					"source" : [ "obj-45", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-44", 0 ],
 					"source" : [ "obj-46", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"source" : [ "obj-47", 0 ]
 				}
 
 			}
@@ -919,15 +1454,36 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-21", 1 ],
+					"destination" : [ "obj-47", 0 ],
+					"source" : [ "obj-49", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-40", 0 ],
+					"source" : [ "obj-50", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-43", 1 ],
 					"source" : [ "obj-51", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-21", 0 ],
+					"destination" : [ "obj-43", 0 ],
 					"source" : [ "obj-51", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-50", 0 ],
+					"source" : [ "obj-52", 0 ]
 				}
 
 			}
@@ -954,16 +1510,144 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-63", 0 ],
+					"source" : [ "obj-56", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-12", 0 ],
+					"source" : [ "obj-57", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-52", 0 ],
+					"source" : [ "obj-58", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-62", 0 ],
+					"source" : [ "obj-59", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-39", 0 ],
 					"source" : [ "obj-60", 0 ]
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-63", 0 ],
+					"source" : [ "obj-62", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-59", 0 ],
+					"source" : [ "obj-64", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-66", 0 ],
+					"source" : [ "obj-65", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-64", 0 ],
+					"order" : 0,
+					"source" : [ "obj-66", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-69", 0 ],
+					"order" : 1,
+					"source" : [ "obj-66", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-70", 0 ],
+					"source" : [ "obj-68", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-70", 0 ],
+					"source" : [ "obj-69", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-18", 0 ],
+					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-29", 0 ],
+					"source" : [ "obj-70", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-29", 0 ],
+					"source" : [ "obj-70", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-73", 0 ],
+					"source" : [ "obj-72", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-70", 0 ],
+					"source" : [ "obj-73", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
+					"source" : [ "obj-9", 1 ]
+				}
+
+			}
  ],
 		"parameters" : 		{
-			"obj-21" : [ "vst~[1]", "vst~[1]", 0 ],
-			"obj-27" : [ "vst~[2]", "vst~[2]", 0 ],
+			"obj-43" : [ "vst~[1]", "vst~[1]", 0 ],
 			"obj-51" : [ "vst~", "vst~", 0 ],
+			"obj-70" : [ "vst~[2]", "vst~[2]", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
 					"index" : 0,
@@ -976,21 +1660,7 @@
 			"inherited_shortname" : 1
 		}
 ,
-		"dependency_cache" : [ 			{
-				"name" : "LABS.maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../../Documents/Max 8/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Saturation Knob.maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../../Documents/Max 8/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
- ],
+		"dependency_cache" : [  ],
 		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "MP-M4L",

@@ -1184,7 +1184,7 @@
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "green.maxpat",
-					"numinlets" : 3,
+					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
@@ -1500,9 +1500,9 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-1::obj-124" : [ "vst~[3]", "vst~", 0 ],
-			"obj-1::obj-77" : [ "vst~[2]", "vst~[2]", 0 ],
-			"obj-1::obj-88" : [ "vst~[1]", "vst~[1]", 0 ],
+			"obj-1::obj-167" : [ "vst~[3]", "vst~", 0 ],
+			"obj-1::obj-174" : [ "vst~[2]", "vst~", 0 ],
+			"obj-1::obj-51" : [ "vst~", "vst~", 0 ],
 			"obj-4" : [ "main", "main", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
@@ -1524,18 +1524,15 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Saturation Knob.maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../Documents/Max 8/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "green.maxpat",
 				"bootpath" : "~/GitHub/MULE-S24/Files",
 				"patcherrelativepath" : "./Files",
 				"type" : "JSON",
 				"implicit" : 1
+			}
+, 			{
+				"name" : "link.beat.mxo",
+				"type" : "iLaX"
 			}
 , 			{
 				"name" : "tree.js",
