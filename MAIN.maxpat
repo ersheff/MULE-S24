@@ -1183,7 +1183,7 @@
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "green.maxpat",
+					"name" : "home.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
@@ -1500,8 +1500,6 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-1::obj-174" : [ "vst~[2]", "vst~[1]", 0 ],
-			"obj-1::obj-51" : [ "vst~", "vst~", 0 ],
 			"obj-4" : [ "main", "main", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
@@ -1516,21 +1514,7 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "LABS_20240329.maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../Documents/Max 8/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "green.json",
-				"bootpath" : "~/GitHub/MULE-S24/Storage",
-				"patcherrelativepath" : "./Storage",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "green.maxpat",
+				"name" : "home.maxpat",
 				"bootpath" : "~/GitHub/MULE-S24/Files",
 				"patcherrelativepath" : "./Files",
 				"type" : "JSON",
@@ -1539,13 +1523,6 @@
 , 			{
 				"name" : "link.beat.mxo",
 				"type" : "iLaX"
-			}
-, 			{
-				"name" : "tree.js",
-				"bootpath" : "~/GitHub/MULE-S24/Files",
-				"patcherrelativepath" : "./Files",
-				"type" : "TEXT",
-				"implicit" : 1
 			}
  ],
 		"autosave" : 0,
