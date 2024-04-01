@@ -1500,8 +1500,7 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-1::obj-167" : [ "vst~[3]", "vst~", 0 ],
-			"obj-1::obj-174" : [ "vst~[2]", "vst~", 0 ],
+			"obj-1::obj-174" : [ "vst~[2]", "vst~[1]", 0 ],
 			"obj-1::obj-51" : [ "vst~", "vst~", 0 ],
 			"obj-4" : [ "main", "main", 0 ],
 			"parameterbanks" : 			{
@@ -1517,10 +1516,17 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "LABS.maxsnap",
+				"name" : "LABS_20240329.maxsnap",
 				"bootpath" : "~/Documents/Max 8/Snapshots",
 				"patcherrelativepath" : "../../Documents/Max 8/Snapshots",
 				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "green.json",
+				"bootpath" : "~/GitHub/MULE-S24/Storage",
+				"patcherrelativepath" : "./Storage",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
