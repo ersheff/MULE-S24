@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 62.0, 1372.0, 804.0 ],
+		"rect" : [ 34.0, 62.0, 1055.0, 804.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,47 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-54",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 513.5, 500.0, 84.0, 22.0 ],
+					"text" : "read config.txt"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-49",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 513.5, 464.0, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-34",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 641.0, 682.0, 116.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"filename" : "create-udpsend.js",
+						"parameter_enable" : 0
+					}
+,
+					"text" : "js create-udpsend.js"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-58",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -67,24 +108,12 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-48",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 283.0, 817.0, 46.0, 22.0 ],
-					"text" : "port $1"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-45",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 283.0, 781.0, 55.0, 22.0 ],
+					"patching_rect" : [ 641.0, 647.0, 55.0, 22.0 ],
 					"text" : "route set"
 				}
 
@@ -96,7 +125,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 313.0, 729.0, 37.0, 22.0 ],
+					"patching_rect" : [ 671.0, 595.0, 37.0, 22.0 ],
 					"text" : "line 5"
 				}
 
@@ -108,8 +137,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "bang", "int" ],
-					"patching_rect" : [ 283.0, 698.0, 79.0, 22.0 ],
-					"text" : "text config.txt"
+					"patching_rect" : [ 641.0, 564.0, 40.0, 22.0 ],
+					"text" : "text"
 				}
 
 			}
@@ -190,7 +219,8 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 233.0, 698.0, 32.0, 22.0 ],
-					"text" : "gate"
+					"text" : "gate",
+					"varname" : "udp-gate"
 				}
 
 			}
@@ -201,7 +231,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 501.0, 546.0, 55.0, 22.0 ],
+					"patching_rect" : [ 513.5, 677.0, 55.0, 22.0 ],
 					"text" : "route set"
 				}
 
@@ -213,7 +243,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 531.0, 491.0, 37.0, 22.0 ],
+					"patching_rect" : [ 543.5, 604.0, 37.0, 22.0 ],
 					"text" : "line 2"
 				}
 
@@ -225,8 +255,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "bang", "int" ],
-					"patching_rect" : [ 501.0, 460.0, 79.0, 22.0 ],
-					"text" : "text config.txt"
+					"patching_rect" : [ 513.5, 564.0, 40.0, 22.0 ],
+					"text" : "text"
 				}
 
 			}
@@ -237,7 +267,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 501.0, 635.0, 72.0, 22.0 ],
+					"patching_rect" : [ 513.5, 739.0, 72.0, 22.0 ],
 					"text" : "prepend set"
 				}
 
@@ -261,19 +291,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 501.0, 603.0, 65.0, 22.0 ],
+					"patching_rect" : [ 513.5, 707.0, 65.0, 22.0 ],
 					"text" : "sprintf /%s"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-32",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 233.0, 857.0, 193.0, 22.0 ],
-					"text" : "udpsend SHEFFIEMBA.local 8001"
 				}
 
 			}
@@ -1371,7 +1390,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-36", 0 ],
-					"midpoints" : [ 322.5, 773.0, 384.0, 773.0, 384.0, 682.0, 292.5, 682.0 ],
+					"midpoints" : [ 680.5, 639.0, 742.0, 639.0, 742.0, 548.0, 650.5, 548.0 ],
 					"source" : [ "obj-35", 0 ]
 				}
 
@@ -1436,7 +1455,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-48", 0 ],
+					"destination" : [ "obj-34", 0 ],
 					"source" : [ "obj-45", 0 ]
 				}
 
@@ -1444,15 +1463,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-44", 0 ],
-					"midpoints" : [ 540.5, 535.0, 602.0, 535.0, 602.0, 444.0, 510.5, 444.0 ],
+					"midpoints" : [ 553.0, 639.0, 614.5, 639.0, 614.5, 548.0, 523.0, 548.0 ],
 					"source" : [ "obj-46", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-32", 0 ],
-					"source" : [ "obj-48", 0 ]
+					"destination" : [ "obj-54", 0 ],
+					"source" : [ "obj-49", 0 ]
 				}
 
 			}
@@ -1479,8 +1498,17 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-32", 0 ],
-					"source" : [ "obj-53", 0 ]
+					"destination" : [ "obj-36", 0 ],
+					"order" : 0,
+					"source" : [ "obj-54", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-44", 0 ],
+					"order" : 1,
+					"source" : [ "obj-54", 0 ]
 				}
 
 			}
@@ -1514,6 +1542,13 @@
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "create-udpsend.js",
+				"bootpath" : "~/GitHub/MULE-S24/Files",
+				"patcherrelativepath" : "./Files",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "home.maxpat",
 				"bootpath" : "~/GitHub/MULE-S24/Files",
 				"patcherrelativepath" : "./Files",
