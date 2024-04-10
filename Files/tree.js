@@ -9,8 +9,6 @@ var limit = 0.04;
 var angle = 45;
 var scale = 1;
 var width = 10;
-var transX = 0;
-var transY = -1;
 var rotX = 0;
 var rotY = 0;
 var rotZ = 0;
@@ -25,26 +23,27 @@ var eraseG = 0.5;
 var eraseB = 0.2;
 treeWorld.message("erase_color", eraseR, eraseG, eraseB);
 
+function convertRange(value, r1, r2) {
+  return ((value - r1[0]) * (r2[1] - r2[0])) / (r1[1] - r1[0]) + r2[0];
+}
+
 function recursiveTree() {
+  mySketch.glcolor(1, 1, 1, 1);
   mySketch.gllinewidth(scale * width);
   mySketch.glscale(scale, scale, scale);
-  mySketch.gltranslate(transX, transY);
+  mySketch.gltranslate(0, convertRange(scale, [0.6, 3.0], [-1.5, -2.4]));
   mySketch.glrotate(rotX, 1, 0, 0);
   mySketch.glrotate(rotY, 0, 1, 0);
   mySketch.glrotate(rotZ, 0, 0, 1);
-  mySketch.glcolor(red, green, blue, alpha);
   mySketch.glbegin("lines");
-  branch(length, angle);
+  branch(1.022, angle);
   mySketch.glend();
   repeats = 0;
 
-  updateLength();
   updateAngle();
   updateScale();
   updateWidth();
-  updateTrans();
   updateRot();
-  updateColor();
   updateErase();
 }
 
@@ -72,25 +71,6 @@ function branch(l, a) {
 
 function erase() {
   mySketch.reset();
-}
-
-//
-
-var lengthStart, lastLength, lengthChange, lengthEnd, lengthTime;
-function setLength(val, time) {
-  var newLength = clamp(val, 0.1, 1.5);
-  lengthStart = Date.now();
-  lastLength = length;
-  lengthChange = newLength - lastLength;
-  lengthEnd = lengthStart + time;
-  lengthTime = time;
-}
-
-function updateLength() {
-  if (Date.now() < lengthEnd) {
-    var t = Date.now() - lengthStart;
-    length = easeSine(t, lastLength, lengthChange, lengthTime);
-  }
 }
 
 //
@@ -152,31 +132,6 @@ function updateWidth() {
 
 //
 
-var lastTransX, transXChange;
-var lastTransY, transYChange;
-var transStart, transEnd, transTime;
-function setTrans(xVal, yVal, time) {
-  var newTransX = clamp(xVal, -2.5, 2.5);
-  var newTransY = clamp(yVal, -4, 0);
-  transStart = Date.now();
-  lastTransX = transX;
-  lastTransY = transY;
-  transXChange = newTransX - lastTransX;
-  transYChange = newTransY - lastTransY;
-  transEnd = transStart + time;
-  transTime = time;
-}
-
-function updateTrans() {
-  if (Date.now() < transEnd) {
-    var t = Date.now() - transStart;
-    transX = easeSine(t, lastTransX, transXChange, transTime);
-    transY = easeSine(t, lastTransY, transYChange, transTime);
-  }
-}
-
-//
-
 var lastRotX, rotXChange;
 var lastRotY, rotYChange;
 var lastRotZ, rotZChange;
@@ -202,41 +157,6 @@ function updateRot() {
     rotX = easeSine(t, lastRotX, rotXChange, rotTime);
     rotY = easeSine(t, lastRotY, rotYChange, rotTime);
     rotZ = easeSine(t, lastRotZ, rotZChange, rotTime);
-  }
-}
-
-//
-
-var lastRed, redChange;
-var lastGreen, greenChange;
-var lastBlue, blueChange;
-var lastAlpha, alphaChange;
-var colorStart, colorEnd, colorTime;
-function setColor(redVal, greenVal, blueVal, alphaVal, time) {
-  colorStart = Date.now();
-  var newRed = clamp(redVal, 0, 1);
-  var newGreen = clamp(greenVal, 0, 1);
-  var newBlue = clamp(blueVal, 0, 1);
-  var newAlpha = clamp(alphaVal, 0, 1);
-  lastRed = red;
-  lastGreen = green;
-  lastBlue = blue;
-  lastAlpha = alpha;
-  redChange = newRed - lastRed;
-  greenChange = newGreen - lastGreen;
-  blueChange = newBlue - lastBlue;
-  alphaChange = newAlpha - lastAlpha;
-  colorEnd = colorStart + time;
-  colorTime = time;
-}
-
-function updateColor() {
-  if (Date.now() < colorEnd) {
-    var t = Date.now() - colorStart;
-    red = easeLinear(t, lastRed, redChange, colorTime);
-    green = easeLinear(t, lastGreen, greenChange, colorTime);
-    blue = easeLinear(t, lastBlue, blueChange, colorTime);
-    alpha = easeLinear(t, lastAlpha, alphaChange, colorTime);
   }
 }
 

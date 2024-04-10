@@ -11,7 +11,7 @@
 ,
 		"classnamespace" : "box",
 		"rect" : [ 34.0, 62.0, 1340.0, 804.0 ],
-		"bglocked" : 0,
+		"bglocked" : 1,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
@@ -49,7 +49,7 @@
 					"patching_rect" : [ 440.0, 188.0, 1086.0, 167.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 9,
-					"presentation_rect" : [ 10.0, 182.0, 945.0, 167.0 ],
+					"presentation_rect" : [ 10.0, 200.0, 945.0, 167.0 ],
 					"text" : "Check all audio settings in the Options > Audio Status... window before every rehearsal and performance:\n- Driver: Core Audio (Mac) or ASIO4ALL (Windows)\n- Latency: Start as 10ms, raise to 20ms if you experience audio glitches (Windows only)\n- I/O Vector Size: Start at 32 or 64, raise to 128 if you experience audio glitches (Windows users, adjust in ASIO4ALL control panel)\n- Signal Vector Size: match the I/O Vector Size setting\n- Sampling Rate: 48000\n- \"Scheduler in Overdrive\" should be ON, \"Audio Interrupt\" should be OFF\n\nConnect to the MULE wifi network.",
 					"textcolor" : [ 0.800000011920929, 0.800000011920929, 0.800000011920929, 1.0 ]
 				}
@@ -64,7 +64,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 10.0, 90.0, 1086.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 100.0, 945.0, 24.0 ],
+					"presentation_rect" : [ 10.0, 118.0, 945.0, 24.0 ],
 					"text" : "Rescan your VST plugins every time a new one is installed:",
 					"textcolor" : [ 0.800000011920929, 0.800000011920929, 0.800000011920929, 1.0 ]
 				}
@@ -92,7 +92,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 727.0, 662.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 150.0, 100.0, 20.0 ]
+					"presentation_rect" : [ 10.0, 168.0, 100.0, 20.0 ]
 				}
 
 			}
@@ -106,7 +106,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 693.0, 498.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 126.0, 100.0, 20.0 ],
+					"presentation_rect" : [ 10.0, 144.0, 100.0, 20.0 ],
 					"text" : "Scan VSTs"
 				}
 
@@ -155,7 +155,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 278.0, 395.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 195.0, 387.0, 150.0, 20.0 ],
+					"presentation_rect" : [ 195.0, 405.0, 150.0, 20.0 ],
 					"text" : "Clicks"
 				}
 
@@ -168,7 +168,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 10.0, 410.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 387.0, 150.0, 20.0 ],
+					"presentation_rect" : [ 10.0, 405.0, 150.0, 20.0 ],
 					"text" : "Tone"
 				}
 
@@ -182,7 +182,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 130.0, 508.0, 127.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 361.0, 643.0, 24.0 ],
+					"presentation_rect" : [ 10.0, 379.0, 643.0, 24.0 ],
 					"text" : "Audio Tester",
 					"textcolor" : [ 0.800000011920929, 0.800000011920929, 0.800000011920929, 1.0 ]
 				}
@@ -208,7 +208,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 278.0, 459.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 347.0, 430.0, 62.0, 20.0 ],
+					"presentation_rect" : [ 347.0, 448.0, 62.0, 20.0 ],
 					"text" : "on/off",
 					"textjustification" : 1
 				}
@@ -224,7 +224,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 278.0, 481.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 347.0, 409.0, 62.0, 62.0 ]
+					"presentation_rect" : [ 347.0, 427.0, 62.0, 62.0 ]
 				}
 
 			}
@@ -251,7 +251,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 517.0, 497.0, 150.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 195.0, 431.0, 150.0, 22.0 ]
+					"presentation_rect" : [ 195.0, 449.0, 150.0, 22.0 ]
 				}
 
 			}
@@ -278,7 +278,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 365.0, 497.0, 150.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 195.0, 409.0, 150.0, 22.0 ]
+					"presentation_rect" : [ 195.0, 427.0, 150.0, 22.0 ]
 				}
 
 			}
@@ -302,7 +302,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 89.0, 605.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 130.0, 430.0, 63.0, 20.0 ],
+					"presentation_rect" : [ 130.0, 448.0, 63.0, 20.0 ],
 					"text" : "on/off",
 					"textjustification" : 1
 				}
@@ -318,7 +318,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 94.0, 631.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 130.0, 409.0, 62.0, 62.0 ]
+					"presentation_rect" : [ 130.0, 427.0, 62.0, 62.0 ]
 				}
 
 			}
@@ -345,7 +345,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 102.0, 727.0, 480.0, 120.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 494.0, 399.0, 120.0 ]
+					"presentation_rect" : [ 10.0, 512.0, 399.0, 120.0 ]
 				}
 
 			}
@@ -381,7 +381,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 10.0, 432.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 472.0, 118.0, 20.0 ],
+					"presentation_rect" : [ 10.0, 490.0, 118.0, 20.0 ],
 					"text" : "freq (55-440Hz)"
 				}
 
@@ -399,7 +399,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 10.0, 508.0, 118.0, 62.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 409.0, 118.0, 62.0 ]
+					"presentation_rect" : [ 10.0, 427.0, 118.0, 62.0 ]
 				}
 
 			}
@@ -419,15 +419,15 @@
 				"box" : 				{
 					"fontsize" : 16.0,
 					"id" : "obj-7",
-					"linecount" : 4,
+					"linecount" : 5,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 10.0, 10.0, 1086.0, 78.0 ],
+					"patching_rect" : [ 10.0, 10.0, 1086.0, 96.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 4,
-					"presentation_rect" : [ 10.0, 10.0, 945.0, 78.0 ],
-					"text" : "First time setup:\n1. Set Color Theme to \"deepdark-carbon\" in Preferences...\n2. Add the MULE-S24 folder in Options > File Preferences...\n3. Duplicate the config-template.txt file, rename as config.txt, then open it and follow the instructions inside.",
+					"presentation_linecount" : 5,
+					"presentation_rect" : [ 10.0, 10.0, 945.0, 96.0 ],
+					"text" : "First time setup:\n1. Set Color Theme to \"deepdark-carbon\" in Preferences...\n2. Add the MULE-S24 folder in Options > File Preferences...\n3. Duplicate the config-template.txt file, rename as config.txt, then open it and follow the instructions inside.\n4. Run the NDI Runtime installer.",
 					"textcolor" : [ 0.800000011920929, 0.800000011920929, 0.800000011920929, 1.0 ]
 				}
 
