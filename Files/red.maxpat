@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 62.0, 1340.0, 804.0 ],
+		"rect" : [ 34.0, 62.0, 1023.0, 804.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,20 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"comment" : "audio out",
+					"id" : "obj-2",
+					"index" : 0,
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 0.0, 770.0, 30.0, 30.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 3.0, 769.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-11",
 					"maxclass" : "newobj",
@@ -677,7 +691,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "osc out",
 					"id" : "obj-20",
 					"index" : 0,
 					"maxclass" : "outlet",

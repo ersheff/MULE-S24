@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 6,
-			"revision" : 0,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -963,7 +963,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 6,
-							"revision" : 0,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1710,7 +1710,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 15.0, 19.871797382831573, 30.0, 20.0 ],
 					"text" : "0",
-					"textcolor" : [ 0.902, 0.902, 0.902, 1.0 ],
+					"textcolor" : [ 0.62, 0.745, 0.953, 1.0 ],
 					"textjustification" : 1
 				}
 
@@ -1743,7 +1743,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 45.0, 19.871797382831573, 15.0, 20.0 ],
 					"text" : ">",
-					"textoncolor" : [ 0.149, 0.149, 0.149, 1.0 ]
+					"textoncolor" : [ 0.62, 0.745, 0.953, 1.0 ]
 				}
 
 			}
@@ -1762,7 +1762,7 @@
 					"presentation_rect" : [ 0.0, 19.871797382831573, 15.0, 20.0 ],
 					"text" : "<",
 					"textcolor" : [ 0.149, 0.149, 0.149, 1.0 ],
-					"textoncolor" : [ 0.149, 0.149, 0.149, 1.0 ]
+					"textoncolor" : [ 0.62, 0.745, 0.953, 1.0 ]
 				}
 
 			}

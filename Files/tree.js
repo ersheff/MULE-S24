@@ -6,8 +6,10 @@ mySketch.blend_enable = 1;
 var length = 1;
 var cof = 0.667;
 var limit = 0.04;
-var angle = 45;
-var scale = 1;
+var angle = 16;
+var scale = 0.5;
+var transX = 0;
+var transY = -1.8;
 var width = 10;
 var rotX = 0;
 var rotY = 0;
@@ -18,9 +20,9 @@ var blue = 1;
 var alpha = 1;
 
 var treeWorld = this.patcher.getnamed("tree-world");
-var eraseR = 0.3;
-var eraseG = 0.5;
-var eraseB = 0.2;
+var eraseR = 0.1;
+var eraseG = 0.3;
+var eraseB = 0.1;
 treeWorld.message("erase_color", eraseR, eraseG, eraseB);
 
 function convertRange(value, r1, r2) {
@@ -31,7 +33,7 @@ function recursiveTree() {
   mySketch.glcolor(1, 1, 1, 1);
   mySketch.gllinewidth(scale * width);
   mySketch.glscale(scale, scale, scale);
-  mySketch.gltranslate(0, convertRange(scale, [0.6, 3.0], [-1.5, -2.4]));
+  mySketch.gltranslate(transX, transY);
   mySketch.glrotate(rotX, 1, 0, 0);
   mySketch.glrotate(rotY, 0, 1, 0);
   mySketch.glrotate(rotZ, 0, 0, 1);
@@ -42,8 +44,9 @@ function recursiveTree() {
 
   updateAngle();
   updateScale();
+  updateTranslate();
   updateWidth();
-  updateRot();
+  updateRotate();
   updateErase();
 }
 
@@ -113,6 +116,29 @@ function updateScale() {
 
 //
 
+var lastTransX, transXChange;
+var lastTransY, transYChange;
+var transStart, transEnd, transTime;
+function setTranslate(xVal, yVal, time) {
+  transStart = Date.now();
+  lastTransX = transX;
+  lastTransY = transY;
+  transXChange = xVal - lastTransX;
+  transYChange = yVal - lastTransY;
+  transEnd = transStart + time;
+  transTime = time;
+}
+
+function updateTranslate() {
+  if (Date.now() < transEnd) {
+    var t = Date.now() - transStart;
+    transX = easeSine(t, lastTransX, transXChange, transTime);
+    transY = easeSine(t, lastTransY, transYChange, transTime);
+  }
+}
+
+//
+
 var widthStart, lastWidth, widthChange, widthEnd, widthTime;
 function setWidth(val, time) {
   var newWidth = clamp(val, 1, 20);
@@ -134,24 +160,18 @@ function updateWidth() {
 
 var lastRotX, rotXChange;
 var lastRotY, rotYChange;
-var lastRotZ, rotZChange;
 var rotStart, rotEnd, rotTime;
-function setRot(xVal, yVal, zVal, time) {
-  var newRotX = clamp(xVal, -180, 180);
-  var newRotY = clamp(yVal, -180, 180);
-  var newRotZ = clamp(zVal, -180, 180);
+function setRotate(xVal, yVal, time) {
   rotStart = Date.now();
   lastRotX = rotX;
   lastRotY = rotY;
-  lastRotZ = rotZ;
-  rotXChange = newRotX - lastRotX;
-  rotYChange = newRotY - lastRotY;
-  rotZChange = newRotZ - lastRotZ;
+  rotXChange = xVal - lastRotX;
+  rotYChange = yVal - lastRotY;
   rotEnd = rotStart + time;
   rotTime = time;
 }
 
-function updateRot() {
+function updateRotate() {
   if (Date.now() < rotEnd) {
     var t = Date.now() - rotStart;
     rotX = easeSine(t, lastRotX, rotXChange, rotTime);
@@ -166,17 +186,41 @@ var lastEraseR, eraseRChange;
 var lastEraseG, eraseGChange;
 var lastEraseB, eraseBChange;
 var eraseStart, eraseEnd, eraseTime;
-function setErase(redVal, greenVal, blueVal, time) {
+function setErase(scene, time) {
+  switch (scene) {
+    case 1:
+      redVal = 0.1;
+      greenVal = 0.3;
+      blueVal = 0.1;
+      break;
+    case 2:
+      redVal = 0.3;
+      greenVal = 0.5;
+      blueVal = 0.3;
+      break;
+    case 3:
+      redVal = 0.57;
+      greenVal = 0.5;
+      blueVal = 0.2;
+      break;
+    case 4:
+      redVal = 0.3;
+      greenVal = 0.3;
+      blueVal = 0.3;
+      break;
+    case 5:
+      redVal = 0;
+      greenVal = 0;
+      blueVal = 0;
+      break;
+  }
   eraseStart = Date.now();
-  var newEraseR = clamp(redVal, 0, 1);
-  var newEraseG = clamp(greenVal, 0, 1);
-  var newEraseB = clamp(blueVal, 0, 1);
   lastEraseR = eraseR;
   lastEraseG = eraseG;
   lastEraseB = eraseB;
-  eraseRChange = newEraseR - lastEraseR;
-  eraseGChange = newEraseG - lastEraseG;
-  eraseBChange = newEraseB - lastEraseB;
+  eraseRChange = redVal - lastEraseR;
+  eraseGChange = greenVal - lastEraseG;
+  eraseBChange = blueVal - lastEraseB;
   eraseEnd = eraseStart + time;
   eraseTime = time;
 }
@@ -215,3 +259,35 @@ function clamp(val, min, max) {
 // It's also usually a static value.
 
 // d - Amount of time the animation will take. Usually a static value aswell.
+
+function sceneChange(s, t) {
+  switch (s) {
+    case 1:
+      setAngle(16, t);
+      setErase(0.3, 0.5, 0.2, t);
+      setTranslate(0, -2.3, t);
+      setScale(0.4, t);
+      break;
+    case 2:
+      setAngle(30, t);
+      setTranslate(0, -1.8, t);
+      setScale(0.65, t);
+      break;
+    case 3:
+      setAngle(45, t);
+      setErase(0.569, 0.5, 0.2, t);
+      setTranslate(0.5, -2, t);
+      setScale(1.2, t);
+      break;
+    case 4:
+      setAngle(60, t);
+      setErase(0.3, 0.3, 0.3, t);
+      setTranslate(0.7, -1.8, t);
+      setScale(1.5, t);
+      break;
+    case 5:
+      setAngle(75, t);
+      setErase(0, 0, 0, t);
+      break;
+  }
+}
