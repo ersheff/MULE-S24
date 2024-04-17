@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 64.0, -199.0, 1342.0, 1033.0 ],
+		"rect" : [ 64.0, -225.0, 1342.0, 1059.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -23100,8 +23100,8 @@
 					"id" : "obj-210",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "bang", "" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
@@ -23149,7 +23149,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 74.5, 209.0, 157.0, 22.0 ],
-									"text" : "replace bloom.mp3"
+									"text" : "replace mammal.mp3"
 								}
 
 							}
@@ -23205,20 +23205,8 @@
 , 							{
 								"box" : 								{
 									"comment" : "",
-									"id" : "obj-99",
-									"index" : 1,
-									"maxclass" : "outlet",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 50.0, 291.0, 30.0, 30.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"comment" : "",
 									"id" : "obj-100",
-									"index" : 2,
+									"index" : 1,
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
@@ -23252,15 +23240,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-97", 0 ],
-									"order" : 0,
-									"source" : [ "obj-92", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-99", 0 ],
-									"order" : 1,
 									"source" : [ "obj-92", 0 ]
 								}
 
@@ -23372,8 +23351,8 @@
 					"id" : "obj-203",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "bang", "" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
@@ -23421,7 +23400,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 74.5, 209.0, 157.0, 22.0 ],
-									"text" : "replace bloom.mp3"
+									"text" : "replace mammal.mp3"
 								}
 
 							}
@@ -23477,20 +23456,8 @@
 , 							{
 								"box" : 								{
 									"comment" : "",
-									"id" : "obj-99",
-									"index" : 1,
-									"maxclass" : "outlet",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 50.0, 291.0, 30.0, 30.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"comment" : "",
 									"id" : "obj-100",
-									"index" : 2,
+									"index" : 1,
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
@@ -23524,15 +23491,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-97", 0 ],
-									"order" : 0,
-									"source" : [ "obj-92", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-99", 0 ],
-									"order" : 1,
 									"source" : [ "obj-92", 0 ]
 								}
 
@@ -23644,8 +23602,8 @@
 					"id" : "obj-198",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "bang", "" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
@@ -23687,13 +23645,25 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-1",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 50.0, 201.0, 48.0, 22.0 ],
+									"text" : "del 100"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-97",
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 74.5, 209.0, 157.0, 22.0 ],
-									"text" : "replace bloom.mp3"
+									"patching_rect" : [ 85.0, 254.0, 157.0, 22.0 ],
+									"text" : "replace mammal.mp3"
 								}
 
 							}
@@ -23749,29 +23719,24 @@
 , 							{
 								"box" : 								{
 									"comment" : "",
-									"id" : "obj-99",
+									"id" : "obj-100",
 									"index" : 1,
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 50.0, 291.0, 30.0, 30.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"comment" : "",
-									"id" : "obj-100",
-									"index" : 2,
-									"maxclass" : "outlet",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 85.0, 291.0, 30.0, 30.0 ]
+									"patching_rect" : [ 85.0, 369.0, 30.0, 30.0 ]
 								}
 
 							}
  ],
 						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-97", 0 ],
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
 								"patchline" : 								{
 									"destination" : [ "obj-79", 0 ],
 									"source" : [ "obj-71", 0 ]
@@ -23787,25 +23752,16 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-1", 0 ],
+									"source" : [ "obj-92", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-97", 1 ],
-									"midpoints" : [ 70.0, 190.0, 222.0, 190.0 ],
+									"midpoints" : [ 70.0, 190.0, 232.5, 190.0 ],
 									"source" : [ "obj-92", 1 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-97", 0 ],
-									"order" : 0,
-									"source" : [ "obj-92", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-99", 0 ],
-									"order" : 1,
-									"source" : [ "obj-92", 0 ]
 								}
 
 							}
@@ -36128,13 +36084,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-202", 0 ],
-					"source" : [ "obj-198", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-87", 0 ],
 					"source" : [ "obj-198", 0 ]
 				}
 
@@ -36156,15 +36105,15 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-204", 0 ],
-					"source" : [ "obj-203", 0 ]
+					"destination" : [ "obj-87", 0 ],
+					"source" : [ "obj-202", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-209", 0 ],
-					"source" : [ "obj-203", 1 ]
+					"source" : [ "obj-203", 0 ]
 				}
 
 			}
@@ -36200,15 +36149,15 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-211", 0 ],
-					"source" : [ "obj-210", 0 ]
+					"destination" : [ "obj-204", 0 ],
+					"source" : [ "obj-209", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-216", 0 ],
-					"source" : [ "obj-210", 1 ]
+					"source" : [ "obj-210", 0 ]
 				}
 
 			}
@@ -36239,6 +36188,13 @@
 					"destination" : [ "obj-216", 0 ],
 					"midpoints" : [ 3814.5, 333.5, 3784.5, 333.5 ],
 					"source" : [ "obj-215", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-211", 0 ],
+					"source" : [ "obj-216", 1 ]
 				}
 
 			}
@@ -38920,7 +38876,7 @@
 		"dependency_cache" : [ 			{
 				"name" : "IMG_8972.mov",
 				"bootpath" : "~/Downloads",
-				"patcherrelativepath" : "../../../../Users/ethanchambers/Downloads",
+				"patcherrelativepath" : "../../../../Downloads",
 				"type" : "MooV",
 				"implicit" : 1
 			}
@@ -38935,7 +38891,7 @@
 , 			{
 				"name" : "cv.jit.stddev.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/cv.jit/patchers",
-				"patcherrelativepath" : "../../../../Users/ethanchambers/Documents/Max 8/Packages/cv.jit/patchers",
+				"patcherrelativepath" : "../../../Max 8/Packages/cv.jit/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -38945,63 +38901,63 @@
 			}
 , 			{
 				"name" : "mix.maxpat",
-				"bootpath" : "/Volumes/Music 1/max stuff/motion responsive stuff",
+				"bootpath" : "~/Documents/GitHub/MULE-S24/Files",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "one small wide.mp4",
-				"bootpath" : "/Volumes/Music 1/max stuff/motion responsive stuff",
+				"bootpath" : "~/Documents/GitHub/MULE-S24/Files",
 				"patcherrelativepath" : ".",
 				"type" : "mpg4",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "one small.mp4",
-				"bootpath" : "/Volumes/Music 1/max stuff/motion responsive stuff",
+				"bootpath" : "~/Documents/GitHub/MULE-S24/Files",
 				"patcherrelativepath" : ".",
 				"type" : "mpg4",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "playbackmoduleOne.maxpat",
-				"bootpath" : "/Volumes/Music 1/max stuff/motion responsive stuff",
+				"bootpath" : "~/Documents/GitHub/MULE-S24/Files",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "playbackmoduleThree.maxpat",
-				"bootpath" : "/Volumes/Music 1/max stuff/motion responsive stuff",
+				"bootpath" : "~/Documents/GitHub/MULE-S24/Files",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "playbackmoduleTwo.maxpat",
-				"bootpath" : "/Volumes/Music 1/max stuff/motion responsive stuff",
+				"bootpath" : "~/Documents/GitHub/MULE-S24/Files",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "rev3~.maxpat",
-				"bootpath" : "/Volumes/Music 1/max stuff/motion responsive stuff",
+				"bootpath" : "~/Documents/GitHub/MULE-S24/Files",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "two big drops.mp4",
-				"bootpath" : "/Volumes/Music 1/max stuff/motion responsive stuff",
+				"bootpath" : "~/Documents/GitHub/MULE-S24/Files",
 				"patcherrelativepath" : ".",
 				"type" : "mpg4",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "two tall drops.mp4",
-				"bootpath" : "/Volumes/Music 1/max stuff/motion responsive stuff",
+				"bootpath" : "~/Documents/GitHub/MULE-S24/Files",
 				"patcherrelativepath" : ".",
 				"type" : "mpg4",
 				"implicit" : 1
