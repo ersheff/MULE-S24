@@ -559,7 +559,7 @@
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "green.maxpat",
+					"name" : "home.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
@@ -569,127 +569,6 @@
 					"presentation_rect" : [ 0.0, 0.0, 1200.0, 800.0 ],
 					"varname" : "mainb",
 					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-9",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 233.0, 857.0, 193.0, 22.0 ],
-					"text" : "udpsend SHEFFIEMBA.local 7000"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-30",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 233.0, 857.0, 193.0, 22.0 ],
-					"text" : "udpsend SHEFFIEMBA.local 7000"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-32",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 233.0, 857.0, 193.0, 22.0 ],
-					"text" : "udpsend SHEFFIEMBA.local 7000"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-7",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 233.0, 857.0, 193.0, 22.0 ],
-					"text" : "udpsend SHEFFIEMBA.local 7000"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-20",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 233.0, 857.0, 193.0, 22.0 ],
-					"text" : "udpsend SHEFFIEMBA.local 7000"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-21",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 233.0, 857.0, 193.0, 22.0 ],
-					"text" : "udpsend SHEFFIEMBA.local 7000"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-22",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 233.0, 857.0, 193.0, 22.0 ],
-					"text" : "udpsend SHEFFIEMBA.local 7000"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-24",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 233.0, 857.0, 193.0, 22.0 ],
-					"text" : "udpsend SHEFFIEMBA.local 7000"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-25",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 233.0, 857.0, 193.0, 22.0 ],
-					"text" : "udpsend SHEFFIEMBA.local 7000"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-28",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 233.0, 857.0, 193.0, 22.0 ],
-					"text" : "udpsend SHEFFIEMBA.local 7000"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-37",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 233.0, 857.0, 193.0, 22.0 ],
-					"text" : "udpsend SHEFFIEMBA.local 7000"
 				}
 
 			}
@@ -940,94 +819,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-20", 0 ],
-					"order" : 10,
-					"source" : [ "obj-53", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-21", 0 ],
-					"order" : 9,
-					"source" : [ "obj-53", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-22", 0 ],
-					"order" : 8,
-					"source" : [ "obj-53", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-24", 0 ],
-					"order" : 7,
-					"source" : [ "obj-53", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-25", 0 ],
-					"order" : 6,
-					"source" : [ "obj-53", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-28", 0 ],
-					"order" : 5,
-					"source" : [ "obj-53", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-30", 0 ],
-					"order" : 4,
-					"source" : [ "obj-53", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-32", 0 ],
-					"order" : 3,
-					"source" : [ "obj-53", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-37", 0 ],
-					"order" : 0,
-					"source" : [ "obj-53", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-7", 0 ],
-					"order" : 2,
-					"source" : [ "obj-53", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
-					"order" : 1,
-					"source" : [ "obj-53", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-36", 0 ],
 					"order" : 0,
 					"source" : [ "obj-54", 0 ]
@@ -1051,9 +842,6 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-1::obj-174" : [ "vst~[1]", "vst~[1]", 0 ],
-			"obj-1::obj-217" : [ "vst~[2]", "vst~[1]", 0 ],
-			"obj-1::obj-51" : [ "vst~", "vst~", 0 ],
 			"obj-4" : [ "main", "main", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
@@ -1068,13 +856,6 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "LABS_20240329.maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../Documents/Max 8/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "create-udpsend.js",
 				"bootpath" : "~/GitHub/MULE-S24/Files",
 				"patcherrelativepath" : "./Files",
@@ -1082,26 +863,15 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "green.maxpat",
+				"name" : "home.maxpat",
 				"bootpath" : "~/GitHub/MULE-S24/Files",
 				"patcherrelativepath" : "./Files",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "jit.ndi.send~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "link.beat.mxo",
 				"type" : "iLaX"
-			}
-, 			{
-				"name" : "tree.js",
-				"bootpath" : "~/GitHub/MULE-S24/Files",
-				"patcherrelativepath" : "./Files",
-				"type" : "TEXT",
-				"implicit" : 1
 			}
  ],
 		"autosave" : 0,
