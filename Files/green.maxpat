@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 6,
-			"revision" : 1,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 62.0, 1058.0, 804.0 ],
+		"rect" : [ 34.0, 77.0, 1239.0, 908.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,46 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-18",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1985.0, 488.0, 1073.0, 22.0 ],
+					"text" : "url https://docs.google.com/presentation/d/e/2PACX-1vQ9cu37npjt5snM6C-f0RJk_ggV3ZQLuE8G5oiGap4bedSKzAxTXcEdR-93IQZVx0yN5oUhQwuwSd_6/pub?start=false&loop=false&delayms=3000"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-24",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 1985.0, 457.0, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-32",
+					"maxclass" : "jweb",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1985.0, 556.0, 320.0, 240.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 378.0, 485.0, 822.0, 306.0 ],
+					"rendermode" : 0,
+					"url" : "https://docs.google.com/presentation/d/e/2PACX-1vQ9cu37npjt5snM6C-f0RJk_ggV3ZQLuE8G5oiGap4bedSKzAxTXcEdR-93IQZVx0yN5oUhQwuwSd_6/pub?start=false&loop=false&delayms=3000",
+					"varname" : "fd-score-window"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"bgcolor" : [ 0.149019607843137, 0.149019607843137, 0.149019607843137, 0.0 ],
 					"color" : [ 1.0, 0.0, 0.0, 0.5 ],
@@ -515,10 +555,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2660.0, 150.0, 70.0, 33.0 ],
+					"patching_rect" : [ 2660.0, 150.0, 70.0, 34.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 10.0, 38.0, 64.0, 33.0 ],
+					"presentation_rect" : [ 10.0, 38.0, 64.0, 34.0 ],
 					"text" : "scene\n1 - 5"
 				}
 
@@ -593,10 +633,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2432.0, 150.0, 70.0, 33.0 ],
+					"patching_rect" : [ 2432.0, 150.0, 70.0, 34.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 62.0, 161.0, 50.0, 33.0 ],
+					"presentation_rect" : [ 62.0, 161.0, 50.0, 34.0 ],
 					"text" : "transY\n0. - 4."
 				}
 
@@ -608,10 +648,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2360.0, 150.0, 70.0, 33.0 ],
+					"patching_rect" : [ 2360.0, 150.0, 70.0, 34.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 10.0, 161.0, 50.0, 33.0 ],
+					"presentation_rect" : [ 10.0, 161.0, 50.0, 34.0 ],
 					"text" : "transX\n-2 - 2."
 				}
 
@@ -1986,7 +2026,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-254",
-					"items" : [ " ", ",", "++bubbler", ",", "++chebyshev", ",", "++compand", ",", "++decimate", ",", "++delay", ",", "++flipper", ",", "++matrix", ",", "++phasor", ",", "++pitchdelay", ",", "BPB Dirty VHS", ",", "Cardinal FX", ",", "Cardinal Synth", ",", "Cardinal", ",", "Deelay", ",", "Filterstep", ",", "Fracture", ",", "Gatelab", ",", "IVGI2", ",", "LABS", ",", "NeuralAmpModeler", ",", "Panflow", ",", "PaulXStretch", ",", "Ruina", ",", "Saturation Knob", ",", "Sinc Vereor", ",", "Surge XT Effects", ",", "Surge XT", ",", "TAL-Vocoder-2", ",", "TDR Nova", ",", "TX16Wx (legacy id)", ",", "TX16Wx", ",", "ValhallaDelay", ",", "ValhallaFreqEcho", ",", "ValhallaSupermassive", ",", "ValhallaVintageVerb_Fx", ",", "ValhallaVintageVerb_Fx_Reverb", ",", "Virt Vereor" ],
+					"items" : [ " ", ",", "LABS", ",", "Serum", ",", "Synplant", ",", "Vital" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -2176,9 +2216,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 413.0, 208.0, 80.0, 35.0 ],
+					"patching_rect" : [ 413.0, 208.0, 80.0, 36.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 251.0, 242.0, 80.0, 35.0 ]
+					"presentation_rect" : [ 251.0, 242.0, 80.0, 36.0 ]
 				}
 
 			}
@@ -2701,10 +2741,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 3362.5, 162.0, 70.0, 33.0 ],
+					"patching_rect" : [ 3362.5, 162.0, 70.0, 34.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 199.0, 161.0, 50.0, 33.0 ],
+					"presentation_rect" : [ 199.0, 161.0, 50.0, 34.0 ],
 					"text" : "width\n1 - 20"
 				}
 
@@ -2779,10 +2819,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2888.0, 138.0, 70.0, 33.0 ],
+					"patching_rect" : [ 2888.0, 138.0, 70.0, 34.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 199.0, 38.0, 50.0, 33.0 ],
+					"presentation_rect" : [ 199.0, 38.0, 50.0, 34.0 ],
 					"text" : "angle\n16 - 90"
 				}
 
@@ -2858,10 +2898,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2142.0, 150.0, 70.0, 33.0 ],
+					"patching_rect" : [ 2142.0, 150.0, 70.0, 34.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 10.0, 100.0, 50.0, 33.0 ],
+					"presentation_rect" : [ 10.0, 100.0, 50.0, 34.0 ],
 					"text" : "rotateX\n-45-45"
 				}
 
@@ -2873,10 +2913,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2070.0, 150.0, 70.0, 33.0 ],
+					"patching_rect" : [ 2070.0, 150.0, 70.0, 34.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 62.0, 100.0, 50.0, 33.0 ],
+					"presentation_rect" : [ 62.0, 100.0, 50.0, 34.0 ],
 					"text" : "rotateY\n-45-45"
 				}
 
@@ -2888,10 +2928,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 3140.0, 162.0, 70.0, 33.0 ],
+					"patching_rect" : [ 3140.0, 162.0, 70.0, 34.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 199.0, 100.0, 61.0, 33.0 ],
+					"presentation_rect" : [ 199.0, 100.0, 61.0, 34.0 ],
 					"text" : "scale\n0.5 - 3.0"
 				}
 
@@ -4086,10 +4126,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 646.0, 1777.0, 182.0, 69.0 ],
+					"patching_rect" : [ 646.0, 1777.0, 182.0, 70.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 4,
-					"presentation_rect" : [ 780.0, 364.0, 182.0, 69.0 ],
+					"presentation_rect" : [ 780.0, 364.0, 182.0, 70.0 ],
 					"text" : "Shift-click to store a preset.\nClick to recall.\nMake sure audio is on when saving/recalling."
 				}
 
@@ -4329,7 +4369,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-194",
-					"items" : [ " ", ",", "++bubbler", ",", "++chebyshev", ",", "++compand", ",", "++decimate", ",", "++delay", ",", "++flipper", ",", "++matrix", ",", "++phasor", ",", "++pitchdelay", ",", "BPB Dirty VHS", ",", "Cardinal FX", ",", "Cardinal Synth", ",", "Cardinal", ",", "Deelay", ",", "Filterstep", ",", "Fracture", ",", "Gatelab", ",", "IVGI2", ",", "LABS", ",", "NeuralAmpModeler", ",", "Panflow", ",", "PaulXStretch", ",", "Ruina", ",", "Saturation Knob", ",", "Sinc Vereor", ",", "Surge XT Effects", ",", "Surge XT", ",", "TAL-Vocoder-2", ",", "TDR Nova", ",", "TX16Wx (legacy id)", ",", "TX16Wx", ",", "ValhallaDelay", ",", "ValhallaFreqEcho", ",", "ValhallaSupermassive", ",", "ValhallaVintageVerb_Fx", ",", "ValhallaVintageVerb_Fx_Reverb", ",", "Virt Vereor" ],
+					"items" : [ " ", ",", "LABS", ",", "Serum", ",", "Synplant", ",", "Vital" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -4479,10 +4519,10 @@
 ,
 									"fileref" : 									{
 										"name" : "LABS",
-										"filename" : "LABS_20240329.maxsnap",
+										"filename" : "LABS.maxsnap",
 										"filepath" : "~/Documents/Max 8/Snapshots",
 										"filepos" : -1,
-										"snapshotfileid" : "77c834b7cda2a0f3f03923e0501a486d"
+										"snapshotfileid" : "70bb06606adaee25f38dc9fa56348310"
 									}
 
 								}
@@ -4500,7 +4540,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-198",
-					"items" : [ " ", ",", "++bubbler", ",", "++chebyshev", ",", "++compand", ",", "++decimate", ",", "++delay", ",", "++flipper", ",", "++matrix", ",", "++phasor", ",", "++pitchdelay", ",", "BPB Dirty VHS", ",", "Cardinal FX", ",", "Cardinal Synth", ",", "Cardinal", ",", "Deelay", ",", "Filterstep", ",", "Fracture", ",", "Gatelab", ",", "IVGI2", ",", "LABS", ",", "NeuralAmpModeler", ",", "Panflow", ",", "PaulXStretch", ",", "Ruina", ",", "Saturation Knob", ",", "Sinc Vereor", ",", "Surge XT Effects", ",", "Surge XT", ",", "TAL-Vocoder-2", ",", "TDR Nova", ",", "TX16Wx (legacy id)", ",", "TX16Wx", ",", "ValhallaDelay", ",", "ValhallaFreqEcho", ",", "ValhallaSupermassive", ",", "ValhallaVintageVerb_Fx", ",", "ValhallaVintageVerb_Fx_Reverb", ",", "Virt Vereor" ],
+					"items" : [ " ", ",", "LABS", ",", "Serum", ",", "Synplant", ",", "Vital" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -5409,6 +5449,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-32", 0 ],
+					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-180", 0 ],
 					"midpoints" : [ 547.5, 1769.0, 547.5, 1769.0 ],
 					"source" : [ "obj-181", 0 ]
@@ -5815,6 +5862,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-288", 0 ],
 					"source" : [ "obj-239", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-18", 0 ],
+					"source" : [ "obj-24", 0 ]
 				}
 
 			}
@@ -7637,23 +7691,23 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "LABS_20240329.maxsnap",
+				"name" : "LABS.maxsnap",
 				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../../Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../../Users/dirtb/Documents/Max 8/Snapshots",
 				"type" : "mx@s",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "jit.ndi.send~.mxo",
-				"type" : "iLaX"
+				"name" : "jit.ndi.send~.mxe64",
+				"type" : "mx64"
 			}
 , 			{
-				"name" : "link.beat.mxo",
-				"type" : "iLaX"
+				"name" : "link.beat.mxe64",
+				"type" : "mx64"
 			}
 , 			{
 				"name" : "tree.js",
-				"bootpath" : "~/GitHub/MULE-S24/Files",
+				"bootpath" : "C:/Music/MULE-S24/Files",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
