@@ -19,11 +19,9 @@ var green = 1;
 var blue = 1;
 var alpha = 1;
 
-var treeWorld = this.patcher.getnamed("tree-world");
 var eraseR = 0.1;
 var eraseG = 0.3;
 var eraseB = 0.1;
-treeWorld.message("erase_color", eraseR, eraseG, eraseB);
 
 function convertRange(value, r1, r2) {
   return ((value - r1[0]) * (r2[1] - r2[0])) / (r1[1] - r1[0]) + r2[0];
@@ -176,7 +174,6 @@ function updateRotate() {
     var t = Date.now() - rotStart;
     rotX = easeSine(t, lastRotX, rotXChange, rotTime);
     rotY = easeSine(t, lastRotY, rotYChange, rotTime);
-    rotZ = easeSine(t, lastRotZ, rotZChange, rotTime);
   }
 }
 
@@ -231,7 +228,9 @@ function updateErase() {
     eraseR = easeLinear(t, lastEraseR, eraseRChange, eraseTime);
     eraseG = easeLinear(t, lastEraseG, eraseGChange, eraseTime);
     eraseB = easeLinear(t, lastEraseB, eraseBChange, eraseTime);
-    treeWorld.message("erase_color", eraseR, eraseG, eraseB);
+    this.patcher
+      .getnamed("tree-world")
+      .message("erase_color", eraseR, eraseG, eraseB);
   }
 }
 
@@ -259,35 +258,3 @@ function clamp(val, min, max) {
 // It's also usually a static value.
 
 // d - Amount of time the animation will take. Usually a static value aswell.
-
-function sceneChange(s, t) {
-  switch (s) {
-    case 1:
-      setAngle(16, t);
-      setErase(0.3, 0.5, 0.2, t);
-      setTranslate(0, -2.3, t);
-      setScale(0.4, t);
-      break;
-    case 2:
-      setAngle(30, t);
-      setTranslate(0, -1.8, t);
-      setScale(0.65, t);
-      break;
-    case 3:
-      setAngle(45, t);
-      setErase(0.569, 0.5, 0.2, t);
-      setTranslate(0.5, -2, t);
-      setScale(1.2, t);
-      break;
-    case 4:
-      setAngle(60, t);
-      setErase(0.3, 0.3, 0.3, t);
-      setTranslate(0.7, -1.8, t);
-      setScale(1.5, t);
-      break;
-    case 5:
-      setAngle(75, t);
-      setErase(0, 0, 0, t);
-      break;
-  }
-}
