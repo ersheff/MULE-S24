@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 64.0, 61.0, 1342.0, 773.0 ],
+		"rect" : [ 64.0, 35.0, 1342.0, 799.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,91 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Avenir Next Condensed Demi Bold",
+					"fontsize" : 16.0,
+					"id" : "obj-265",
+					"linecount" : 10,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1001.0, 382.0, 91.0, 225.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 4,
+					"presentation_rect" : [ 954.0, 403.0, 245.0, 94.0 ],
+					"text" : "-Spacebar moves through keys\n-RETURN key sets cues to 0\n-Arrow keys can also be used for moving through cues",
+					"textcolor" : [ 0.866666666666667, 0.313725490196078, 0.203921568627451, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Avenir Next Condensed Demi Bold",
+					"fontsize" : 24.0,
+					"id" : "obj-346",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1001.0, 337.0, 102.0, 105.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 954.0, 358.0, 242.0, 39.0 ],
+					"text" : "Moving Through Cues",
+					"textcolor" : [ 0.866666674613953, 0.313725501298904, 0.20392157137394, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Avenir Next Condensed Demi Bold",
+					"fontsize" : 24.0,
+					"id" : "obj-263",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 680.0, 235.0, 102.0, 72.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 677.0, 232.404764711856842, 242.0, 39.0 ],
+					"text" : "Initialization",
+					"textcolor" : [ 0.866666674613953, 0.313725501298904, 0.20392157137394, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Avenir Next Condensed Demi Bold",
+					"fontsize" : 16.0,
+					"id" : "obj-116",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 735.0, 450.0, 91.0, 94.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 954.0, 674.5, 245.0, 28.0 ],
+					"text" : "- \"x\" key starts and stops the timer",
+					"textcolor" : [ 0.866666666666667, 0.313725490196078, 0.203921568627451, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Avenir Next Condensed Demi Bold",
+					"fontsize" : 24.0,
+					"id" : "obj-244",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 735.0, 405.0, 102.0, 39.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 954.0, 629.5, 242.0, 39.0 ],
+					"text" : "Timer",
+					"textcolor" : [ 0.866666674613953, 0.313725501298904, 0.20392157137394, 1.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-330",
 					"maxclass" : "message",
@@ -128,7 +213,7 @@
 					"patching_rect" : [ 1408.0, 2308.0, 91.0, 291.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 713.0, 634.0, 408.0, 50.0 ],
+					"presentation_rect" : [ 677.0, 720.09307450056076, 408.0, 50.0 ],
 					"text" : "WRITE STUFF ABOUT CAMERA INPUT, RESIZING CAMERA INPUT, CHOOSING SAMPLE, REVERB, REHEASAL MODE, EDIT MODE, ETC.",
 					"textcolor" : [ 0.866666666666667, 0.313725490196078, 0.203921568627451, 1.0 ]
 				}
@@ -147,7 +232,7 @@
 					"patching_rect" : [ 770.0, 2278.0, 89.0, 181.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 1013.0, 546.0, 242.0, 72.0 ],
+					"presentation_rect" : [ 954.0, 279.404764711856842, 242.0, 72.0 ],
 					"text" : "-Works with pedals that trigger key #32 (space bar) and also midi #64 (sustain pedal)",
 					"textcolor" : [ 0.866666666666667, 0.313725490196078, 0.203921568627451, 1.0 ]
 				}
@@ -164,7 +249,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1109.0, 2294.0, 102.0, 39.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1013.0, 499.0, 242.0, 39.0 ],
+					"presentation_rect" : [ 954.0, 232.404764711856842, 242.0, 39.0 ],
 					"text" : "Pedal",
 					"textcolor" : [ 0.866666674613953, 0.313725501298904, 0.20392157137394, 1.0 ]
 				}
@@ -183,7 +268,7 @@
 					"patching_rect" : [ 1232.0, 2294.0, 91.0, 334.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 4,
-					"presentation_rect" : [ 1013.0, 387.0, 245.0, 94.0 ],
+					"presentation_rect" : [ 677.0, 423.0, 245.0, 94.0 ],
 					"text" : "-Use Audio Status in the Options tab to ensure proper output (built-in output for most AC/DC amplifiers, assuming they plug into the headphone jack)",
 					"textcolor" : [ 0.866666666666667, 0.313725490196078, 0.203921568627451, 1.0 ]
 				}
@@ -201,7 +286,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 877.0, 2278.0, 102.0, 72.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1013.0, 342.0, 242.0, 39.0 ],
+					"presentation_rect" : [ 677.0, 378.0, 242.0, 39.0 ],
 					"text" : "Audio Setup",
 					"textcolor" : [ 0.866666674613953, 0.313725501298904, 0.20392157137394, 1.0 ]
 				}
@@ -219,7 +304,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 543.0, 2262.0, 102.0, 138.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 713.0, 492.0, 242.0, 39.0 ],
+					"presentation_rect" : [ 954.0, 506.0, 245.0, 39.0 ],
 					"text" : "Jump to cue (rehearsing)",
 					"textcolor" : [ 0.866666674613953, 0.313725501298904, 0.20392157137394, 1.0 ]
 				}
@@ -238,7 +323,7 @@
 					"patching_rect" : [ 1000.0, 2278.0, 91.0, 181.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 713.0, 538.0, 245.0, 72.0 ],
+					"presentation_rect" : [ 954.0, 552.0, 245.0, 72.0 ],
 					"text" : "-Double-click on number, enter cue, hit return/enter and then press space or pedal to jump to cue",
 					"textcolor" : [ 0.866666666666667, 0.313725490196078, 0.203921568627451, 1.0 ]
 				}
@@ -250,15 +335,15 @@
 					"fontsize" : 16.0,
 					"hidden" : 1,
 					"id" : "obj-344",
-					"linecount" : 13,
+					"linecount" : 10,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 665.0, 2262.0, 87.0, 291.0 ],
+					"patching_rect" : [ 665.0, 2262.0, 87.0, 225.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 4,
-					"presentation_rect" : [ 713.0, 376.30232572555542, 242.0, 94.0 ],
-					"text" : "-Press return/enter key to initialize patch/turn on audio\n-also used to restart/reinitialize patch\n-resets cues/timers to 0, stops audio",
+					"presentation_rect" : [ 677.0, 277.0, 242.0, 94.0 ],
+					"text" : "-Make Audio/DAC is turned on\n-RETURN key used to restart/reinitialize patch\n-Also resets cues/timers to 0",
 					"textcolor" : [ 0.866666666666667, 0.313725490196078, 0.203921568627451, 1.0 ]
 				}
 
@@ -349,7 +434,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 3262.0, 1332.0, 70.0, 22.0 ],
-					"text" : "loadmess 0"
+					"text" : "loadmess 2"
 				}
 
 			}
