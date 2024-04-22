@@ -40,6 +40,33 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-45",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 340.0, 377.0, 83.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 305.0, 52.0, 83.0, 20.0 ],
+					"text" : "current angle"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-37",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 282.5, 376.0, 50.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 310.0, 74.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-18",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -434,7 +461,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 3023.0, 186.0, 66.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 251.0, 52.0, 66.0, 20.0 ],
+					"presentation_rect" : [ 251.0, 52.0, 54.0, 20.0 ],
 					"text" : "duration"
 				}
 
@@ -7524,6 +7551,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-37", 0 ],
+					"source" : [ "obj-57", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-177", 0 ],
 					"source" : [ "obj-58", 0 ]
 				}
@@ -7693,7 +7727,7 @@
 		"dependency_cache" : [ 			{
 				"name" : "LABS.maxsnap",
 				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../../Users/dirtb/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../../../Users/dirtb/Documents/Max 8/Snapshots",
 				"type" : "mx@s",
 				"implicit" : 1
 			}
@@ -7707,7 +7741,7 @@
 			}
 , 			{
 				"name" : "tree.js",
-				"bootpath" : "C:/Music/MULE-S24/Files",
+				"bootpath" : "C:/Music/MULES24/Files/Green",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
