@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 64.0, -43.0, 1342.0, 877.0 ],
+		"rect" : [ 64.0, 87.0, 863.0, 747.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -641,11 +641,11 @@
 					"fontname" : "Avenir Next Condensed Demi Bold",
 					"fontsize" : 16.0,
 					"id" : "obj-372",
-					"linecount" : 11,
+					"linecount" : 10,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2628.0, 2449.0, 95.0, 247.0 ],
+					"patching_rect" : [ 2628.0, 2449.0, 96.0, 225.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 5,
 					"presentation_rect" : [ 877.0, 583.0, 211.0, 116.0 ],
@@ -6453,7 +6453,7 @@
 													"maxclass" : "inlet",
 													"numinlets" : 0,
 													"numoutlets" : 1,
-													"outlettype" : [ "jit_matrix" ],
+													"outlettype" : [ "" ],
 													"patching_rect" : [ 45.0, 30.0, 25.0, 25.0 ]
 												}
 
@@ -6655,8 +6655,8 @@
 									"id" : "obj-33",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "jit_matrix", "" ],
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
 									"patching_rect" : [ 992.5, 118.278687000000005, 283.0, 22.0 ],
 									"text" : "cv.jit.threshold @mode 1 @radius 3 @threshold 20"
 								}
@@ -7243,8 +7243,8 @@
 													"id" : "obj-14",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
-													"numoutlets" : 2,
-													"outlettype" : [ "jit_matrix", "" ],
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
 													"patching_rect" : [ 150.0, 240.0, 139.0, 22.0 ],
 													"text" : "cv.jit.ravg @alpha 0.005"
 												}
@@ -7272,7 +7272,7 @@
 													"maxclass" : "newobj",
 													"numinlets" : 1,
 													"numoutlets" : 2,
-													"outlettype" : [ "jit_matrix", "jit_matrix" ],
+													"outlettype" : [ "jit_matrix", "" ],
 													"patching_rect" : [ 360.0, 225.0, 72.0, 22.0 ],
 													"text" : "cv.jit.stddev"
 												}
@@ -9723,8 +9723,8 @@
 									"id" : "obj-8",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "jit_matrix", "" ],
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
 									"patching_rect" : [ 970.5, 373.221313000000009, 60.0, 22.0 ],
 									"text" : "cv.jit.ravg"
 								}
@@ -11835,7 +11835,7 @@
 													"maxclass" : "inlet",
 													"numinlets" : 0,
 													"numoutlets" : 1,
-													"outlettype" : [ "jit_matrix" ],
+													"outlettype" : [ "" ],
 													"patching_rect" : [ 45.0, 30.0, 25.0, 25.0 ]
 												}
 
@@ -12037,8 +12037,8 @@
 									"id" : "obj-33",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "jit_matrix", "" ],
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
 									"patching_rect" : [ 992.5, 118.278687000000005, 283.0, 22.0 ],
 									"text" : "cv.jit.threshold @mode 1 @radius 3 @threshold 20"
 								}
@@ -12625,8 +12625,8 @@
 													"id" : "obj-14",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
-													"numoutlets" : 2,
-													"outlettype" : [ "jit_matrix", "" ],
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
 													"patching_rect" : [ 150.0, 240.0, 139.0, 22.0 ],
 													"text" : "cv.jit.ravg @alpha 0.005"
 												}
@@ -12654,7 +12654,7 @@
 													"maxclass" : "newobj",
 													"numinlets" : 1,
 													"numoutlets" : 2,
-													"outlettype" : [ "jit_matrix", "jit_matrix" ],
+													"outlettype" : [ "jit_matrix", "" ],
 													"patching_rect" : [ 360.0, 225.0, 72.0, 22.0 ],
 													"text" : "cv.jit.stddev"
 												}
@@ -15105,8 +15105,8 @@
 									"id" : "obj-8",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "jit_matrix", "" ],
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
 									"patching_rect" : [ 970.5, 373.221313000000009, 60.0, 22.0 ],
 									"text" : "cv.jit.ravg"
 								}
@@ -16418,7 +16418,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 62.0, 1372.0, 804.0 ],
+						"rect" : [ 34.0, 87.0, 893.0, 747.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -17161,7 +17161,7 @@
 													"maxclass" : "inlet",
 													"numinlets" : 0,
 													"numoutlets" : 1,
-													"outlettype" : [ "jit_matrix" ],
+													"outlettype" : [ "" ],
 													"patching_rect" : [ 45.0, 30.0, 25.0, 25.0 ]
 												}
 
@@ -17363,9 +17363,9 @@
 									"id" : "obj-33",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "jit_matrix", "" ],
-									"patching_rect" : [ 992.5, 118.278687000000005, 283.0, 22.0 ],
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 994.0, 118.0, 280.0, 22.0 ],
 									"text" : "cv.jit.threshold @mode 1 @radius 3 @threshold 20"
 								}
 
@@ -17951,8 +17951,8 @@
 													"id" : "obj-14",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
-													"numoutlets" : 2,
-													"outlettype" : [ "jit_matrix", "" ],
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
 													"patching_rect" : [ 150.0, 240.0, 139.0, 22.0 ],
 													"text" : "cv.jit.ravg @alpha 0.005"
 												}
@@ -17980,7 +17980,7 @@
 													"maxclass" : "newobj",
 													"numinlets" : 1,
 													"numoutlets" : 2,
-													"outlettype" : [ "jit_matrix", "jit_matrix" ],
+													"outlettype" : [ "jit_matrix", "" ],
 													"patching_rect" : [ 360.0, 225.0, 72.0, 22.0 ],
 													"text" : "cv.jit.stddev"
 												}
@@ -20431,9 +20431,9 @@
 									"id" : "obj-8",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "jit_matrix", "" ],
-									"patching_rect" : [ 970.5, 373.221313000000009, 60.0, 22.0 ],
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 970.5, 373.221313000000009, 58.0, 22.0 ],
 									"text" : "cv.jit.ravg"
 								}
 
@@ -21478,7 +21478,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-33", 0 ],
-									"midpoints" : [ 1167.0, 95.278687000000005, 1002.0, 95.278687000000005 ],
+									"midpoints" : [ 1167.0, 95.278687000000005, 1003.5, 95.278687000000005 ],
 									"source" : [ "obj-29", 0 ]
 								}
 
@@ -21507,7 +21507,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-33", 0 ],
-									"midpoints" : [ 1092.0, 86.278687000000005, 1002.0, 86.278687000000005 ],
+									"midpoints" : [ 1092.0, 86.278687000000005, 1003.5, 86.278687000000005 ],
 									"source" : [ "obj-32", 0 ]
 								}
 
@@ -21522,7 +21522,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-33", 0 ],
-									"midpoints" : [ 1002.0, 81.278687000000005, 1002.0, 81.278687000000005 ],
+									"midpoints" : [ 1002.0, 81.278687000000005, 1003.5, 81.278687000000005 ],
 									"source" : [ "obj-34", 0 ]
 								}
 
@@ -39947,96 +39947,84 @@
 		"dependency_cache" : [ 			{
 				"name" : "IMG_8972.mov",
 				"bootpath" : "~/Downloads",
-				"patcherrelativepath" : "../../../../Downloads",
+				"patcherrelativepath" : "../../../../../Downloads",
 				"type" : "MooV",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "cv.jit.mean.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "cv.jit.ravg.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "cv.jit.stddev.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/cv.jit/patchers",
-				"patcherrelativepath" : "../../../Max 8/Packages/cv.jit/patchers",
+				"patcherrelativepath" : "../../../../Max 8/Packages/cv.jit/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "cv.jit.threshold.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "drivers.maxpat",
 				"bootpath" : "~/Documents/GitHub/MULE-S24/Files",
-				"patcherrelativepath" : ".",
+				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mix.maxpat",
-				"bootpath" : "~/Documents/GitHub/MULE-S24/Files",
+				"bootpath" : "~/Documents/GitHub/MULE-S24/Files/Red",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "one small wide.mp4",
-				"bootpath" : "~/Documents/GitHub/MULE-S24/Files",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/GitHub/MULE-S24/Files/Red/video",
+				"patcherrelativepath" : "./video",
 				"type" : "mpg4",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "one small.mp4",
-				"bootpath" : "~/Documents/GitHub/MULE-S24/Files",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/GitHub/MULE-S24/Files/Red/video",
+				"patcherrelativepath" : "./video",
 				"type" : "mpg4",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "playbackmoduleOne.maxpat",
-				"bootpath" : "~/Documents/GitHub/MULE-S24/Files",
+				"bootpath" : "~/Documents/GitHub/MULE-S24/Files/Red",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "playbackmoduleThree.maxpat",
-				"bootpath" : "~/Documents/GitHub/MULE-S24/Files",
+				"bootpath" : "~/Documents/GitHub/MULE-S24/Files/Red",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "playbackmoduleTwo.maxpat",
-				"bootpath" : "~/Documents/GitHub/MULE-S24/Files",
+				"bootpath" : "~/Documents/GitHub/MULE-S24/Files/Red",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "rev3~.maxpat",
-				"bootpath" : "~/Documents/GitHub/MULE-S24/Files",
+				"bootpath" : "~/Documents/GitHub/MULE-S24/Files/Red",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "two big drops.mp4",
-				"bootpath" : "~/Documents/GitHub/MULE-S24/Files",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/GitHub/MULE-S24/Files/Red/video",
+				"patcherrelativepath" : "./video",
 				"type" : "mpg4",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "two tall drops.mp4",
-				"bootpath" : "~/Documents/GitHub/MULE-S24/Files",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/GitHub/MULE-S24/Files/Red/video",
+				"patcherrelativepath" : "./video",
 				"type" : "mpg4",
 				"implicit" : 1
 			}
