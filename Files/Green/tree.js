@@ -91,6 +91,7 @@ function updateAngle() {
     var t = Date.now() - angleStart;
     angle = easeSine(t, lastAngle, angleChange, angleTime);
   }
+  outlet(0, angle);
 }
 
 //
