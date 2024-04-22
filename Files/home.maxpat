@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 62.0, 1023.0, 804.0 ],
+		"rect" : [ 34.0, 62.0, 1372.0, 804.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,33 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-35",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 853.0, 123.0, 92.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 411.0, 512.0, 92.0, 20.0 ],
+					"text" : "incoming OSC:",
+					"textjustification" : 2
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-33",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 947.0, 122.0, 242.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 505.0, 511.0, 242.0, 22.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"comment" : "osc out",
 					"id" : "obj-1",
@@ -76,7 +103,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 10.0, 90.0, 1086.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 118.0, 945.0, 24.0 ],
+					"presentation_rect" : [ 10.0, 118.0, 484.0, 24.0 ],
 					"text" : "Rescan your VST plugins every time a new one is installed:",
 					"textcolor" : [ 0.800000011920929, 0.800000011920929, 0.800000011920929, 1.0 ]
 				}
@@ -589,6 +616,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-22", 0 ],
 					"source" : [ "obj-5", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-33", 1 ],
+					"source" : [ "obj-6", 0 ]
 				}
 
 			}
