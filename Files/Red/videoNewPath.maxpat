@@ -41,15 +41,15 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-47",
-					"linecount" : 5,
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 604.0, 85.0, 150.0, 74.0 ],
+					"patching_rect" : [ 604.0, 85.0, 150.0, 47.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 5,
-					"presentation_rect" : [ 282.0, 95.0, 150.0, 74.0 ],
-					"text" : "on my computer, reducing GUI elements in presentation mode drops CPU usage even further: 47% vs. 50%"
+					"presentation_linecount" : 3,
+					"presentation_rect" : [ 282.0, 95.0, 150.0, 47.0 ],
+					"text" : "reducing GUI elements in presentation mode drops CPU usage even further"
 				}
 
 			}
