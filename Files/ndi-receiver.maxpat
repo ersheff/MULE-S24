@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 81.0, 1384.0, 898.0 ],
+		"rect" : [ 59.0, 81.0, 1583.0, 898.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -104,7 +104,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-34",
-					"items" : "<empty>",
+					"items" : [ "BIZRIG (u785001465)", ",", "SCHMELVIN (u490000859)", ",", "YUM31KU3 (u943000459)", ",", "YUM31KU3 (u035000311)" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -172,6 +172,8 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
 					"patching_rect" : [ 24.0, 676.0, 160.0, 90.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 24.0, 676.0, 160.0, 90.0 ],
 					"sync" : 1
 				}
 
@@ -216,7 +218,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-25",
-					"items" : "<empty>",
+					"items" : [ "EVANDELLAMD (u468000311)", ",", "EVANDELLAMD (u333000563)", ",", "EVANDELLAMD (u100000462)", ",", "BIZRIG (u785001465)", ",", "SCHMELVIN (u490000859)" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -284,6 +286,8 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
 					"patching_rect" : [ 426.0, 302.0, 160.0, 90.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 667.0, 53.0, 640.0, 360.0 ],
 					"sync" : 1
 				}
 
@@ -328,7 +332,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-13",
-					"items" : "<empty>",
+					"items" : [ "BIZRIG (u785001465)", ",", "SCHMELVIN (u490000859)", ",", "YUM31KU3 (u943000459)" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -396,6 +400,8 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
 					"patching_rect" : [ 24.0, 302.0, 160.0, 90.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 18.0, 53.0, 640.0, 360.0 ],
 					"sync" : 1
 				}
 
@@ -440,7 +446,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-5",
-					"items" : "<empty>",
+					"items" : [ "BIZRIG (u785001465)", ",", "SCHMELVIN (u490000859)", ",", "YUM31KU3 (u943000459)", ",", "YUM31KU3 (u035000311)" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
