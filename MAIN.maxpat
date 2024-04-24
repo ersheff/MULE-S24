@@ -559,7 +559,7 @@
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "home.maxpat",
+					"name" : "green.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
@@ -569,6 +569,17 @@
 					"presentation_rect" : [ 0.0, 0.0, 1200.0, 800.0 ],
 					"varname" : "mainb",
 					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 233.0, 857.0, 165.0, 22.0 ],
+					"text" : "udpsend 192.168.0.181 7000"
 				}
 
 			}
@@ -819,6 +830,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"source" : [ "obj-53", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-36", 0 ],
 					"order" : 0,
 					"source" : [ "obj-54", 0 ]
@@ -842,6 +860,9 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-1::obj-174" : [ "vst~[1]", "vst~[1]", 0 ],
+			"obj-1::obj-217" : [ "vst~[2]", "vst~[1]", 0 ],
+			"obj-1::obj-51" : [ "vst~", "vst~", 0 ],
 			"obj-4" : [ "main", "main", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
@@ -856,6 +877,20 @@
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "LABS.maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../Documents/Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "LABS_20240329.maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../Documents/Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "createUdpsend.js",
 				"bootpath" : "~/GitHub/MULES24/Files/FD",
 				"patcherrelativepath" : "./Files/FD",
@@ -863,15 +898,26 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "home.maxpat",
-				"bootpath" : "~/GitHub/MULES24/Files",
-				"patcherrelativepath" : "./Files",
+				"name" : "green.maxpat",
+				"bootpath" : "~/GitHub/MULES24/Files/Green",
+				"patcherrelativepath" : "./Files/Green",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
+				"name" : "jit.ndi.send~.mxo",
+				"type" : "iLaX"
+			}
+, 			{
 				"name" : "link.beat.mxo",
 				"type" : "iLaX"
+			}
+, 			{
+				"name" : "tree.js",
+				"bootpath" : "~/GitHub/MULES24/Files/Green",
+				"patcherrelativepath" : "./Files/Green",
+				"type" : "TEXT",
+				"implicit" : 1
 			}
  ],
 		"autosave" : 0,
