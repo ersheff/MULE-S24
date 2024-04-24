@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 6,
-			"revision" : 1,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 62.0, 1239.0, 804.0 ],
+		"rect" : [ 34.0, 77.0, 1239.0, 908.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -569,7 +569,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 2170.0, 400.0, 50.0, 49.0 ],
+					"patching_rect" : [ 2170.0, 400.0, 50.0, 50.0 ],
 					"text" : "setRotate 5 8 1000"
 				}
 
@@ -643,10 +643,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 334.5, 377.0, 83.0, 33.0 ],
+					"patching_rect" : [ 334.5, 377.0, 83.0, 34.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 477.0, 38.0, 83.0, 33.0 ],
+					"presentation_rect" : [ 477.0, 38.0, 83.0, 34.0 ],
 					"text" : "current\nangle"
 				}
 
@@ -998,7 +998,7 @@
 				"box" : 				{
 					"id" : "obj-541",
 					"maxclass" : "number",
-					"maximum" : 300,
+					"maximum" : 500,
 					"minimum" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 2,
@@ -1027,7 +1027,7 @@
 				"box" : 				{
 					"id" : "obj-539",
 					"maxclass" : "number",
-					"maximum" : 300,
+					"maximum" : 500,
 					"minimum" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 2,
@@ -1056,7 +1056,7 @@
 				"box" : 				{
 					"id" : "obj-535",
 					"maxclass" : "number",
-					"maximum" : 300,
+					"maximum" : 500,
 					"minimum" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 2,
@@ -1138,7 +1138,7 @@
 				"box" : 				{
 					"id" : "obj-516",
 					"maxclass" : "number",
-					"maximum" : 300,
+					"maximum" : 500,
 					"minimum" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 2,
@@ -1168,10 +1168,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2660.0, 150.0, 70.0, 33.0 ],
+					"patching_rect" : [ 2660.0, 150.0, 70.0, 34.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 10.0, 38.0, 64.0, 33.0 ],
+					"presentation_rect" : [ 10.0, 38.0, 64.0, 34.0 ],
 					"text" : "scene\n1 - 5"
 				}
 
@@ -1216,7 +1216,7 @@
 				"box" : 				{
 					"id" : "obj-499",
 					"maxclass" : "number",
-					"maximum" : 300,
+					"maximum" : 500,
 					"minimum" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 2,
@@ -1246,10 +1246,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2432.0, 150.0, 70.0, 33.0 ],
+					"patching_rect" : [ 2432.0, 150.0, 70.0, 34.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 62.0, 161.0, 50.0, 33.0 ],
+					"presentation_rect" : [ 62.0, 161.0, 50.0, 34.0 ],
 					"text" : "transY\n0. - 4."
 				}
 
@@ -1261,10 +1261,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2360.0, 150.0, 70.0, 33.0 ],
+					"patching_rect" : [ 2360.0, 150.0, 70.0, 34.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 10.0, 161.0, 50.0, 33.0 ],
+					"presentation_rect" : [ 10.0, 161.0, 50.0, 34.0 ],
 					"text" : "transX\n-2 - 2."
 				}
 
@@ -1355,7 +1355,7 @@
 				"box" : 				{
 					"id" : "obj-487",
 					"maxclass" : "number",
-					"maximum" : 300,
+					"maximum" : 500,
 					"minimum" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 2,
@@ -2665,7 +2665,7 @@
 										"filename" : "LABS.maxsnap",
 										"filepath" : "~/Documents/Max 8/Snapshots",
 										"filepos" : -1,
-										"snapshotfileid" : "9c3ec1805a22a8d239a8731cc5745e9f"
+										"snapshotfileid" : "70bb06606adaee25f38dc9fa56348310"
 									}
 
 								}
@@ -2680,10 +2680,10 @@
 									"embed" : 0,
 									"fileref" : 									{
 										"name" : "LABS",
-										"filename" : "LABS_20240329.maxsnap",
+										"filename" : "LABS.maxsnap",
 										"filepath" : "~/Documents/Max 8/Snapshots",
 										"filepos" : -1,
-										"snapshotfileid" : "77c834b7cda2a0f3f03923e0501a486d"
+										"snapshotfileid" : "70bb06606adaee25f38dc9fa56348310"
 									}
 
 								}
@@ -2701,7 +2701,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-254",
-					"items" : [ " ", ",", "++bubbler", ",", "++chebyshev", ",", "++compand", ",", "++decimate", ",", "++delay", ",", "++flipper", ",", "++matrix", ",", "++phasor", ",", "++pitchdelay", ",", "BPB Dirty VHS", ",", "Cardinal FX", ",", "Cardinal Synth", ",", "Cardinal", ",", "Deelay", ",", "Filterstep", ",", "Fracture", ",", "Gatelab", ",", "IVGI2", ",", "LABS", ",", "NeuralAmpModeler", ",", "Panflow", ",", "PaulXStretch", ",", "Ruina", ",", "Saturation Knob", ",", "Sinc Vereor", ",", "Surge XT Effects", ",", "Surge XT", ",", "TAL-Vocoder-2", ",", "TDR Nova", ",", "TX16Wx (legacy id)", ",", "TX16Wx", ",", "ValhallaDelay", ",", "ValhallaFreqEcho", ",", "ValhallaSupermassive", ",", "ValhallaVintageVerb_Fx", ",", "ValhallaVintageVerb_Fx_Reverb", ",", "Virt Vereor" ],
+					"items" : [ " ", ",", "LABS", ",", "Serum", ",", "Synplant", ",", "Vital" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -2891,9 +2891,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 413.0, 208.0, 80.0, 35.0 ],
+					"patching_rect" : [ 413.0, 208.0, 80.0, 36.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 170.0, 371.0, 80.0, 35.0 ]
+					"presentation_rect" : [ 170.0, 371.0, 80.0, 36.0 ]
 				}
 
 			}
@@ -3380,10 +3380,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 3362.5, 162.0, 70.0, 33.0 ],
+					"patching_rect" : [ 3362.5, 162.0, 70.0, 34.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 307.0, 161.0, 50.0, 33.0 ],
+					"presentation_rect" : [ 307.0, 161.0, 50.0, 34.0 ],
 					"text" : "width\n1 - 20"
 				}
 
@@ -3458,10 +3458,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2888.0, 138.0, 70.0, 33.0 ],
+					"patching_rect" : [ 2888.0, 138.0, 70.0, 34.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 307.0, 38.0, 50.0, 33.0 ],
+					"presentation_rect" : [ 307.0, 38.0, 50.0, 34.0 ],
 					"text" : "angle\n16 - 90"
 				}
 
@@ -3537,10 +3537,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2142.0, 150.0, 70.0, 33.0 ],
+					"patching_rect" : [ 2142.0, 150.0, 70.0, 34.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 10.0, 100.0, 50.0, 33.0 ],
+					"presentation_rect" : [ 10.0, 100.0, 50.0, 34.0 ],
 					"text" : "rotateX\n-45-45"
 				}
 
@@ -3552,10 +3552,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2070.0, 150.0, 70.0, 33.0 ],
+					"patching_rect" : [ 2070.0, 150.0, 70.0, 34.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 62.0, 100.0, 50.0, 33.0 ],
+					"presentation_rect" : [ 62.0, 100.0, 50.0, 34.0 ],
 					"text" : "rotateY\n-45-45"
 				}
 
@@ -3567,10 +3567,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 3140.0, 162.0, 70.0, 33.0 ],
+					"patching_rect" : [ 3140.0, 162.0, 70.0, 34.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 307.0, 100.0, 61.0, 33.0 ],
+					"presentation_rect" : [ 307.0, 100.0, 61.0, 34.0 ],
 					"text" : "scale\n0.5 - 3.0"
 				}
 
@@ -4645,7 +4645,7 @@
 										"filename" : "LABS.maxsnap",
 										"filepath" : "~/Documents/Max 8/Snapshots",
 										"filepos" : -1,
-										"snapshotfileid" : "9c3ec1805a22a8d239a8731cc5745e9f"
+										"snapshotfileid" : "70bb06606adaee25f38dc9fa56348310"
 									}
 
 								}
@@ -4660,10 +4660,10 @@
 									"embed" : 0,
 									"fileref" : 									{
 										"name" : "LABS",
-										"filename" : "LABS_20240329.maxsnap",
+										"filename" : "LABS.maxsnap",
 										"filepath" : "~/Documents/Max 8/Snapshots",
 										"filepos" : -1,
-										"snapshotfileid" : "77c834b7cda2a0f3f03923e0501a486d"
+										"snapshotfileid" : "70bb06606adaee25f38dc9fa56348310"
 									}
 
 								}
@@ -4791,10 +4791,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 645.0, 1977.0, 182.0, 69.0 ],
+					"patching_rect" : [ 645.0, 1977.0, 182.0, 70.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 4,
-					"presentation_rect" : [ 780.0, 364.0, 182.0, 69.0 ],
+					"presentation_rect" : [ 780.0, 364.0, 182.0, 70.0 ],
 					"text" : "Shift-click to store a preset.\nClick to recall.\nMake sure audio is on when saving/recalling."
 				}
 
@@ -5078,7 +5078,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-194",
-					"items" : [ " ", ",", "++bubbler", ",", "++chebyshev", ",", "++compand", ",", "++decimate", ",", "++delay", ",", "++flipper", ",", "++matrix", ",", "++phasor", ",", "++pitchdelay", ",", "BPB Dirty VHS", ",", "Cardinal FX", ",", "Cardinal Synth", ",", "Cardinal", ",", "Deelay", ",", "Filterstep", ",", "Fracture", ",", "Gatelab", ",", "IVGI2", ",", "LABS", ",", "NeuralAmpModeler", ",", "Panflow", ",", "PaulXStretch", ",", "Ruina", ",", "Saturation Knob", ",", "Sinc Vereor", ",", "Surge XT Effects", ",", "Surge XT", ",", "TAL-Vocoder-2", ",", "TDR Nova", ",", "TX16Wx (legacy id)", ",", "TX16Wx", ",", "ValhallaDelay", ",", "ValhallaFreqEcho", ",", "ValhallaSupermassive", ",", "ValhallaVintageVerb_Fx", ",", "ValhallaVintageVerb_Fx_Reverb", ",", "Virt Vereor" ],
+					"items" : [ " ", ",", "LABS", ",", "Serum", ",", "Synplant", ",", "Vital" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -5231,7 +5231,7 @@
 										"filename" : "LABS.maxsnap",
 										"filepath" : "~/Documents/Max 8/Snapshots",
 										"filepos" : -1,
-										"snapshotfileid" : "9c3ec1805a22a8d239a8731cc5745e9f"
+										"snapshotfileid" : "70bb06606adaee25f38dc9fa56348310"
 									}
 
 								}
@@ -5246,10 +5246,10 @@
 									"embed" : 0,
 									"fileref" : 									{
 										"name" : "LABS",
-										"filename" : "LABS_20240329.maxsnap",
+										"filename" : "LABS.maxsnap",
 										"filepath" : "~/Documents/Max 8/Snapshots",
 										"filepos" : -1,
-										"snapshotfileid" : "77c834b7cda2a0f3f03923e0501a486d"
+										"snapshotfileid" : "70bb06606adaee25f38dc9fa56348310"
 									}
 
 								}
@@ -5267,7 +5267,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-198",
-					"items" : [ " ", ",", "++bubbler", ",", "++chebyshev", ",", "++compand", ",", "++decimate", ",", "++delay", ",", "++flipper", ",", "++matrix", ",", "++phasor", ",", "++pitchdelay", ",", "BPB Dirty VHS", ",", "Cardinal FX", ",", "Cardinal Synth", ",", "Cardinal", ",", "Deelay", ",", "Filterstep", ",", "Fracture", ",", "Gatelab", ",", "IVGI2", ",", "LABS", ",", "NeuralAmpModeler", ",", "Panflow", ",", "PaulXStretch", ",", "Ruina", ",", "Saturation Knob", ",", "Sinc Vereor", ",", "Surge XT Effects", ",", "Surge XT", ",", "TAL-Vocoder-2", ",", "TDR Nova", ",", "TX16Wx (legacy id)", ",", "TX16Wx", ",", "ValhallaDelay", ",", "ValhallaFreqEcho", ",", "ValhallaSupermassive", ",", "ValhallaVintageVerb_Fx", ",", "ValhallaVintageVerb_Fx_Reverb", ",", "Virt Vereor" ],
+					"items" : [ " ", ",", "LABS", ",", "Serum", ",", "Synplant", ",", "Vital" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -8825,28 +8825,21 @@
 		"dependency_cache" : [ 			{
 				"name" : "LABS.maxsnap",
 				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../../../Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../../../Users/dirtb/Documents/Max 8/Snapshots",
 				"type" : "mx@s",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "LABS_20240329.maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../../../Documents/Max 8/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
+				"name" : "jit.ndi.send~.mxe64",
+				"type" : "mx64"
 			}
 , 			{
-				"name" : "jit.ndi.send~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "link.beat.mxo",
-				"type" : "iLaX"
+				"name" : "link.beat.mxe64",
+				"type" : "mx64"
 			}
 , 			{
 				"name" : "tree.js",
-				"bootpath" : "~/GitHub/MULES24/Files/Green",
+				"bootpath" : "C:/Music/MULES24/Files/Green",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
