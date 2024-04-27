@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 62.0, 1346.0, 804.0 ],
+		"rect" : [ 34.0, 62.0, 1123.0, 804.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,26 +40,80 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-16",
-					"maxclass" : "jweb",
+					"comment" : "",
+					"id" : "obj-1",
+					"index" : 0,
+					"maxclass" : "outlet",
 					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 39.0, 770.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-24",
+					"linecount" : 3,
+					"maxclass" : "message",
+					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 39.0, 173.0, 494.0, 368.0 ],
-					"rendermode" : 0,
-					"url" : "https://ersheff.github.io/MULE-S24/"
+					"patching_rect" : [ 734.0, 846.0, 581.0, 49.0 ],
+					"text" : "url https://docs.google.com/presentation/d/e/2PACX-1vRLaLwNb10HlEasKhpZgNhC699gWPbOxnps3qfUdBk_nUII1M2tvNos7U0awlP5C4gwrNHmgg3ST2ts/pub?start=false&loop=false&delayms=3000"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-17",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 734.0, 817.0, 58.0, 22.0 ],
+					"text" : "loadbang"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-15",
+					"maxclass" : "jweb",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 734.0, 907.0, 320.0, 240.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, 536.0, 1200.0, 264.0 ],
+					"rendermode" : 0,
+					"url" : "https://docs.google.com/presentation/d/e/2PACX-1vRLaLwNb10HlEasKhpZgNhC699gWPbOxnps3qfUdBk_nUII1M2tvNos7U0awlP5C4gwrNHmgg3ST2ts/pub?start=false&loop=false&delayms=3000"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 174.0, 632.0, 50.0, 22.0 ],
-					"text" : "F#"
+					"patching_rect" : [ 147.0, 134.0, 42.0, 22.0 ],
+					"text" : "reload"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "jweb",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 39.0, 173.0, 494.0, 368.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 390.0, 37.0, 420.0, 460.0 ],
+					"rendermode" : 0,
+					"url" : "https://ersheff.github.io/MULE-S24/"
 				}
 
 			}
@@ -70,7 +124,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 589.0, 802.0, 70.0, 22.0 ],
+					"patching_rect" : [ 580.0, 770.0, 70.0, 22.0 ],
 					"text" : "loadmess 0"
 				}
 
@@ -738,17 +792,15 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-15", 1 ],
-					"order" : 0,
+					"destination" : [ "obj-69", 0 ],
 					"source" : [ "obj-16", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-69", 0 ],
-					"order" : 1,
-					"source" : [ "obj-16", 0 ]
+					"destination" : [ "obj-24", 0 ],
+					"source" : [ "obj-17", 0 ]
 				}
 
 			}
@@ -761,8 +813,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-16", 0 ],
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-54", 0 ],
 					"source" : [ "obj-23", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"source" : [ "obj-24", 0 ]
 				}
 
 			}
@@ -910,6 +976,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-11", 2 ],
 					"source" : [ "obj-61", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-16", 0 ],
+					"source" : [ "obj-67", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-69", 0 ]
 				}
 
 			}
