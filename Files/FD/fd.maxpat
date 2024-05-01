@@ -1238,7 +1238,7 @@
 					"patching_rect" : [ 930.0, 427.0, 63.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 997.5, 22.0, 63.0, 24.0 ],
-					"text" : "0",
+					"text" : "4",
 					"textjustification" : 1
 				}
 
@@ -3355,7 +3355,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-26", 0 ],
 					"order" : 0,
-					"source" : [ "obj-53", 2 ]
+					"source" : [ "obj-53", 1 ]
 				}
 
 			}
@@ -3363,7 +3363,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-60", 0 ],
 					"order" : 1,
-					"source" : [ "obj-53", 2 ]
+					"source" : [ "obj-53", 1 ]
 				}
 
 			}
