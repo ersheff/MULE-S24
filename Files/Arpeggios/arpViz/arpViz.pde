@@ -1,3 +1,9 @@
+// import spout.*;
+import codeanticode.syphon.*;
+
+// Spout spout;
+SyphonServer server;
+
 import netP5.*;
 import oscP5.*;
 import java.util.HashMap;
@@ -24,12 +30,14 @@ float dropMin = 0.05;
 float dropMax = 0.2;
 
 void setup() {
-  size(1280, 720);
-  //pixelDensity(displayDensity());
+  size(1920, 1080, P3D);
   dotDim = width/15;
   strokeWeight(2);
   oscP5 = new OscP5(this, 7001); // Listen for OSC messages on port 7001
   
+  // spout = new Spout(this);
+  server = new SyphonServer(this, "Processing Syphon");
+
   nameToColumn = new HashMap<String, Integer>();
   String[] names = {"/willb", "/ethanc", "/ethand", "/iand", "/tylerh", "/erics", "/henryk", "/evann", "/willp", "/isar", "/ianr", "/kylers", "/jackw"};
   for (int i = 0; i < names.length; i++) {
@@ -63,6 +71,9 @@ void draw() {
     }
   }
   
+  // spout.sendTexture();
+  server.sendScreen();
+  
   allDots.removeAll(dotsToRemove);
   allDots.addAll(newDots);
 
@@ -71,7 +82,6 @@ void draw() {
   }
 
   newDots.clear();
-  println(allDots.size());
 }
 
 
