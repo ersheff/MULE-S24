@@ -39,7 +39,7 @@ void setup() {
   server = new SyphonServer(this, "Processing Syphon");
 
   nameToColumn = new HashMap<String, Integer>();
-  String[] names = {"/willb", "/ethanc", "/ethand", "/iand", "/tylerh", "/erics", "/henryk", "/evann", "/willp", "/isar", "/ianr", "/kylers", "/jackw"};
+  String[] names = {"/willb", "/ethanc", "/ethand", "/iand", "/tylerh", "/henryk", "/evann", "/willp", "/isar", "/ianr", "/kylers", "/jackw"};
   for (int i = 0; i < names.length; i++) {
     nameToColumn.put(names[i], i);
   }
