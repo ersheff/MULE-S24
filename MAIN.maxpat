@@ -82,7 +82,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 18.0, 6.0, 97.0, 22.0 ],
-					"text" : "udpreceive 7000"
+					"text" : "udpreceive 8000"
 				}
 
 			}
