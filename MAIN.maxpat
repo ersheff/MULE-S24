@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 267.0, 62.0, 1069.0, 804.0 ],
+		"rect" : [ 34.0, 62.0, 1166.0, 804.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,30 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-21",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 516.0, 736.0, 59.0, 22.0 ],
+					"text" : "port 7002"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-17",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 456.0, 736.0, 59.0, 22.0 ],
+					"text" : "port 7001"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-20",
 					"maxclass" : "message",
@@ -177,8 +201,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 531.0, 120.0, 29.5, 22.0 ],
-					"text" : "red"
+					"patching_rect" : [ 531.0, 120.0, 113.0, 22.0 ],
+					"text" : "PERFORMANCE-b"
 				}
 
 			}
@@ -492,7 +516,7 @@
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "home.maxpat",
+					"name" : "PERFORMANCE-b.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
@@ -512,7 +536,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 233.0, 803.0, 165.0, 22.0 ],
-					"text" : "udpsend 192.168.0.181 7001"
+					"text" : "udpsend 10.10.100.255 7001"
 				}
 
 			}
@@ -563,6 +587,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-17", 0 ],
+					"order" : 1,
+					"source" : [ "obj-16", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
 					"source" : [ "obj-16", 0 ]
 				}
@@ -571,6 +603,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-20", 0 ],
+					"order" : 0,
+					"source" : [ "obj-16", 5 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"order" : 1,
 					"source" : [ "obj-16", 5 ]
 				}
 
@@ -599,7 +640,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
+					"order" : 0,
 					"source" : [ "obj-16", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"source" : [ "obj-17", 0 ]
 				}
 
 			}
@@ -621,6 +670,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
 					"source" : [ "obj-20", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"source" : [ "obj-21", 0 ]
 				}
 
 			}
@@ -769,6 +825,14 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-1::obj-25" : [ "live.toggle", "live.toggle", 0 ],
+			"obj-1::obj-31" : [ "live.toggle[1]", "live.toggle", 0 ],
+			"obj-1::obj-32" : [ "live.toggle[2]", "live.toggle", 0 ],
+			"obj-1::obj-33::obj-70::obj-1" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-1::obj-379" : [ "ONE", "ONE", 0 ],
+			"obj-1::obj-380" : [ "TWO", "TWO", 0 ],
+			"obj-1::obj-381" : [ "THREE", "THREE", 0 ],
+			"obj-1::obj-418" : [ "toggle[15]", "toggle[15]", 0 ],
 			"obj-4" : [ "main", "main", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
@@ -783,6 +847,10 @@
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "cv.jit.ravg.mxo",
+				"type" : "iLaX"
+			}
+, 			{
 				"name" : "home.maxpat",
 				"bootpath" : "~/GitHub/MULES24/Files",
 				"patcherrelativepath" : "./Files",
@@ -791,10 +859,6 @@
 			}
 , 			{
 				"name" : "jit.ndi.send~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "link.beat.mxo",
 				"type" : "iLaX"
 			}
  ],
