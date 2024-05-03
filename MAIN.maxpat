@@ -46,7 +46,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 516.0, 736.0, 59.0, 22.0 ],
-					"text" : "port 7002"
+					"text" : "port 8002"
 				}
 
 			}
@@ -58,7 +58,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 456.0, 736.0, 59.0, 22.0 ],
-					"text" : "port 7001"
+					"text" : "port 8001"
 				}
 
 			}
@@ -516,7 +516,7 @@
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "PERFORMANCE-b.maxpat",
+					"name" : "home.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
@@ -536,7 +536,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 233.0, 803.0, 165.0, 22.0 ],
-					"text" : "udpsend 10.10.100.255 7001"
+					"text" : "udpsend 10.10.100.255 8001"
 				}
 
 			}
@@ -825,14 +825,6 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-1::obj-25" : [ "live.toggle", "live.toggle", 0 ],
-			"obj-1::obj-31" : [ "live.toggle[1]", "live.toggle", 0 ],
-			"obj-1::obj-32" : [ "live.toggle[2]", "live.toggle", 0 ],
-			"obj-1::obj-33::obj-70::obj-1" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-1::obj-379" : [ "ONE", "ONE", 0 ],
-			"obj-1::obj-380" : [ "TWO", "TWO", 0 ],
-			"obj-1::obj-381" : [ "THREE", "THREE", 0 ],
-			"obj-1::obj-418" : [ "toggle[15]", "toggle[15]", 0 ],
 			"obj-4" : [ "main", "main", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
@@ -847,10 +839,6 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "cv.jit.ravg.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "home.maxpat",
 				"bootpath" : "~/GitHub/MULES24/Files",
 				"patcherrelativepath" : "./Files",
@@ -858,7 +846,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "jit.ndi.send~.mxo",
+				"name" : "link.beat.mxo",
 				"type" : "iLaX"
 			}
  ],

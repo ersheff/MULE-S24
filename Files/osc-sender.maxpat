@@ -46,7 +46,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 297.0, 174.0, 50.0, 22.0 ],
-					"text" : "113"
+					"text" : "12"
 				}
 
 			}
@@ -80,8 +80,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 130.0, 220.0, 178.0, 22.0 ],
-					"text" : "udpsend 255.255.255.255 7000"
+					"patching_rect" : [ 130.0, 220.0, 165.0, 22.0 ],
+					"text" : "udpsend 10.10.100.255 7000"
 				}
 
 			}

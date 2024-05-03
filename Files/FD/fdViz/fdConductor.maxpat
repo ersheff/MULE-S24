@@ -801,7 +801,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 245.0, 1161.0, 165.0, 22.0 ],
-					"text" : "udpsend 10.10.100.255 7000"
+					"text" : "udpsend 10.10.100.255 8000"
 				}
 
 			}
